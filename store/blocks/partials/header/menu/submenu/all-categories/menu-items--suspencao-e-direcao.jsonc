@@ -1,0 +1,361 @@
+{
+    "menu-item#submenu-item--suspencao-e-direcao": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 4,
+                "text": "Suspenção e direção"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-suspencao-e-direcao"]
+    },
+    "vtex.menu@2.x:submenu#submenu-suspencao-e-direcao": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-suspencao-e-direcao",
+            "vtex.menu@2.x:menu#submenu-suspencao-e-direcao-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-suspencao-e-direcao": {
+        "children": ["flex-layout.col#title-suspencao-e-direcao"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-suspencao-e-direcao": {
+        "children": ["rich-text#menu-title-suspencao-e-direcao"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-suspencao-e-direcao": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Suspenção e direção",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--suspencao-e-direcao"]
+    },
+    "menu-item#see-more--suspencao-e-direcao": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--suspencao-e-direcao",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/suspencao e direcao",
+                "noFollow": false,
+                "tagTitle": "Ver Todos",
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-suspencao-e-direcao-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":111,
+                        "text": "Amortecedor Suspenção"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId": 192,
+                        "text": "Bandeja"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":196,
+                        "text": "Barra direção"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":198,
+                        "text": "Barra estabilizadora"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":200,
+                        "text": "Barra ligação"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId": 211,
+                        "text": "Batente amortecedor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId": 242,
+                        "text": "Bieleta"
+                    }
+                },
+                {
+                    "id": "menu-item-link-08",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":319,
+                        "text": "Braço aux direção"
+                    }
+                },
+                {
+                    "id": "menu-item-link-09",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":327,
+                        "text": "Braço pitman"
+                    }
+                },
+                {
+                    "id": "menu-item-link-10",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":342,
+                        "text": "Bucha bandeja"
+                    }
+                },
+                {
+                    "id": "menu-item-link-11",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":353,
+                        "text": "Bucha braço tensor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-12",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":383,
+                        "text": "Bucha tensor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-13",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":430,
+                        "text": "Caixa direção"
+                    }
+                },
+                {
+                    "id": "menu-item-link-14",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":612,
+                        "text": "Coifa caixa direção"
+                    }
+                },
+                {
+                    "id": "menu-item-link-15",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":614,
+                        "text": "Coifa junta homocinetica"
+                    }
+                },
+                {
+                    "id": "menu-item-link-16",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":677,
+                        "text": "Coxim amortecedor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-17",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":679,
+                        "text": "Coxim cabine"
+                    }
+                },
+                {
+                    "id": "menu-item-link-18",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":991,
+                        "text": "Kit batente amortecedor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-19",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":995,
+                        "text": "Kit borracha estab"
+                    }
+                },
+                {
+                    "id": "menu-item-link-20",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1030,
+                        "text": "Kit rolamento roda"
+                    }
+                },
+                {
+                    "id": "menu-item-link-21",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1163,
+                        "text": "Pivo suspensão"
+                    }
+                },
+                {
+                    "id": "menu-item-link-22",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1237,
+                        "text": "Retentor roda"
+                    }
+                },
+                {
+                    "id": "menu-item-link-23",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1257,
+                        "text": "Rolamento cardan"
+                    }
+                },
+                {
+                    "id": "menu-item-link-24",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1279,
+                        "text": "Rolamento roda"
+                    }
+                },
+                {
+                    "id": "menu-item-link-25",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1301,
+                        "text": "Semi-eixo"
+                    }
+                },
+                {
+                    "id": "menu-item-link-26",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1332,
+                        "text": "Suporte barra tensora"
+                    }
+                },
+                {
+                    "id": "menu-item-link-27",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1406,
+                        "text": "Terminal barra estab"
+                    }
+                },
+                {
+                    "id": "menu-item-link-28",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1402,
+                        "text": "Terminal direção"
+                    }
+                }
+            ]
+        }
+    }
+}

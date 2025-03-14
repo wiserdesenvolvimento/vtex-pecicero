@@ -1,0 +1,93 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+/* Colors */
+/* Grid breakpoints */
+.element--m3-shelf-product {
+  background-color: #fff;
+  border: 1px solid #ebe9e9;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 16px 20px 12px;
+}
+
+.nameContainer--m3-shelf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px 0 12px;
+  padding: 0;
+}
+.nameContainer--m3-shelf::before {
+  content: "";
+  display: block;
+  border-top: 1px solid #ebe9e9;
+  width: 80%;
+}
+
+.productNameContainer--m3-shelf {
+  padding-top: 8px;
+}
+
+.brandName--m3-shelf {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  color: #000;
+  display: -webkit-box;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  line-height: 16px;
+  overflow: hidden;
+  text-align: center;
+  text-rendering: geometricPrecision;
+}
+
+.element--m3-shelf-product :global(.vtex-button) {
+  border: none;
+}
+.element--m3-shelf-product :global(.vtex-button__label) {
+  background-color: #828282;
+  border-radius: 0;
+  padding: 0 !important;
+}
+
+.containerNormal--m3-shelf-product {
+  border-radius: 0;
+  max-width: 100% !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .element--m3-shelf-product {
+    border: none;
+    border-radius: 0;
+    padding: 5px;
+  }
+  .image--m3-shelf-product-image {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 180px !important;
+  }
+  .nameContainer--m3-shelf {
+    margin: 8px 0;
+  }
+  .nameContainer--m3-shelf::before {
+    display: none;
+  }
+  .productNameContainer--m3-shelf {
+    padding-top: 0;
+  }
+  .brandName--m3-shelf {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

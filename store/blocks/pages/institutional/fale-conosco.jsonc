@@ -1,0 +1,65 @@
+{
+    "store.custom#fale-conosco": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#wrapper-faleConosco"
+        ]
+    },
+    "flex-layout.row#wrapper-faleConosco": {
+        "children": [
+            "flex-layout.col#inst-nav",
+            "flex-layout.col#institucional--faleConosco"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    },
+    "flex-layout.col#institucional--faleConosco": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": [
+            "flex-layout.row#institucional--faleConosco",
+            "flex-layout.row#institucional--atendimento"
+
+        ]
+    },
+    "flex-layout.row#institucional--faleConosco": {
+        "children": [
+            "rich-text#faleConosco"
+        ]
+    },
+    "flex-layout.row#institucional--atendimento": {
+        "children": [
+            "flex-layout.row#sac"
+        ]
+    },
+    "rich-text#faleConosco": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Fale conosco",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "flex-layout.row#sac": {
+        "props": {
+            "blockClass": "sac-row"
+        },
+        "children": [
+            "rich-text#atendimento"
+        ]
+    },
+    "rich-text#atendimento": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "### Central de Atendimento \n #### SAC \n\n ![telefone](assets/imgs/icon-tel.png) [85 3499 9009](tel:8534999009) \n\n ![E-mail](assets/imgs/icon-mail.png) [ecomm@pecicero.com.br](mailto:ecomm@pecicero.com.br) \n\n #### Televendas \n\n ![Whatsapp](assets/imgs/icon-whatsapp.png) [85 3499 9000](https://api.whatsapp.com/send?phone=558534999000)",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "tel-text"
+        }
+    }
+}

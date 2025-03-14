@@ -1,0 +1,88 @@
+{
+    "menu-item#submenu-item--pecas-interior": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":22,
+                "text": "Peças interior"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-pecas-interior"]
+    },
+    "vtex.menu@2.x:submenu#submenu-pecas-interior": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-pecas-interior",
+            "vtex.menu@2.x:menu#submenu-pecas-interior-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-pecas-interior": {
+        "children": ["flex-layout.col#title-pecas-interior"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-pecas-interior": {
+        "children": ["rich-text#menu-title-pecas-interior"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-pecas-interior": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Peças interior",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--pecas-interior"]
+    },
+    "menu-item#see-more--pecas-interior": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--pecas-interior",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":22,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-pecas-interior-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":715,
+                        "text": "Difusor ar"
+                    }
+                }
+            ]
+        }
+    }
+}

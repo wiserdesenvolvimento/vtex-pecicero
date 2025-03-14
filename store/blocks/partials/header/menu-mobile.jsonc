@@ -1,0 +1,32 @@
+{
+    "menu#drawer": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "menu-mobile"
+        },
+        "children": [
+            "flex-layout.row#drawer-top",
+            "custom-menu#m3-custom"
+        ]
+    },
+    "flex-layout.row#drawer-top": {
+        "props": {
+            "sticky": true,
+            "blockClass": "drawer-top-content"
+        },
+        "children": ["login#menu-mobile", "login-name"]
+    },
+    "login#menu-mobile": {
+        //https://github.com/vtex-apps/login/blob/master/docs/README.md
+        "props": {
+            "showIconProfile": true,
+            "iconLabel": "Entre ou Cadastre-se",
+            "optionsTitle": "Escolha uma opção para entrar:",
+            "providerPasswordButtonLabel":"Entrar com e-mail",
+            "accessCodeTitle": "Receber acesso de código por e-mail:",
+            "emailAndPasswordTitle": "Entrar com e-mail e Senha",
+            "passwordPlaceholder": "Adicione sua Senha",
+            "acessCodePlaceholder":"Adicione seu código de acesso"
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/* M3 SHELF SLIDER  */
+/* ---------------------------------------------------------------------------------------- */
+.sliderLayoutContainer--m3-shelf-products-slide {
+    padding: 0 0 28px !important;
+}
+
+.sliderLayoutContainer--m3-shelf-highlight {
+    padding: 0 47px !important;
+}
+
+.slideChildrenContainer--m3-shelf-products-slide {
+    padding: 0 12px;
+}
+
+@include mq(md, min) {
+    .caretIcon--m3-shelf-highlight {
+        color: #ffaf00;
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@include mq(md, max) {
+    .sliderLayoutContainer--m3-shelf-products-slide {
+        padding-bottom: 16px !important;
+    }
+
+    .slideChildrenContainer--m3-shelf-products-slide {
+        padding: 0;
+    }
+
+    .sliderLayoutContainer--m3-shelf-highlight {
+        padding: 0 !important;
+    }
+
+    .slideChildrenContainer--m3-shelf-highlight {
+        margin: 0 4px;
+    }
+
+    .sliderRightArrow--m3-shelf-highlight {
+        right: 4px;
+    }
+
+    .sliderLeftArrow--m3-shelf-highlight {
+        left: 4px;
+    }
+}
+
+.sliderTrackContainer--m3-shelf-products-slide {
+    @include mq(lg, min) {
+        height: 475px;
+    }
+}

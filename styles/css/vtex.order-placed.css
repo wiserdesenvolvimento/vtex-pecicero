@@ -1,0 +1,168 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+/* Colors */
+/* Grid breakpoints */
+.section--confirmation {
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 575px) {
+  .orderPlacedWrapper {
+    padding: 4rem 1rem 0;
+  }
+}
+
+.confirmationTitle {
+  color: #292929;
+  font-family: "Chivo", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.noticesList {
+  background: white;
+}
+
+.noticeListItem {
+  border: none;
+  color: #292929;
+  font-family: "Chivo", sans-serif;
+  font-size: 13px;
+  padding: 10px 0;
+}
+.noticeListItem:first-child {
+  display: none;
+}
+
+.orderOptionsWrapper {
+  display: none;
+}
+
+.orderNumber,
+.packageDeliveryTitle {
+  color: #292929;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.orderDatetime,
+.orderSoldBy,
+.orderSeller,
+.customerInfoListName,
+.customerInfoListEmail,
+.customerInfoListDocument,
+.customerInfoListPhone,
+.paymentGroup,
+.paymentValue,
+.addressContainer,
+.packageShippingEstimate,
+.packageSLA {
+  color: #292929 !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+}
+
+.packageSLA {
+  display: block;
+  width: fit-content;
+}
+
+.vtex__icon-info {
+  color: #5baa63;
+}
+
+.updateOrderButton :global(.vtex-button),
+.myOrdersButton :global(.vtex-button) {
+  background: #26247b;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-transform: none;
+}
+
+.cancelOrderButton :global(.vtex-button) {
+  border: none;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  text-transform: none;
+}
+
+.package--delivery {
+  flex-direction: column;
+}
+
+.productList {
+  width: 100%;
+}
+.productList .productInfoColumn {
+  justify-content: space-evenly;
+}
+.productList .productName,
+.productList .productQuantity {
+  color: #282828;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.productList .productPrice {
+  display: flex;
+  align-items: flex-end;
+  color: #de7903;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 767px) {
+  .productList .productPrice {
+    justify-content: center;
+  }
+}
+
+.totalListWrapper {
+  justify-content: start;
+}
+
+.totalListItem {
+  color: #292929;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+}
+.totalListItem:not(:last-child) {
+  display: none;
+}
+.totalListItem .totalListItemValue {
+  color: #de7903;
+  font-size: 22px;
+  margin-left: 0.625rem;
+}
+
+.totalListItemLabel {
+  font-size: 24px;
+}
+.totalListItemLabel::after {
+  content: ":";
+}

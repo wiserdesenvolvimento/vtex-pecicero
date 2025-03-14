@@ -1,0 +1,188 @@
+{
+    "menu-item#submenu-item--arrefecimento": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 16,
+                "text": "Arrefecimento"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-arrefecimento"]
+    },
+    "vtex.menu@2.x:submenu#submenu-arrefecimento": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-arrefecimento",
+            "vtex.menu@2.x:menu#submenu-arrefecimento-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-arrefecimento": {
+        "children": ["flex-layout.col#title-arrefecimento"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-arrefecimento": {
+        "children": ["rich-text#menu-title-arrefecimento"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-arrefecimento": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Arrefecimento",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--arrefecimento"]
+    },
+    "menu-item#see-more--arrefecimento": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--arrefecimento",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 16,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-arrefecimento-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId": 61,
+                        "text": "Aditivo radiador"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":267,
+                        "text": "Bomba d'água"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":469,
+                        "text": "Cano d'água"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":508,
+                        "text": "Carcaça bomba d'água"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId": 535,
+                        "text": "Cavalete distr água"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":594,
+                        "text": "Cj embreagem viscosa"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId": 683,
+                        "text": "Coxim radiador"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId": 748,
+                        "text": "Embreagem viscosa"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1055,
+                        "text": "Mangote radiador"
+                    }
+                },
+                {
+                    "id": "menu-item-link-08",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1193,
+                        "text": "Radiador motor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-09",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1516,
+                        "text": "Válvula termostática"
+                    }
+                }
+            ]
+        }
+    }
+}

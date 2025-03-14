@@ -1,0 +1,166 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+/* Colors */
+/* Grid breakpoints */
+@media only screen and (max-width: 575px) {
+  .opened {
+    max-width: 384px !important;
+  }
+}
+
+.drawerContent :global(.vtex-rich-text-0-x-paragraph) {
+  color: #4f4f4f;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 575px) {
+  .minicartIconContainer :global(.vtex-store-components-3-x-imageElement) {
+    width: 29.79px;
+    height: 26.78px;
+  }
+}
+
+.minicartWrapperContainer {
+  margin: 0 24px;
+}
+@media only screen and (max-width: 1024px) {
+  .minicartWrapperContainer {
+    margin: 0 12px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .minicartWrapperContainer {
+    margin: 0 0 0 4px;
+  }
+}
+
+.openIconContainer {
+  padding: 0 !important;
+}
+.openIconContainer :global(.vtex-button) {
+  border: none;
+}
+.openIconContainer :global(.vtex-button):hover, .openIconContainer :global(.vtex-button):focus {
+  background: transparent;
+  outline: none;
+}
+.openIconContainer :global(.vtex-button__label) {
+  padding: 0;
+}
+
+.drawer {
+  width: 95% !important;
+}
+
+.drawerContent {
+  height: 100vh;
+  position: relative;
+}
+
+.closeIconContainer {
+  height: 74px;
+  padding: 26px 20px;
+  position: absolute;
+}
+
+.closeIconButton {
+  padding: 0;
+}
+
+.closeIcon {
+  color: #888;
+  width: 20px;
+  height: 20px;
+}
+
+.childrenContainer,
+.minicartSideBarContentWrapper {
+  height: 100% !important;
+}
+
+.minicartTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  line-height: 0;
+  padding: 26px;
+  margin: 0;
+}
+.minicartTitle::before {
+  content: "Meu carrinho";
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #808080;
+  margin-right: 12px;
+  text-transform: uppercase;
+}
+.minicartTitle::after {
+  content: " ";
+  display: block;
+  background: url("assets/svgs/minicart-icon-title.svg") center no-repeat;
+  width: 23px;
+  height: 22px;
+  visibility: visible;
+}
+
+.minicartEmptyStateContainer {
+  padding: 16px;
+}
+
+.minicartProductListContainer {
+  padding: 0 16px;
+}
+
+.minicartCheckoutButton {
+  margin: 8px 0 0;
+  padding: 0;
+}
+@media only screen and (max-width: 575px) {
+  .minicartCheckoutButton {
+    width: 348px;
+    max-width: 100%;
+  }
+}
+.minicartCheckoutButton :global(.vtex-button) {
+  background-color: #5baa63;
+  border: none;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  padding: 16px;
+}
+.minicartCheckoutButton :global(.vtex-button)::before {
+  content: "Comprar";
+  font-size: 16px;
+  line-height: 19px;
+}
+.minicartCheckoutButton :global(.vtex-button__label) {
+  padding: 0 !important;
+}
+
+.minicartCheckoutButton :global(.vtex-button):hover,
+.minicartCheckoutButton :global(.vtex-button):active {
+  background-color: rgb(71.686746988, 138.313253012, 78.4337349398);
+}

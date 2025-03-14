@@ -1,0 +1,84 @@
+/* CATEGORIES SLIDER */
+/* ---------------------------------------------------------------------------------------- */
+.infoCardContainer--categories-home {
+    flex-direction: column-reverse;
+    background: $color-white;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.24);
+    padding: 20px 12px;
+}
+
+.infoCardImageContainer--categories-home,
+.infoCardTextContainer--categories-home {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+
+.infoCardHeadline--categories-home {
+    font-family: $font-family2;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #727272;
+    margin-top: 16px;
+}
+
+.infoCardCallActionContainer--categories-home {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+
+    :global(.vtex-button) {
+        display: inline-block;
+        background-color: transparent;
+        border: 1px solid $primary-color;
+        border-radius: 0;
+        width: 100%;
+        max-width: 160px;
+        margin-top: 36px;
+        padding: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    :global(.vtex-button):hover {
+        background-color: $primary-color;
+
+        :global(.vtex-button__label) {
+            color: $color-white;
+        }
+    }
+
+    :global(.vtex-button__label) {
+        font-family: $font-family2;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $primary-color;
+        padding: 16px !important;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .infoCardContainer--categories-home {
+        display: flex;
+        border-radius: 5px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .infoCardHeadline--categories-home {
+        margin-top: 8px;
+    }
+
+    .infoCardCallActionContainer--categories-home {
+        :global(.vtex-button) {
+            margin-top: 16px;
+        }
+    }
+}

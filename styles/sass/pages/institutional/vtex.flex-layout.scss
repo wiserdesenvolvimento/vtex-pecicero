@@ -1,0 +1,116 @@
+
+/* INSTITUCIONAL  */
+.flexRowContent--institucional-breadcrumb-wrapper{
+  display: flex;
+  align-items: center;
+}
+.flexRow--institucional-breadcrumb-wrapper{
+  padding:20px 36px 0;
+}
+.flexRowContent--institucional-titulo-wrapper{
+  margin-top: 5rem;
+}
+.flexRowContent--institucional-wrapper{
+  margin-top: 15px;
+  margin-bottom: 6rem;
+}
+.flexColChild--institucional-main-row{
+  max-width: 715px;
+}
+
+.flexRow--institucional-main-row {
+  max-width: 1160px;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-bottom: 180px;
+}
+
+.flexRow--productSpecificationGroup {
+  margin-top: 40px;
+}
+.flexRowContent--productSpecificationGroup {
+  position: relative;
+}
+
+.flexRowContent--productSpecification,
+.flexRowContent--productSpecificationGroupName {
+  padding: 10px 7px;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+.flexCol--pedidos-antigos {
+  position: relative;
+}
+
+.flexRow--m3-shelf-badges {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+
+  @media (max-width: 768px) {
+    left: 5%;
+    top: 5%;
+  }
+
+  @media (max-width: 576px) {
+    left: 8px;
+    top: 25px;
+  }
+}
+
+.flexCol--navegacao-institucional {
+    border-right: 1px solid #e5e5e5;
+    height: fit-content;
+    padding: 0;
+    margin: 3rem 3rem 0;
+
+    @include mq(lg, min) {
+      width: fit-content!important;
+    }
+}
+
+.flexColChild--institucional-main-row {
+    height: auto!important;
+}
+
+.flexRowContent--institucional-row-perguntas {
+    flex-direction: column;
+}
+
+.flexRowContent--institucional-row-perguntas :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100%!important;
+
+    @include mq(md, max) {
+        width: 90%!important;
+        margin: 0 auto;
+    }
+}
+
+.flexColChild--navegacao-institucional {
+    height: auto!important;
+}
+
+@media screen and (max-width: 1026px){
+    .flexRow--institucional-breadcrumb-wrapper{
+      padding: 15px 0 30px 19px;
+    }
+    .flexRowContent--institucional-wrapper{
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    .flexRowContent--institucional-titulo-wrapper{
+      margin-top: 0;
+    }
+    .flexCol--navegacao-institucional{
+      border: none;
+      margin: 0 0 35px 8px;
+      padding-right: 4px;
+      padding-left: 0;
+    }
+  }
+
+//   .flexRow--institucional-wrapper {
+//     :global(.vtex-rich-text-0-x-paragraph--institucional) {
+//       padding: 0 11px;
+//     }
+//   }

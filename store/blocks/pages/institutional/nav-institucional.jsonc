@@ -1,0 +1,51 @@
+{
+    "flex-layout.col#inst-nav": {
+        "props": {
+            "blockClass": "navegacao-institucional",
+            "width": "30%",
+            "paddingRight": 8,
+            "paddingLeft": 5
+        },
+        "children": [
+            "m3-institucional-nav"
+        ]
+    },
+    "m3-institucional-nav": {
+        "props": {
+            "links": [
+                {
+                    "label": "Sobre nós",
+                    "href": "/sobre"
+                },
+                {
+                    "label": "Termos e condições de uso",
+                    "href": "/termos-condicoes-de-uso"
+                },
+                {
+                    "label": "Política de Privacidade",
+                    "href": "/privacidade"
+                },
+                // {
+                //     "label": "Perguntas Frequentes",
+                //     "href": "/perguntas"
+                // },
+                {
+                    "label": "Política de Entrega",
+                    "href": "/politica-de-entrega"
+                },
+                {
+                    "label": "Políticas de Trocas e devoluções",
+                    "href": "/troca-e-devolucao"
+                },
+                {
+                    "label": "Onde Estamos",
+                    "href": "/nossas-lojas"
+                },
+                {
+                    "label": "Contato",
+                    "href": "/fale-conosco"
+                }
+            ]
+        }
+    }
+}

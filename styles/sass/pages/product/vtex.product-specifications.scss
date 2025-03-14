@@ -1,0 +1,28 @@
+.groupName {
+    display: none;
+}
+
+.specificationName {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: #828282;
+    margin-bottom: 8px;
+
+    &::after {
+        content: ": ";
+        display: inline-block;
+        margin-right: 4px;
+    }
+}
+
+.specificationValue {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #828282;
+    margin-bottom: 24px;
+}

@@ -1,0 +1,162 @@
+{
+    "store.custom#privacidade": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#wrapper-privacidade"
+        ]
+    },
+    "flex-layout.row#wrapper-privacidade": {
+        "children": [
+            "flex-layout.col#inst-nav",
+            "flex-layout.col#institucional--privacidade"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    },
+    "flex-layout.col#institucional--privacidade": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": ["flex-layout.row#institucional--privacidade"]
+    },
+    "flex-layout.row#institucional--privacidade": {
+        "children": ["flex-layout.col#institucional--privacidade-content"]
+    },
+    "flex-layout.col#institucional--privacidade-content": {
+        "children": [
+            "rich-text#privacidade",
+            "rich-text#privacidade--o-que-oferecemos",
+            "rich-text#privacidade--conceitos-basicos",
+            "rich-text#privacidade--nosso-papel-na-sua-privacidade",
+            "rich-text#privacidade--que-tipo-de-dados-pessoais-a-appc-coleta",
+            "rich-text#privacidade--com-quem-a-appc-compartilha-seus-dados-pessoais",
+            "rich-text#privacidade--por-quanto-tempo-guardamos-seus-dados",
+            "rich-text#privacidade--como-a-appc-protege-seus-dados",
+            "rich-text#privacidade--a-appc-protege-seus-dados",
+            "rich-text#privacidade--direitos-como-titular-de-dados-pessoais",
+            "rich-text#privacidade--como-falar-sobre-dados-pessoais-com-a-appc",
+            "rich-text#privacidade--mudancas-nesta-politica-de-privacidade"
+        ]
+    },
+    "rich-text#privacidade": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Política de Privacidade",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#privacidade--o-que-oferecemos": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**O que nós oferecemos**\n - A APPC não medirá esforços para proteger a privacidade e a segurança dos usuários durante todo o processo de navegação pelo site (“Plataforma APPC”), o qual tem como principal finalidade a divulgação dos nossos serviços e de informações gerais e os canais de atendimento disponíveis.\n\n - Além disso, disponibilizamos em nossa Plataforma o “Portal do Cliente”, um serviço gratuito que garante aos Usuários e clientes um acesso rápido e fácil as suas informações financeiras, possibilitando o acompanhamento de notas fiscais e boletos, dentre outras funcionalidades.\n\nAcreditamos que você, usuário de nosso site e/ou cliente de nossos produtos e serviços, deve ter o controle das suas informações para, assim, tomar decisões relativas ao tratamento de seus Dados Pessoais.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#privacidade--conceitos-basicos": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**1. Conceitos Básicos Para Compreender Esta Política e Descomplicar Sua Leitura**\n Para começarmos a entender esta política de privacidade e descomplicar a leitura deste documento, apresentamos algumas definições úteis para sua interpretação e que serão utilizadas nos próximos tópicos:\n - **controlador**\n Pessoa natural ou jurídica a quem competem as decisões referentes ao tratamento de dados pessoais.\n\n - **Dado Pessoal**\n É toda informação relacionada a uma pessoa física identificada ou que possa tornar possível a sua identificação. Ex.: Nome.\n - **Empresa**\n Somos nós, a Auto Peças Padre Cícero.\n - **Política**\n É esta Política de Privacidade.\n - **Titular/Usuário**\n É você, pessoa física a quem os Dados Pessoais se referem.\n - **Tratamento**\n É toda operação realizada com Dados Pessoais, incluindo, mas não se limitando a: coleta, armazenamento, consulta, uso, compartilhamento, transmissão e exclusão.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#privacidade--nosso-papel-na-sua-privacidade": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**2. Nosso Papel Na Sua Privacidade**\n Se você é cliente da APPC ou está apenas visitando nosso site, esta política se aplica a você. Falaremos, nos próximos itens, sobre o tratamento dos seus dados pessoais e os seus direitos enquanto titular de suas informações.\n - **Nossas Responsabilidades:**\n Se você é um cliente APPC ou um visitante do nosso site, nós agiremos como Controlador dos dados pessoais, caso estes sejam coletados. Isso significa que determinamos como e porquê seus dados são processados.\n\n - **Suas Responsabilidades:**\n  1. Ler esta Política de Privacidade na íntegra.\n\n  2. Se você é nosso cliente, verifique também os contratos entre nós: eles podem conter mais detalhes sobre como coletamos e processamos seus dados.\n  3. Caso você nos forneça ou tenha fornecido informações pessoais sobre outras pessoas, você confirma que tem o direito de nos autorizar a processá-las em seu nome e compromete-se a transferir para a parte interessada, proprietária desses dados, as informações contidas nesta Política. No entanto, a APPC poderá realizar as verificações necessárias para autenticar esse fatos, de acordo com a legislação de proteção de dados.\n - **Empresa**\n Somos nós, a Auto Peças Padre Cícero.\n - **Política**\n É esta Política de Privacidade.\n - **Titular/Usuário**\n É você, pessoa física a quem os Dados Pessoais se referem.\n - **Tratamento**\n É toda operação realizada com Dados Pessoais, incluindo, mas não se limitando a: coleta, armazenamento, consulta, uso, compartilhamento, transmissão e exclusão.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#privacidade--que-tipo-de-dados-pessoais-a-appc-coleta": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**3. Que Tipo De Dados Pessoais a APPC Coleta**\n Nós, da APPC, coletamos o mínimo possível de dados pessoais e apenas utilizamos esses dados para as finalidades específicas para as quais estes foram coletados. Dessa forma, os tipos de Dados Pessoais e a forma como a APPC os coleta dependem de como você se relaciona conosco e por quê.\n - **Cadastro no Portal do Cliente**\n Para otimizar a experiência dos nossos clientes e usuários através do Portal do Cliente, para seu cadastramento, a APPC poderá coletar informações não pessoais, tais como CNPJ e e-mail corporativo previamente cadastrado no ERP (“Sistema Integrado de Gestão Empresarial”) da APPC. Caso sejam coletados dados pessoais, estes são utilizados principalmente para fornecer de forma assertiva os serviços prestados pela Empresa.\n\n - **Legítimo Interesse**\n  A APPC também pode processar dados pessoais para fins de conformidade com as leis e regulamentos locais aplicáveis no território onde nossos serviços são oferecidos. Com seu consentimento prévio ou sempre que houver um interesse legítimo, eles também poderão ser utilizados para personalizar sua experiência, desenvolver e melhorar nossos serviços, enviar conteúdos específicos e comunicar novidades da APPC, como newsletters, eventos, e-books etc.\n - **Cookie**\n O uso de cookies e informações da navegação é feito com o objetivo de traçar um perfil anônimo do público que visita a Plataforma APPC, buscando assim aperfeiçoar continuamente nossos serviços. O usuário poderá sempre configurar seu navegador para que notifique e cancele a instalação dos cookies enviados pelo site, sem que isso prejudique seu acesso ao conteúdo que ofertamos.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#privacidade--com-quem-a-appc-compartilha-seus-dados-pessoais": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**4. Com Quem a APPC Compartilha Seus Dados Pessoas**\n - Expressamente autorizado por nossos usuários e clientes.\nNecessário para a prestação de serviços específicos e/ou execução de contrato.\nNecessário para cumprimento de obrigação legal ou regulatória.\nFor necessário para a proteção de nossos direitos.\n\n - A APPC pode compartilhar Dados Pessoais que coleta a partir do Website com parceiros e/ou fornecedores da Empresa. Nossos parceiros e fornecedores somente são autorizados a utilizar os Dados Pessoais para os fins específicos que eles foram contratados, portanto, eles não irão utilizar os seus Dados Pessoais para outras finalidades além das relativas à prestação de serviços previstos contratualmente.\n - Em consonância com a lei aplicável, bem como com as escolhas e controles que podem estar disponíveis para você, poderemos utilizar informações coletadas com o intuito de:\n  - **A.** Proporcionar experiências, produtos e serviços por você solicitados, visualizados, acessados ou contratados;\n  - **B.** Enviar informações, requisitar feedback sobre nossos serviços, recursos de nossos sites e eventualmente informar mudanças em nossas políticas;\n  - **C.** Personalizar conteúdos e experiências;\n  - **D.** Operar, entender, otimizar, desenvolver ou melhorar nosso site, produtos, serviços e operações, inclusive utilizando pesquisas com clientes e usuários.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#privacidade--por-quanto-tempo-guardamos-seus-dados": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**5. Por Quanto Tempo Guardamos Seus Dados**\n - Os Dados Pessoais são armazenados somente pelo tempo que forem necessários para cumprir com as finalidades para as quais foram coletados, salvo se houver qualquer outra razão para sua manutenção como, por exemplo, cumprimento de quaisquer obrigações legais, regulatórias, contratuais, entre outras permitidas sob a lei.\n\n -  Sempre fazemos uma análise técnica para determinar o período de retenção adequado para cada tipo de Dado Pessoal coletado, considerando a sua natureza, necessidade de coleta e finalidade para a qual ele será tratado, bem como eventuais necessidades de retenção para o cumprimento de obrigações ou o resguardo de direitos.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#privacidade--como-a-appc-protege-seus-dados": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**6. Como a APPC Protege Seus Dados?**\n- Nossa responsabilidade é cuidar dos seus Dados Pessoais e utilizá-los somente para as finalidades descritas nesta Política.\nPara garantir a sua privacidade e a proteção dos seus Dados Pessoais, adotamos recursos tecnológicos avançados para garantir a segurança de todos os dados tratados pela APPC. Entre as medidas de segurança implementadas estão a implementação de certificado de autenticidade de domínio, controles de acesso a sistemas e ambientes de tratamento de dados, instalação de barreiras contra o acesso indevido às bases de dados (incluindo firewalls), entre outros controles de segurança da informação.\n\n- Nós nos esforçamos para proteger sua privacidade, mas infelizmente não podemos garantir total segurança.\nEntradas e usos não autorizados de terceiros com informações suas, falhas de hardware ou software que não estejam sob controle da APPC e outros fatores externos podem comprometer a segurança dos seus Dados Pessoais. Por isso, sua atuação é fundamental para a manutenção de um ambiente seguro para todos. Caso você identifique ou tome conhecimento de qualquer fator que comprometa a segurança dos seus dados na sua relação com a Plataforma APPC, por favor entre em contato conosco por meio das informações de contato indicadas no item 9.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#privacidade--a-appc-protege-seus-dados": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**7. Como a APPC Protege Seus Dados?**\n- Em regra, nós da APPC não tratamos dados pessoais de crianças (menores de 12 anos) ou adolescentes (pessoas entre 12 e 18 anos) no âmbito de nossa prestação de serviços, mas podemos, eventualmente, tratar informações, incluindo dados pessoais, de adolescentes quando houver o acesso à plataforma.\n\n- Sempre que tomarmos ciência de que dados pessoais de uma criança e/ou adolescente precisam ser tratados, nos comprometemos a realizar esforços razoáveis para garantir que haja consentimento específico e em destaque de pelo menos um dos pais ou responsável legal. Entre em contato conosco se você acredita que coletamos informações de uma criança ou adolescente por engano ou sem intenção.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#privacidade--direitos-como-titular-de-dados-pessoais": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**8. Quais São Seus Direitos Como Titular de Dados Pessoais**\n- Os Dados Pessoais são seus, e a lei brasileira lhe garante uma série de direitos relacionados a eles. Nós estamos comprometidos com o cumprimento desses direitos e, nesta seção, vamos explicar quais são esses direitos e como você pode exercê-los. Veja a tabela seguir:\n\n | Seus Direitos | Explicação |\n | ------ | ----- |\n | Confirmação e Acesso | Você pode solicitar à APPC a confirmação sobre a existência de tratamento dos seus Dados Pessoais para que, em caso positivo, você possa acessá-los.|\n | Correção | Você pode solicitar a correção dos seus Dados Pessoais caso estes estejam incompletos, inexatos ou desatualizados. |\n | Portabilidade | Você pode solicitar que a APPC forneça seus Dados Pessoais em formato estruturado e interoperável visando sua transferência para um terceiro, desde que essa transferência não viole a propriedade intelectual ou segredo de negócios da Empresa.|\n | Informação sobre o compartilhamento | Você tem o direito de saber quais são as entidades públicas e privadas com as quais a APPC realiza uso compartilhado dos seus Dados Pessoais. Manteremos, no item 4 desta Política, uma indicação das nossas relações com terceiros que podem envolver o compartilhamento de Dados Pessoais. Em todo caso, se você tiver dúvidas ou quiser mais detalhes, você tem o direito de nos solicitar essas informações. |\n | Informação sobre a possibilidade de não consentir | Você tem o direito de receber informações claras e completas sobre a possibilidade e as consequências de não fornecer consentimento, quando ele for solicitado pela APPC. O seu consentimento, quando necessário, deve ser livre, inequívoco e informado. Portanto, sempre que pedirmos seu consentimento, você será livre para negá-lo. Nesses casos, é possível que alguns serviços não possam ser prestados. |\n | Revogação do consentimento | Caso você tenha consentido com alguma finalidade de tratamento dos seus Dados Pessoais, você pode sempre optar por retirar o seu consentimento. No entanto, isso não afetará a legalidade de qualquer Tratamento realizado anteriormente à revogação. Se você retirar seu consentimento, é possível que fiquemos impossibilitados de lhe prestar certos serviços, mas iremos avisá-lo quando isso ocorrer. |\n | Oposição | A lei autoriza o tratamento de Dados Pessoais mesmo sem o seu consentimento ou um contrato conosco. Nessas situações, somente trataremos seus Dados Pessoais se tivermos motivos legítimos para tanto, como, por exemplo, para a segurança dos nossos sistemas. Caso você não concorde com alguma finalidade de tratamento dos seus Dados Pessoais, você poderá apresentar oposição, solicitando a sua interrupção. |\n",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#privacidade--como-falar-sobre-dados-pessoais-com-a-appc": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**9. Como Falar Sobre Dados Pessoais Com a APPC?**\n- Para sua segurança, sempre que você apresentar uma requisição para exercer seus direitos, a APPC poderá solicitar algumas informações e/ou documentos complementares para que possamos comprovar a sua identidade, buscando impedir fraudes. Fazemos isso para garantir a segurança e a privacidade de todos.\n\n- Em alguns casos, a APPC pode ter motivos legítimos para deixar de atender a uma solicitação de exercício de direitos. Essas situações incluem, por exemplo, casos em que uma revelação de informações específicas poderia violar direitos de propriedade intelectual ou segredos de negócio da Empresa ou de terceiros, bem como casos em que pedidos de exclusão de dados não possam ser atendidos em razão da existência de obrigação da APPC de reter tais dados, seja para cumprir obrigações legais, regulatórias ou para possibilitar a defesa da Empresa ou de terceiros em disputas de qualquer natureza.\n- Ainda, algumas solicitações podem não ser respondidas de forma imediata, mas a APPC se compromete a responder todas as requisições em um prazo razoável e sempre em conformidade com a legislação aplicável.\n- Se você acredita que seus Dados Pessoais foram tratados de maneira incompatível com esta Política ou com as suas escolhas enquanto Titular dos seus Dados Pessoais, ou, ainda, se você tiver dúvidas, comentários ou sugestões relacionadas a esta Política, entre em contato conosco.\nE-mail para contato: ouvidoria@pecicero.com.br",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#privacidade--mudancas-nesta-politica-de-privacidade": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**10. Mudança Nesta Política de Privacidade**\n\n- **Parabéns por chegar até aqui!**\nNós projetamos esta Política para ser o mais transparente possível e adoraríamos ouvir seus comentários sobre como podemos torná-la ainda melhor. Entre em contato conosco pelo e-mail ouvidoria@pecicero.com.br.\n\n- Como estamos sempre buscando melhorar os nossos serviços e a forma como operamos, esta Política de Privacidade pode passar por atualizações que irão refletir tais avanços. Dessa forma, recomendamos a visita periódica desta página para que você tenha conhecimento sobre as modificações efetivadas.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    }
+}

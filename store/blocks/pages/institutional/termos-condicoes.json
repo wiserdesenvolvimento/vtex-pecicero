@@ -1,0 +1,150 @@
+{
+    "store.custom#termos-condicoes-de-uso": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#wrapper-termos-condicoes"
+        ]
+    },
+    "flex-layout.row#wrapper-termos-condicoes": {
+        "children": [
+            "flex-layout.col#inst-nav",
+            "flex-layout.col#institucional--termos-condicoes"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    },
+    "flex-layout.col#institucional--termos-condicoes": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": ["flex-layout.row#institucional--termos-condicoes"]
+    },
+    "flex-layout.row#institucional--termos-condicoes": {
+        "children": ["flex-layout.col#institucional--termos-condicoes-content"]
+    },
+    "flex-layout.col#institucional--termos-condicoes-content": {
+        "children": [
+            "rich-text#termos-condicoes-de-uso",
+            "rich-text#termos-condicoes-de-uso--uso-da-plataforma",
+            "rich-text#termos-condicoes-de-uso--contas-de-usuario",
+            "rich-text#termos-condicoes-de-uso--propriedade-intelectual",
+            "rich-text#termos-condicoes-de-uso--protecao-de-dados",
+            "rich-text#termos-condicoes-de-uso--atualizacoes-e-alteracoes-da-plataforma",
+            "rich-text#termos-condicoes-de-uso--exclusao-de-garantia",
+            "rich-text#termos-condicoes-de-uso--limitacao-de-responsabilidade",
+            "rich-text#termos-condicoes-de-uso--modificacoes-dos-termos-e-condicoes-gerais",
+            "rich-text#termos-condicoes-de-uso--condicoes-gerais"
+        ]
+    },
+    "rich-text#termos-condicoes-de-uso": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Termos e Condições de Uso",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#termos-condicoes-de-uso--uso-da-plataforma": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**1.** **Uso da plataforma**\n 1. O Usuário, ao utilizar a Plataforma, não poderá realizar qualquer atividade que:\n    - **A.** Viole o presente Termos de Uso;\n    - **B.** Restrinja, iniba, fraude, interrompa, interfira, limite ou impeça o correto funcionamento e uso da Plataforma;\n    - **C.** Permita a extração de dados e relatórios com objetivo de revende-los;\n    - **D.** Seja considerada ilegal ou, a exclusivo critério da APPC, esteja em desacordo com os princípios que esta entender aplicáveis ao seu negócio;\n    - **E.** Usar meios automáticos, incluindo spiders, robôs, crawlers, ferramentas de captação de dados ou similares para baixar dados do site, acessar a plataforma ou tentar fraudá-la;\n    - **F.** Desvie ou viole qualquer medida de segurança adotada para restringir o acesso à Plataforma ou serviços conexos.\n 2. A APPC poderá bloquear ou desativar de maneira permanente o acesso ao Portal do Cliente caso entenda que o Usuário praticou qualquer das atividades acima elencadas, sem prejuízo da possibilidade de o Usuário responder judicialmente por todos os danos e prejuízos causados.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#termos-condicoes-de-uso--contas-de-usuario": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**2.** **Contas de Usuário**\n 1. Ao se cadastrar e utilizar a Plataforma, o Usuário deverá fornecer informações verdadeiras, completas e não enganosas, comprometendo-se a mantê-las atualizadas, devendo zelar pela segurança de sua conta e se responsabilizar por todos os atos praticados a partir dela. A APPC poderá recusar ou cancelar o acesso ao Portal do Cliente caso constate que existe alguma informação inverídica, sem qualquer direito de indenização ao Usuário.\n 2. A APPC se reserva o direito de utilizar todos os meios válidos e possíveis para identificar seus Usuários, bem como solicitar dados adicionais e documentos que estime serem pertinentes a fim de conferir os dados informados.\n 3. O Usuário não poderá compartilhar com terceiros as informações de Login e Senha para acesso à Plataforma e deverá comunicar imediatamente à APPC sobre qualquer conhecimento da utilização indevida de sua conta, para que se realize a imediata suspensão de acesso indevido.\n 4. Para utilizar a Plataforma, é necessária a criação de uma Conta, onde o Usuário deverá fornecer dados como CNPJ e e-mail previamente cadastrado no sistema da APPC, a qual será protegida por senha de acesso cadastrada pelo próprio Usuário.\n 5. Após a fase de cadastramento, o login do Usuário poderá ser associado aos demais cadastros relacionados ao mesmo cliente (matriz e filiais). No momento do acesso e validação das credenciais, o usuário do Portal terá acesso a todos os títulos vencidos e a vencer organizados em uma espécie de planilha denominada “Grid”, que trará informações como o número do título, vencimento, data de emissão, valor, número da nota fiscal e quantidade de dias de atraso. O Grid disponibilizará o Boleto ou Nota Fiscal Eletrônica para download, em formato PDF.\n 6. O Usuário expressamente autoriza que a APPC envie mensagens por sistemas PUSH, e-mail e ou mensagens de texto para os telefones móveis cadastrados, referentes aos Serviços prestados e informações sobre a plataforma.\n 7. A APPC busca por interações honestas e desencoraja ações que não são realizadas em conformidade com o presente Termos de Uso, com as Leis, a moral e os bons costumes. Assim, o Usuário garante a veracidade, qualidade, integridade e legalidade de seus dados e de suas atitudes e está ciente que é responsável por suas ações realizadas no sistema e que responde integralmente por elas.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#termos-condicoes-de-uso--propriedade-intelectual": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**3.** **Propriedade Intelectual**\n - A propriedade intelectual da Plataforma, seu código-fonte, organização e tabelas do banco de dados e demais Serviços conexos, incluindo quaisquer melhorias ou modificações dos mesmos e qualquer documentação relacionada, bem como os elementos visuais e textuais e da seleção, arranjo e compilação de dados incorporados na plataforma, são trabalhos protegidos pela lei de Propriedade Intelectual, pertencendo exclusivamente à APPC.\n Qualquer melhoria incorporada à Plataforma, ainda que por sugestão ou contratação do Usuário e/ou Empresa, salvo disposição em contrário, será sempre exclusivamente de propriedade da APPC.\n As funcionalidades da Plataforma são oferecidas na forma de prestação de serviço, não conferindo ao Usuário nenhum direito sobre o software relacionado à Plataforma ou sobre suas estruturas tecnológicas que a sustentam.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#termos-condicoes-de-uso--protecao-de-dados": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**4.** **Proteção de Dados**\n - A Política de Privacidade inclui detalhes do escopo, natureza e finalidade do processamento dos dados, bem como, a duração do processamento, os tipos de dados pessoais coletados ​e os dados envolvidos, conforme disciplinado pela Lei Geral de Proteção de Dados Pessoais – LGPD – Lei no 13.709/2018.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#termos-condicoes-de-uso--atualizacoes-e-alteracoes-da-plataforma": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**5.** **Atualizações e Alterações da Plataforma**\n 1. Periodicamente a APPC pode realizar atualizações em sua Plataforma, devendo o Usuário realizar o aceite das novas versões, caso não sejam realizadas automaticamente. As atualizações realizadas são necessárias para melhorar e aperfeiçoar a plataforma, trazendo uma melhor experiência de navegabilidade ao Usuário.\n 2. O Usuário tem ciência de que a APPC poderá modificar ou eliminar funcionalidades da plataforma a qualquer momento e a seu exclusivo critério, desde que não prejudique direitos já adquiridos pelo Usuário.\n 3. O Usuário compreende e aceita que a APPC também poderá suspender ou interromper o funcionamento da Plataforma para fins de manutenção ou por caso fortuito ou de força maior, independentemente de qualquer aviso prévio, situações em que o Usuário não terá nenhum direito de indenização a qualquer título.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#termos-condicoes-de-uso--exclusao-de-garantia": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**6.** **Exclusão de Garantia**\n - A Plataforma é fornecida e aceita no estado técnico e de perfeição em que se encontra, razão pela qual não responde a APPC por nenhuma outra garantia, inclusive de qualidade, de funcionamento da internet, de produtividade ou resultados, ou referentes a quaisquer outros ajustes ou adequações não acordadas minuciosamente entre as partes.\n\n - O Usuário concorda que toda e qualquer plataforma é uma espécie de produto que está sempre em constante atualização e aperfeiçoamento, possuindo, sempre e incondicionalmente, aspectos a serem melhorados, o que não podem ser considerados em si como falhas ou defeitos.\n - As partes declaram ter plena ciência de que o uso de qualquer sistema de informática, seja em rede interna ou na internet, está sujeito a ataques de terceiros, não se responsabilizando nenhuma das partes perante a parte contrária ou terceiros por quaisquer danos causados por invasões perpetradas por quaisquer terceiros, tais como hackers, ressalvada a responsabilidade por qualquer descumprimento de obrigações de segurança, especialmente a responsabilidade do Usuário pela segurança de suas Senhas e Logins.\n - O Usuário é o único e exclusivo responsável pelo uso da Plataforma a partir de seu Login e Senha, perante a APPC ou qualquer terceiro, comprometendo-se a indenizar integralmente a APPC pelos danos que lhe causar pelo uso ilegal ou irregular da Plataforma.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#termos-condicoes-de-uso--limitacao-de-responsabilidade": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**7.** **Limitação de responsabilidade**\n - A APPC não se responsabiliza pelas informações inseridas pelos Usuários no Portal do Cliente, mas, a qualquer tempo, poderá excluir tais informações se caso violar estes Termos de Uso.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#termos-condicoes-de-uso--modificacoes-dos-termos-e-condicoes-gerais": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**8.** **Modificações dos Termos e Condições Gerais**\n - A APPC poderá alterar, a qualquer tempo e a seu único e exclusivo critério, estes Termos.\n\n - Os novos Termos entrarão em vigor 01 (um) dia depois de publicados na Plataforma. No prazo de 10 (dez) dias contados a partir da publicação das modificações, o Usuário deverá informar, por e-mail, caso não concorde com os termos alterados. Nesse caso, o vínculo entre as Partes deixará de existir, desde que não haja contas ou dívidas em aberto. Não havendo manifestação no prazo estipulado, entender-se-á que o Usuário aceitou tacitamente os novos Termos, e o contrato continuará vinculando as partes, sendo a versão em vigor sempre a mais recente.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#termos-condicoes-de-uso--condicoes-gerais": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**9.** **Condições Gerais**\n - As Partes permanecerão independentes e nada nestes instrumentos poderá ser interpretado de forma a constituir uma sociedade, “joint venture” ou qualquer outro tipo de associação, formal ou informal, entre as Partes, ou entre estas e quaisquer de seus respectivos sócios, administradores ou empregados. Neste sentido, nenhuma das Partes terá poderes para obrigar a outra perante terceiros ou para assumir obrigações em nome da outra.\n\n - Quaisquer dúvidas, sugestões ou reclamações a respeito dos presentes Termos de Uso poderão ser dirigidas ao seguinte canal de comunicação dos Usuários: suporte.cobranca@pecicero.com.br.\n - Desde já, todas as partes interessadas elegem o foro da Comarca da cidade de Fortaleza-CE, para dirimir eventuais controvérsias existentes em decorrência da utilização da Plataforma.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#termos-condicoes-de-uso--lido": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "O Usuário declara ter lido, entendido e aceitado todas as regras, condições e obrigações estabelecidas no presente Termos e Condições Gerais de Uso.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    }
+}

@@ -1,0 +1,101 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+/* Colors */
+/* Grid breakpoints */
+.currencyCode {
+  text-transform: uppercase;
+}
+
+.listPrice--product {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  color: #727272;
+  margin-bottom: 8px;
+}
+
+.sellingPrice--product {
+  display: block;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #de7903;
+  margin-bottom: 8px;
+}
+
+.installments--m3-custom-installments {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: #4f4f4f;
+  margin-bottom: 28px;
+}
+
+.listPrice--m3-shelf {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #828282;
+}
+.listPrice--m3-shelf::before {
+  content: "DE: ";
+}
+
+.listPriceValue--m3-shelf {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.sellingPrice--m3-shelf {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #de7903;
+  margin: 4px 0 8px;
+}
+
+.spotPrice {
+  font-size: 0;
+}
+.spotPrice::before, .spotPrice .spotPriceValue {
+  content: "DE: ";
+  color: #828282;
+  font-size: 11px;
+}
+
+.installments--m3-shelf {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #828282;
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .listPrice--m3-shelf {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .sellingPrice--m3-shelf {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}

@@ -1,0 +1,88 @@
+{
+    "menu-item#submenu-item--parachoques-e-componentes": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":9,
+                "text": "Parachoques e componentes"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-parachoques-e-componentes"]
+    },
+    "vtex.menu@2.x:submenu#submenu-parachoques-e-componentes": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-parachoques-e-componentes",
+            "vtex.menu@2.x:menu#submenu-parachoques-e-componentes-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-parachoques-e-componentes": {
+        "children": ["flex-layout.col#title-parachoques-e-componentes"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-parachoques-e-componentes": {
+        "children": ["rich-text#menu-title-parachoques-e-componentes"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-parachoques-e-componentes": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Parachoques e componentes",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--parachoques-e-componentes"]
+    },
+    "menu-item#see-more--parachoques-e-componentes": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--parachoques-e-componentes",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":9,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-parachoques-e-componentes-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1117,
+                        "text": "Parachoque"
+                    }
+                }
+            ]
+        }
+    }
+}

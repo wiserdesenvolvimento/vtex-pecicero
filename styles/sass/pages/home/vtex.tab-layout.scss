@@ -1,0 +1,48 @@
+/* CATEGORIES SLIDER */
+/* ---------------------------------------------------------------------------------------- */
+.container--categories-home {
+    margin-top: 20px;
+}
+
+.listContainer--categories-home {
+    border: none;
+    padding: 0;
+}
+
+.listItem--categories-home-mobile {
+    margin: 0;
+    padding: 0;
+
+    :global(.vtex-button) {
+        min-height: 0;
+    }
+
+    :global(.vtex-button__label) {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #4f4f4f;
+        transition: all 0.3s ease-in-out;
+        white-space: nowrap;
+    }
+}
+
+.listItemActive--categories-home-mobile {
+    border: none;
+
+    :global(.vtex-button__label) {
+        font-weight: 900;
+        text-decoration: underline;
+        color: $secondary-color;
+    }
+}
+
+.contentContainer--categories-home {
+    padding: 24px;
+    margin: 0;
+
+    @include mq(sm, max) {
+        padding: 18px 10px;
+    }
+}

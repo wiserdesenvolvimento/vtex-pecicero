@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+.title{
+  font-weight: 500;
+    font-size: 14px;
+    color: #999;
+    line-height: 20px;
+}
+div{
+  overflow-x: auto; 
+  box-sizing: inherit;
+}
+
+table{
+  width:100%;
+  border-collapse: collapse;
+  margin-bottom:20px ;
+}
+
+tbody{
+  width:100%;
+}
+
+tr{
+  font-weight: 500;
+  font-size: 14px;
+  color: #999;
+  line-height: 20px;
+  border: 1px solid #999;
+  white-space: nowrap;
+}
+tr>td:last-child{
+  text-align: end;
+}
+
+td{
+  padding: 10px 10px;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+div::-webkit-scrollbar {
+   width: 5px;
+   height: 7px;
+}
+
+div::-webkit-scrollbar-track {
+   border-radius: 10px;
+}
+
+div::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   background-color: #999; 
+}
+
+@media only screen and (max-width:370px){
+  tr{
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,138 @@
+{
+    "menu-item#submenu-item--iluminacao": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":8,
+                "text": "Iluminação"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-iluminacao"]
+    },
+    "vtex.menu@2.x:submenu#submenu-iluminacao": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-iluminacao",
+            "vtex.menu@2.x:menu#submenu-iluminacao-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-iluminacao": {
+        "children": ["flex-layout.col#title-iluminacao"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-iluminacao": {
+        "children": ["rich-text#menu-title-iluminacao"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-iluminacao": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Iluminação",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--iluminacao"]
+    },
+    "menu-item#see-more--iluminacao": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--iluminacao",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":8,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-iluminacao-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":797,
+                        "text": "Farol"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                       "categoryId": 798,
+                        "text": "Farol auxiliar"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1034,
+                        "text": "Lâmpada"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1035,
+                        "text": "Lanterna"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1037,
+                        "text": "Lente lanterna"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1540,
+                        "text": "Vidro Farol"
+                    }
+                }
+            ]
+        }
+    }
+}

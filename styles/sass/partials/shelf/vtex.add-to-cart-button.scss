@@ -1,0 +1,19 @@
+.buttonDataContainer--m3-shelf {
+    background-color: $color-green;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background: darken($color-green, 10);
+    }
+}
+
+.buttonText--m3-shelf {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: $color-white;
+    padding: 18px;
+}

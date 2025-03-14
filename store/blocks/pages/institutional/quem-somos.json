@@ -1,0 +1,94 @@
+{
+    "store.custom#quem-somos": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#wrapper-quem-somos"
+        ]
+    },
+    "flex-layout.row#wrapper-quem-somos": {
+        "children": [
+            "flex-layout.col#inst-nav",
+            "flex-layout.col#institucional--quem-somos"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    },
+    "flex-layout.col#institucional--quem-somos": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": ["flex-layout.row#institucional--quem-somos"]
+    },
+    "flex-layout.row#institucional--quem-somos": {
+        "children": ["flex-layout.col#institucional--quem-somos-content"]
+    },
+    "flex-layout.col#institucional--quem-somos-content": {
+        "children": [
+            "rich-text#quem-somos",
+            "rich-text#quem-somos--historico",
+            "rich-text#quem-somos--missao",
+            "rich-text#quem-somos--visao"
+        ]
+    },
+    "rich-text#quem-somos": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Sobre Nós",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#quem-somos--historico": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "LEFT",
+            "text": "**Histórico Padre Cícero Auto Peças**\nEm abril de 1975 nasceu a Auto Peças Padre Cícero, uma empresa genuinamente familiar, regida por cinco irmãos que começaram com uma simples microempresa. Os quais desde então vem aprimorando sua infra-estrutura e seus processos visando melhor atender seus clientes. Tem como grande diferencial a disponibilidade e presença constante e rotineira de seus proprietários em cada setor da empresa, onde dedicam grande parte do seu dia-a-dia a este gratificante trabalho. Transmitindo sempre suas raízes de simplicidade, humildade, perseverança e a honestidade. Hoje o Grupo Padre Cícero se destaca no mercado cearense e demais estados do Norte e Nordeste brasileiro, onde seu objetivo é oferecer as melhores condições para os seus clientes na aquisição de peças, tintas e acessórios para motos, veículos nacionais e importados, utilitários e toda a linha pesada. Disponibilizando o maior número de itens em estoque no mercado de autopeças, para a satisfação do cliente como um todo.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#quem-somos--missao": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "LEFT",
+            "text": "**Nossa Missão**\nProporcionar uma comercialização e distribuição de autopeças eficiente e satisfatória para nossos clientes. Inovando sempre, para atender e oferecer os melhores e mais adequados produtos e serviços automotivos. Preservando a ética e a transparência, conquistando e fortalecendo parcerias através de ações seguras e rentáveis para todos.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#quem-somos--visao": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "LEFT",
+            "text": "**Nossa Visão**\nConquistar e manter a liderança no mercado varejista e de distribuição de autopeças, preservando uma política de trabalho séria, sendo referencial de excelência em atendimento, disponibilidade de produtos, preço justo e logística eficiente. Valorizados e guiados pelo entusiasmo e comprometimento de seus fundadores e colaboradores.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#quem-somos--onde-estamos": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "LEFT",
+            "text": "**ONDE ESTAMOS**\nListar as seguintes unidades: [https://www.pecicero.com.br/nossas-lojas/](https://www.pecicero.com.br/nossas-lojas/)",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#quem-somos--contato": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "LEFT",
+            "text": "**CONTATO**\nListar os seguintes: [https://www.pecicero.com.br/contato/](https://www.pecicero.com.br/contato/)",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    }
+}

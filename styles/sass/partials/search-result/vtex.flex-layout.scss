@@ -1,0 +1,67 @@
+.flexRow--search-title {
+    padding: 48px 20px 26px;
+}
+
+.flexCol--filter-col {
+    min-width: 300px;
+    max-width: 450px;
+    margin-right: 20px;
+}
+
+.flexRowContent--search-result .stretchChildrenWidth {
+    &:first-child {
+        width: auto !important;
+    }
+
+    &:last-child {
+        width: 100% !important;
+    }
+}
+
+.flexRowContent--search-info {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding-inline: 12px;
+}
+
+.flexRowContent--search-info-mobile {
+    gap: 16px;
+
+    :first-child .flexColChild--filter-mobile { margin-inline: auto 0; }
+    :last-child .flexColChild--order-by-mobile { margin-inline: 0 auto; }
+}
+
+.flexColChild--content-col {
+    height: auto !important;
+}
+
+.flexRow--result-products {
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0;
+    }
+}
+
+.flexRow--product-count-mobile {
+    padding: 16px;
+}
+
+.flexRow--search-info-mobile {
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0;
+    }
+}
+
+.flexColChild--filter-mobile,
+.flexColChild--order-by-mobile {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 0 2px;
+}
+
+@media screen and (max-width: 475px) {
+    .flexRow--search-title {
+        padding: 32px 12px 20px;
+    }
+}

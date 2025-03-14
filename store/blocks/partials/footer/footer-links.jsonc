@@ -1,0 +1,436 @@
+{
+    "vtex.menu@2.x:menu#footer-institucional": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "footer-menu-links"
+        },
+        "children": [
+            "menu-item#institucional",
+            "menu-item#quem-somos",
+            "menu-item#termos-de-uso",
+            "menu-item#privacidade",
+            "menu-item#lojas",
+            "menu-item#entrega",
+            "menu-item#trocas",
+            "menu-item#duvidas"
+        ]
+    },
+    "vtex.menu@2.x:menu#footer-institucional-2": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "footer-menu-links"
+        },
+        "children": [
+            //"menu-item#curriculo",
+            "menu-item#pc-consulta",
+            "menu-item#revendedor",
+            "menu-item#ouvidoria",
+            "menu-item#conheca-nossas-lojas"
+        ]
+    },
+
+    "rich-text#institucional": {
+        "props": {
+            "blockClass": "footer-menu-title",
+            "text": "Institucional"
+        }
+    },
+    "menu-item#institucional": {
+        "props": {
+            "blockClass": "footer-menu-title",
+            "id": "menu-item-tank-tops",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "https://autopecas.pecicero.com.br/",
+                "noFollow": false,
+                "tagTitle": "Institucional",
+                "text": "Institucional",
+                "target": "_blank"
+            }
+        }
+    },
+    "menu-item#site-institucional": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-tank-tops",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "https://autopecas.pecicero.com.br/",
+                "noFollow": false,
+                "tagTitle": "Institucional",
+                "text": "Institucional",
+                "target": "_blank"
+            }
+        }
+    },
+    "menu-item#quem-somos": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-tank-tops",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/sobre",
+                "noFollow": false,
+                "tagTitle": "Sobre nós",
+                "text": "Sobre nós"
+            }
+        }
+    },
+    "menu-item#privacidade": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-tank-tops",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/privacidade",
+                "noFollow": false,
+                "tagTitle": "Política de privacidade",
+                "text": "Política de privacidade"
+            }
+        }
+    },
+    "menu-item#entrega": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-entrega",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "politica-de-entrega",
+                "noFollow": false,
+                "tagTitle": "Política de entrega",
+                "text": "Política de entrega"
+            }
+        }
+    },
+    "menu-item#trocas": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-entrega",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/troca-e-devolucao",
+                "noFollow": false,
+                "tagTitle": "Política de trocas e devoluções",
+                "text": "Política de trocas e devoluções"
+            }
+        }
+    },
+    "menu-item#lojas": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-entrega",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "nossas-lojas",
+                "noFollow": false,
+                "tagTitle": "onde estamos",
+                "text": "onde estamos"
+            }
+        }
+    },
+    "menu-item#termos-de-uso": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-entrega",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "termos-condicoes-de-uso",
+                "noFollow": false,
+                "tagTitle": "Termos de Uso",
+                "text": "Termos e condições de Uso"
+            }
+        }
+    },
+    "menu-item#duvidas": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-duvidas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "fale-conosco",
+                "noFollow": false,
+                "tagTitle": "contato",
+                "text": "contato"
+            }
+        }
+    },
+    "menu-item#curriculo": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-duvidas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "http://rh.pecicero.com.br:58080/fortesrh/externo/prepareLogin.action?empresaId=3",
+                "noFollow": false,
+                "tagTitle": "Enviar currículo",
+                "text": "Enviar currículo",
+                "target": "_blank"
+            }
+        }
+    },
+    "menu-item#pc-consulta": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-pc-consulta",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "https://autopecas.pecicero.com.br/pc-consulta/",
+                "noFollow": false,
+                "tagTitle": "PC Consulta",
+                "text": "PC Consulta",
+                "target": "_blank"
+            }
+        }
+    },
+    "menu-item#revendedor": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-revendedor",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "https://autopecas.pecicero.com.br/vendas-para-empresas/",
+                "noFollow": false,
+                "tagTitle": "Seja revendedor",
+                "text": "Seja revendedor",
+                "target": "_blank"
+            }
+        }
+    },
+    "menu-item#conheca-nossas-lojas": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-revendedor",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "https://autopecas.pecicero.com.br/nossas-lojas/",
+                "noFollow": false,
+                "tagTitle": "Conheça nossas lojas",
+                "text": "Conheça nossas lojas",
+                "target": "_blank"
+            }
+        }
+    },
+    "menu-item#ouvidoria": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-ouvidoria",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "https://autopecas.pecicero.com.br/contato/",
+                "noFollow": false,
+                "tagTitle": "Ouvidoria",
+                "text": "Ouvidoria",
+                "target": "_blank"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#footer-fale-conosco": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "footer-menu-links"
+        },
+        "children": [
+            "rich-text#fale-conosco",
+            "menu-item#whatsapp",
+            "menu-item#tel",
+            "menu-item#email"
+        ]
+    },
+    "rich-text#fale-conosco": {
+        "props": {
+            "blockClass": "footer-menu-title",
+            "text": "Fale Conosco"
+        }
+    },
+    "menu-item#whatsapp": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-fale-conosco",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+                "type": "external",
+                "target": "_blank",
+                "href": "https://api.whatsapp.com/send?phone=558534999009",
+                "noFollow": true,
+                "tagTitle": "Whatsapp",
+                "text": "85 3499-9009"
+            },
+            "iconProps": {
+                "id": "whatsapp-footer",
+                "activeClassName": "footer-icon",
+                "size": 16,
+                "viewBox": "0 0 14 14"
+            }
+        }
+    },
+    "menu-item#tel": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-tank-tops",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "tel:+55(85)34999000",
+                "noFollow": false,
+                "tagTitle": "85 3499-9000",
+                "text": "85 3499-9000"
+            },
+            "iconProps": {
+                "id": "phone-footer",
+                "activeClassName": "footer-icon",
+                "size": 16,
+                "viewBox": "0 0 16 16"
+            }
+        }
+    },
+    "menu-item#email": {
+        "props": {
+            "blockClass": "footer-menu-item",
+            "id": "menu-item-shorts",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+                "type": "external",
+                "href": "mailto:ecomm@pecicero.com.br",
+                "noFollow": false,
+                "tagTitle": "ecomm@pecicero.com.br",
+                "text": "ecomm@pecicero.com.br"
+            },
+            "iconProps": {
+                "id": "email-footer",
+                "activeClassName": "footer-icon",
+                "size": 16,
+                "viewBox": "0 0 16 16"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#footer-mobile": {
+        "props": {
+            "blockClass": "footer-links-mobile",
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#institucional-mobile",
+            "menu-item#fale-conosco-mobile"
+        ]
+    },
+    "menu-item#institucional-mobile": {
+        "props": {
+            "blockClass": "footer-accordion-title",
+            "id": "menu-item-institucional",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "",
+                "noFollow": true,
+                "tagTitle": "Institucional",
+                "text": "Institucional"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu.accordion#institucional"]
+    },
+    "vtex.menu@2.x:submenu.accordion#institucional": {
+        "props": {
+            "blockClass": "footer-accordion"
+        },
+        "children": ["vtex.menu@2.x:menu#institucional-accordion"]
+    },
+    "vtex.menu@2.x:menu#institucional-accordion": {
+        "props": {
+            "blockClass": "footer-links-mobile",
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#quem-somos",
+            "menu-item#termos-de-uso",
+            "menu-item#privacidade",
+            "menu-item#lojas",
+            "menu-item#entrega",
+            "menu-item#trocas",
+            "menu-item#duvidas",
+            "menu-item#site-institucional",
+            "menu-item#curriculo",
+            "menu-item#pc-consulta",
+            "menu-item#revendedor",
+            "menu-item#ouvidoria",
+            "menu-item#conheca-nossas-lojas"
+        ]
+    },
+    "menu-item#fale-conosco-mobile": {
+        "props": {
+            "blockClass": "footer-accordion-title",
+            "id": "menu-item-fale-conosco",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/fale-conosco",
+                "noFollow": true,
+                "tagTitle": "FALE CONOSCO",
+                "text": "Fale Conosco"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu.accordion#fale-conosco"]
+    },
+    "vtex.menu@2.x:submenu.accordion#fale-conosco": {
+        "props": {
+            "blockClass": "footer-accordion"
+        },
+        "children": ["vtex.menu@2.x:menu#fale-conosco-accordion"]
+    },
+    "vtex.menu@2.x:menu#fale-conosco-accordion": {
+        "props": {
+            "blockClass": "footer-links-mobile",
+            "orientation": "vertical"
+        },
+        "children": ["menu-item#whatsapp", "menu-item#tel", "menu-item#email"]
+    }
+}

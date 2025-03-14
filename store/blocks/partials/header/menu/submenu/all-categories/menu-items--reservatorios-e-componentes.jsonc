@@ -1,0 +1,88 @@
+{
+    "menu-item#submenu-item--reservatorios-e-componentes": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":39,
+                "text": "Reservatórios e componentes"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-reservatorios-e-componentes"]
+    },
+    "vtex.menu@2.x:submenu#submenu-reservatorios-e-componentes": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-reservatorios-e-componentes",
+            "vtex.menu@2.x:menu#submenu-reservatorios-e-componentes-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-reservatorios-e-componentes": {
+        "children": ["flex-layout.col#title-reservatorios-e-componentes"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-reservatorios-e-componentes": {
+        "children": ["rich-text#menu-title-reservatorios-e-componentes"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-reservatorios-e-componentes": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Reservatórios e componentes",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--reservatorios-e-componentes"]
+    },
+    "menu-item#see-more--reservatorios-e-componentes": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--reservatorios-e-componentes",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":39,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-reservatorios-e-componentes-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1225,
+                        "text": "Resevatório radiador"
+                    }
+                }
+            ]
+        }
+    }
+}

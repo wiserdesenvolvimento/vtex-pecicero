@@ -1,0 +1,198 @@
+{
+    "menu-item#submenu-item--cabos": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":30,
+                "text": "Cabos"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-cabos"]
+    },
+    "vtex.menu@2.x:submenu#submenu-cabos": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-cabos",
+            "vtex.menu@2.x:menu#submenu-cabos-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-cabos": {
+        "children": ["flex-layout.col#title-cabos"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-cabos": {
+        "children": ["rich-text#menu-title-cabos"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-cabos": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Cabos",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--cabos"]
+    },
+    "menu-item#see-more--cabos": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--cabos",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":30,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-cabos-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":401,
+                        "text": "Cabo acelerador"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":402,
+                        "text": "Cabo acion fech port"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":404,
+                        "text": "Cabo afogador"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":407,
+                        "text": "Cabo capo"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":408,
+                        "text": "cabo chupeta bateria"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":410,
+                        "text": "cabo de Embreagem"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":411,
+                        "text": "Cabo engate marcha"
+                    }
+                },
+                {
+                    "id": "menu-item-link-08",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":412,
+                        "text": "Cabo engate/seleção"
+                    }
+                },
+                {
+                    "id": "menu-item-link-09",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":413,
+                        "text": "Cabo estrang"
+                    }
+                },
+                {
+                    "id": "menu-item-link-10",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":414,
+                        "text": "Cabo freio"
+                    }
+                },
+                {
+                    "id": "menu-item-link-11",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":419,
+                        "text": "Cabo seleção marcha"
+                    }
+                },
+                {
+                    "id": "menu-item-link-12",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":424,
+                        "text": "Cabo velocímetro"
+                    }
+                }
+            ]
+        }
+    }
+}

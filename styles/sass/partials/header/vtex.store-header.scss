@@ -1,0 +1,127 @@
+.headerRowBackground {
+    display: flex;
+    background: $primary-color;
+    padding: 12px 0;
+}
+
+.headerRowBackground--main-header-mobile {
+    padding: 8px 0;
+}
+
+.headerRowContentContainer {
+    max-width: 1500px;
+    padding: 0 40px;
+}
+
+.headerRowContentContainer--main-header-mobile {
+    padding: 0 24px;
+}
+
+.headerRowBackground--main-header-menu {
+    background-color: #f2f2f2;
+    padding: 0;
+    position: relative;
+}
+
+.headerRowBackground--main-header-menu .menuContainerNav {
+    margin: 0 auto;
+}
+
+.headerRowContainer--main-header-mobile {
+    justify-content: space-between;
+    position: relative;
+}
+
+.headerRowContainer--mobile-search {
+    justify-content: space-around;
+}
+
+.headerRowBackground--mobile-search {
+    padding: 0 0 16px;
+}
+
+.headerRowContentContainer--mobile-search {
+    padding: 0 8px;
+
+    @include mq(sm, max) {
+        padding: 0;
+        width: 92vw;
+    }
+}
+
+//Header fixo mobile
+.headerStickyRow--header-mobile-fixed {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    width: 100vw;
+    position: fixed;
+    bottom: -100px;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.headerRowBackground--header-mobile-fixed {
+    padding: 0;
+}
+
+.headerRowContentContainer--header-mobile-fixed {
+    padding: 20px;
+}
+
+.headerRowContainer--header-mobile-fixed {
+    display: flex;
+    justify-content: space-between;
+
+    :global(.vtex-store-drawer-0-x-openIconContainer) {
+        flex: initial;
+        height: 36px;
+        padding: 0 8px;
+        overflow: hidden;
+    }
+
+    :global(.vtex-store-drawer-0-x-menuIcon) {
+        width: 45px !important;
+        height: 48px !important;
+    }
+
+    :global(.vtex-login-2-x-container),
+    :global(.vtex-minicart-2-x-minicartWrapperContainer) {
+        margin: 0;
+        padding: 0 8px;
+    }
+}
+
+.headerStickyRow--searh-fixed {
+    width: 100vw;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 8;
+    transition: all 0.3s ease-in-out;
+}
+
+.headerRowBackground--searh-fixed {
+    padding: 16px 0 0;
+}
+
+@include mq(md, max) {
+    .headerRowContentContainer--main-header-mobile {
+        padding: 0 20px;
+    }
+}
+
+@include mq(sm, max) {
+    .headerRowContainer--main-header-mobile {
+        justify-content: flex-start;
+    }
+
+    .headerRowContentContainer--main-header-mobile {
+        padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .headerRowContentContainer--header-mobile-fixed {
+        padding: 12px 8px;
+    }
+}

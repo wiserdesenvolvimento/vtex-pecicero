@@ -1,0 +1,54 @@
+{
+    "store.custom#politica-de-entrega": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#wrapper-politica-de-entrega"
+        ]
+    },
+    "flex-layout.row#wrapper-politica-de-entrega": {
+        "children": [
+            "flex-layout.col#inst-nav",
+            "flex-layout.col#institucional--politica-de-entrega"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    },
+    "flex-layout.col#institucional--politica-de-entrega": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": [
+            "flex-layout.row#institucional--politica-de-entrega"
+        ]
+    },
+    "flex-layout.row#institucional--politica-de-entrega":{
+        "children":["flex-layout.col#institucional--politica-de-entrega-content"]
+    },
+    "flex-layout.col#institucional--politica-de-entrega-content":{
+        "children":[
+            "rich-text#politica-de-entrega",
+            "rich-text#politica-de-entrega--frete"
+        ]
+    },
+    "rich-text#politica-de-entrega":{
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Política de Entrega/Frete",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#politica-de-entrega--frete":{
+        "props":{
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "****\n 1. O prazo para entrega dos Produtos é informado durante o procedimento de compra, sendo contabilizado em dias úteis. As entregas dos Produtos são realizadas de segunda a sexta-feira, das 8h às 18h. Excepcionalmente, algumas entregas de Produtos podem ocorrer aos sábados, domingos e feriados.\n 2. A conferência da adequação das dimensões do Produto é de exclusiva responsabilidade do Cliente, que deverá se assegurar de que estão de acordo com os limites espaciais dos elevadores, portas e corredores do local da entrega. **Não será realizada a montagem ou desmontagem do Produto, transporte pela escada e/ou portas e janelas, ou içamento das mercadorias.**\n 3. Serão realizadas até três tentativas de entrega no local informado pelo Cliente, em dias alternados, com intervalo de até 48h entre uma entrega e outra. É indispensável que, no endereço informado, haja uma pessoa autorizada pelo comprador, maior de 18 anos e responsável, portando documento de identificação para receber a mercadoria e assinar o protocolo de entrega. Se houver três tentativas de entrega sem sucesso, o Cliente entende e aceita que o pedido retornará para o Centro de Distribuição da Autopeças Padre Cícero.\n 4. Após a finalização do pedido não é possível alterar a forma de pagamento e/ou o endereço de entrega, solicitar adiantamento ou, ainda, prioridade da entrega.\n 5. O prazo de entrega informado durante o procedimento de compra do Produto leva em consideração o estoque, a região, o processo de emissão da nota fiscal e o tempo de preparo do Produto. A cada atualização no status de entrega do pedido, o sistema da Autopeças Padre Cicero envia, automaticamente, e-mails de alerta para o Cliente.\n 6. O valor do frete da entrega é calculado com base no local de entrega, peso e dimensões do Produto.\n 7. A Autopeças Padre Cicero não autoriza a transportadora a:\n  * Entrar no domicílio onde será entregue o Produto;\n  * Entregar o Produto por meios alternativos (exemplo: Lançar o Produto pela janela);\n  * Realizar instalação ou manutenção de Produtos;\n  * Abrir a embalagem do Produto;\n  * Realizar entrega em endereço diferente do que consta na nota fiscal e/ou invoice, que é o documento enviado nas vendas de produtos e/ou serviços internacionais; - Entregar o Produto para pessoa com menos de 18 anos e/ou sem documento de identificação.\n 8. A Autopeças Padre Cicero não se responsabiliza pela retenção de mercadorias na Secretaria da Fazenda - SEFAZ quando está se dever exclusivamente a pendências do cliente, sendo, portanto, necessário o comparecimento deste no posto fiscal para que a mercadoria seja devidamente liberada, tendo em vista que nestes casos as informações referentes a liberações e pagamentos só são passadas aos interessados.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    }
+}

@@ -1,0 +1,41 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+/* Colors */
+/* Grid breakpoints */
+.groupName {
+  display: none;
+}
+
+.specificationName {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #828282;
+  margin-bottom: 8px;
+}
+.specificationName::after {
+  content: ": ";
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.specificationValue {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #828282;
+  margin-bottom: 24px;
+}

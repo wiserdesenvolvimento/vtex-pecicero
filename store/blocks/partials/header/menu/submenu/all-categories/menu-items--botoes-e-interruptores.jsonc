@@ -1,0 +1,149 @@
+{
+    "menu-item#submenu-item--botoes-e-interruptores": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":12,
+                "text": "Botões e interruptores"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-botoes-e-interruptores"]
+    },
+    "vtex.menu@2.x:submenu#submenu-botoes-e-interruptores": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-botoes-e-interruptores",
+            "vtex.menu@2.x:menu#submenu-botoes-e-interruptores-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-botoes-e-interruptores": {
+        "children": ["flex-layout.col#title-botoes-e-interruptores"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-botoes-e-interruptores": {
+        "children": ["rich-text#menu-title-botoes-e-interruptores"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-botoes-e-interruptores": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Botões e interruptores",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--botoes-e-interruptores"]
+    },
+    "menu-item#see-more--botoes-e-interruptores": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--botoes-e-interruptores",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":12,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-botoes-e-interruptores-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":544,
+                        "text": "Chave ignição"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":545,
+                        "text": "chave limpadora parabrisa"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":546,
+                        "text": "chave luz"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":547,
+                        "text": "chave seta"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":909,
+                        "text": "Interruptor luz freio"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId": 914,
+                        "text": "Interruptor luz pressão óleo"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":915,
+                        "text": "Interruptor vidro porta"
+                    }
+                }
+
+            ]
+        }
+    }
+}

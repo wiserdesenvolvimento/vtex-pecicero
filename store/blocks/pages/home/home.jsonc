@@ -1,0 +1,68 @@
+{
+  "store.home": {
+      "blocks": [
+          "list-context.image-list#main-slider",
+          //"filter-product",
+          "flex-layout.row#categorias-home",
+          "link#whatsapp",
+          "__fold__",
+          "flex-layout.row#shelf-01",
+          "flex-layout.row#shelf-highlight",
+          "flex-layout.row#shelf-02",
+          "flex-layout.row#home-deals",
+          "flex-layout.row#shelf-03",
+          "flex-layout.row#shelf-04"
+      ]
+  },
+  "challenge.trade-policy-condition": {
+      "props": {
+          "redirectPath": "/registration",
+          "defaultContentVisibility": "hidden"
+      }
+  },
+  "list-context.image-list#main-slider": {
+      "props": {
+          "images": [
+              {
+                  "image": "assets/imgs/banner-desktop.png",
+                  "mobileImage": "assets/imgs/banner-mobile.png"
+              },
+              {
+                  "image": "assets/imgs/banner-desktop.png",
+                  "mobileImage": "assets/imgs/banner-mobile.png"
+              }
+          ]
+      },
+      "children": [
+          "slider-layout#main-slider"
+      ]
+  },
+  "filter-product": {
+      "props": {
+          "filterTitle": "Busque a peça certa para o seu veículo",
+          "placeHolder": "Digite a placa do carro",
+          "searchButtonText": "Buscar por peça",
+          "clearButtonText": "Limpar filtros"
+      }
+  },
+  "slider-layout#main-slider": {
+      "props": {
+          "itemsPerPage": {
+              "desktop": 1,
+              "tablet": 1,
+              "phone": 1
+          },
+          "blockClass": "m3-main-slider",
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots": "mobileOnly"
+      }
+  },
+  "link#whatsapp": {
+      "props": {
+          "href": "https://wa.me/5585987740914",
+          "blockClass": "whatsapp-link",
+          "target": "_blank"
+      }
+  }
+}

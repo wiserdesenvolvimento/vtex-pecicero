@@ -1,0 +1,198 @@
+{
+    "menu-item#submenu-item--correias-correntes-componentes": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":33,
+                "text": "Correias, correntes e componentes"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-correias-correntes-componentes"]
+    },
+    "vtex.menu@2.x:submenu#submenu-correias-correntes-componentes": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-correias-correntes-componentes",
+            "vtex.menu@2.x:menu#submenu-correias-correntes-componentes-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-correias-correntes-componentes": {
+        "children": ["flex-layout.col#title-correias-correntes-componentes"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-correias-correntes-componentes": {
+        "children": ["rich-text#menu-title-correias-correntes-componentes"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-correias-correntes-componentes": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Correias, correntes e componentes",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--correias-correntes-componentes"]
+    },
+    "menu-item#see-more--correias-correntes-componentes": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--correias-correntes-componentes",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":33,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-correias-correntes-componentes-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":593,
+                        "text": "Cj coroa pião"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":663,
+                        "text": "Correia"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":657,
+                        "text": "Correia alternador"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":658,
+                        "text": "Correia ar condicionado"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":661,
+                        "text": "Correia comando vávula"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":662,
+                        "text": "Correia direção hidráulica"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":665,
+                        "text": "Correia GIR/ALT/BBA/DH/ACD"
+                    }
+                },
+                {
+                    "id": "menu-item-link-08",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1031,
+                        "text": "Kit rolamento + correia"
+                    }
+                },
+                {
+                    "id": "menu-item-link-09",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1033,
+                        "text": "Kit tração"
+                    }
+                },
+                {
+                    "id": "menu-item-link-10",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1396,
+                        "text": "Tensor correia"
+                    }
+                },
+                {
+                    "id": "menu-item-link-11",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1397,
+                        "text": "Tensor correia alternador"
+                    }
+                },
+                {
+                    "id": "menu-item-link-12",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1400,
+                        "text": "Tensor corrente"
+                    }
+                }
+            ]
+        }
+    }
+}

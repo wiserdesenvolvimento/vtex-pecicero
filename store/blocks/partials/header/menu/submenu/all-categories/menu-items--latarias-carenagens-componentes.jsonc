@@ -1,0 +1,88 @@
+{
+    "menu-item#submenu-item--latarias-carenagens-componentes": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryid":25,
+                "text": "Latarias, carenagens e componentes"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-latarias-carenagens-componentes"]
+    },
+    "vtex.menu@2.x:submenu#submenu-latarias-carenagens-componentes": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-latarias-carenagens-componentes",
+            "vtex.menu@2.x:menu#submenu-latarias-carenagens-componentes-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-latarias-carenagens-componentes": {
+        "children": ["flex-layout.col#title-latarias-carenagens-componentes"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-latarias-carenagens-componentes": {
+        "children": ["rich-text#menu-title-latarias-carenagens-componentes"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-latarias-carenagens-componentes": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Latarias, carenagens e componentes",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--latarias-carenagens-componentes"]
+    },
+    "menu-item#see-more--latarias-carenagens-componentes": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--latarias-carenagens-componentes",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryid":25,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-latarias-carenagens-componentes-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryid":1387,
+                        "text": "Tanque de combustível"
+                    }
+                }
+            ]
+        }
+    }
+}

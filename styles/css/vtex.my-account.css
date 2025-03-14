@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+/* Colors */
+/* Grid breakpoints */
+@media only screen and (max-width: 600px) {
+  .menu {
+    padding-inline: 30px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .menu {
+    padding-inline: 20px;
+  }
+}
+
+.menuLinks :global(.vtex-account_menu-link),
+.menuLink {
+  color: #7d7d7d;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.menuLinks :global(.b--action-primary) {
+  color: #282828;
+}
+
+.menuLinks :global(.flex) div:nth-child(1) {
+  order: 2;
+}
+.menuLinks :global(.flex) div:nth-child(2) {
+  order: 3;
+}
+.menuLinks :global(.flex) div:nth-child(3) {
+  order: 4;
+}
+.menuLinks :global(.flex) div:nth-child(4) {
+  order: 1;
+}
+
+.userGreeting {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 124.68%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #de7903;
+}
+
+.userImage {
+  margin-right: 8px;
+}
+
+.userName {
+  color: #de7903;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.boxContainer {
+  border: 1px solid c4c4c4;
+  border-radius: 0;
+}
+
+.boxContainerFooter {
+  background-color: #26247b;
+  max-height: 36px;
+}
+
+.boxContainerFooter :global(.vtex-button) {
+  color: #fff;
+  margin-top: 2px;
+  transition: ease-in 0.22s all;
+}
+
+.boxContainerFooter :global(.vtex-button):hover {
+  background-color: rgb(31.9056603774, 30.2264150943, 103.2735849057);
+}
+
+:global(.vtex-pageHeader__container) {
+  padding-top: 1.3rem;
+  padding-bottom: 0;
+  padding-left: 1rem;
+}
+@media (max-width: 300px) {
+  :global(.vtex-pageHeader__container) {
+    padding-left: 0;
+  }
+}
+
+:global(.vtex-pageHeader__title) {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #7d7d7d;
+  margin-bottom: 16px;
+}
+
+:global(.vtex-pageHeader-link__container) {
+  padding-bottom: 2rem;
+}
+
+:global(.vtex-pageHeader-link__container .vtex-button) {
+  color: #de7903;
+}
+
+:global(.vtex-pageHeader-link__container .t-action--small) {
+  font-size: 0;
+}
+:global(.vtex-pageHeader-link__container .t-action--small):before {
+  content: "voltar";
+  font-size: 11px;
+}
+
+@media only screen and (max-width: 767px) {
+  .boxContainerBody {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+
+.boxContainerBody :global(.mb8) {
+  margin-bottom: 30px;
+}
+
+.dataEntryLabel,
+.newsletterContainerTitle,
+.boxContainerBody :global(.vtex-input__label),
+.boxContainerBody :global(.vtex-dropdown__label) {
+  color: #7d7d7d;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+:global(.bg-white) {
+  -webkit-appearance: none;
+}
+
+.dataEntryChildren,
+.newsletterContainerMessage {
+  color: #848484;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.passwordBox {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+[type=text] {
+  border-radius: 0;
+  color: #979899;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.boxContainerBody :global(.vtex-button.bg-action-primary) {
+  background: #26247b;
+  border: none;
+}
+
+:global(.vtex-pageHeader__children .vtex-button) {
+  background: #26247b;
+  border: none;
+}
+
+.addressList :global(.t-heading-4),
+:global(.vtex-account__page-body .t-heading-4) {
+  color: #7d7d7d;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 300px) {
+  .addressList :global(.t-heading-4),
+  :global(.vtex-account__page-body .t-heading-4) {
+    font-size: 15px;
+  }
+}
+
+:global(.vtex-account__cards-list) :global(.c-on-base) {
+  font-size: 15px !important;
+}
+
+@media only screen and (max-width: 575px) {
+  .addressBox {
+    flex-direction: column;
+    margin-top: 16px;
+  }
+  .profile :global(.flex-column-s.flex-row-ns) {
+    flex-direction: column;
+  }
+}
+:global(.vtex-profile-form-3-x-styleguideInput):nth-child(7) :global(.lh-title) {
+  font-size: 0;
+}
+
+:global(.vtex-profile-form-3-x-styleguideInput):nth-child(7) :global(.lh-title)::after {
+  content: "Data Inválida";
+  font-size: 0.85rem;
+}
+
+:global(.vtex-profile-form-3-x-styleguideInput):nth-child(4) :global(.lh-title) {
+  font-size: 0;
+}
+
+:global(.vtex-profile-form-3-x-styleguideInput):nth-child(4) :global(.lh-title)::after {
+  content: "Número Inválido";
+  font-size: 0.85rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--login-page) :global(.pa2) {
+  position: absolute !important;
+  /* left: 438px; */
+  width: 43% !important;
+  right: -204px !important;
+  top: -56px !important;
+}
+@media (max-width: 920px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--login-page) :global(.pa2) {
+    position: absolute !important;
+    width: 240px !important;
+    top: 180px !important;
+    right: 0 !important;
+    left: 0 !important;
+  }
+}
+
+:global(.vtex-my-authentication-1-x-newPassInput_container) :global(.vtex-styleguide-9-x-input) {
+  text-transform: none !important;
+}

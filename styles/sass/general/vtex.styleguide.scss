@@ -1,0 +1,39 @@
+/* .input, .input::-webkit-input-placeholder{
+  display: none;
+  font-family: "Roboto";
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+color: $color-gray4;
+} */
+
+:global(.vtex-dropdown__container) {
+    max-width: 100px;
+    :global(.vtex-dropdown__button) {
+        width: initial;
+    }
+    :global(.vtex-dropdown__caption) {
+        padding-right: 15px;
+        & ::after {
+            content: url(assets/svgs/dropdown/dropdown-arrow-down.svg);
+            display: inline-block;
+            position: absolute;
+            right: 8px;
+            top: 9px;
+
+            @media screen and (min-width: 992px) {
+                right: 11px;
+                top: 9px;
+            }
+        }
+    }
+    :global(.vtex-dropdown__arrow) {
+        display: none;
+    }
+}
+
+:global(.vtex-dropdown__button) {
+    // width: 93px;
+    width: 100%;
+}

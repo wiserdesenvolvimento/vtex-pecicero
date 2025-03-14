@@ -1,0 +1,72 @@
+{
+    "flex-layout.row#product-shelf-01": {
+        "props": {
+            "blockClass": ["m3-shelf", "m3-product-shelf"]
+        },
+        "children": ["flex-layout.col#product-shelf-01"]
+    },
+    "flex-layout.col#product-shelf-01": {
+        "props": {
+            "blockClass": "m3-shelf"
+        },
+        "children": [
+            "rich-text#product-shelf-01-title",
+            "list-context.product-list#product-shelf-01-list"
+        ]
+    },
+    "rich-text#product-shelf-01-title": {
+        "props": {
+            "blockClass": "m3-shelf-title",
+            "text": "## Novidades",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#product-shelf-01-list": {
+        "props": {
+            "blockClass": "m3-shelf",
+            "collection": "137"
+        },
+        "blocks": [
+            "product-summary.shelf#m3-shelf-product"
+        ],
+        "children": [
+            "slider-layout#m3-shelf-products-slide"
+        ]
+    },
+    "flex-layout.row#product-shelf-02": {
+        "props": {
+            "blockClass": ["m3-shelf", "m3-product-shelf"]
+        },
+        "children": ["flex-layout.col#product-shelf-02"]
+    },
+    "flex-layout.col#product-shelf-02": {
+        "props": {
+            "blockClass": "m3-shelf"
+        },
+        "children": [
+            "rich-text#product-shelf-02-title",
+            "list-context.product-list#product-shelf-02-list"
+        ]
+    },
+    "rich-text#product-shelf-02-title": {
+        "props": {
+            "blockClass": "m3-shelf-title",
+            "text": "## Mais Vendidos",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#product-shelf-02-list": {
+        "props": {
+            "blockClass": "m3-shelf",
+            "collection": "137"
+        },
+        "blocks": [
+            "product-summary.shelf#m3-shelf-product"
+        ],
+        "children": [
+            "slider-layout#m3-shelf-products-slide"
+        ]
+    }
+}

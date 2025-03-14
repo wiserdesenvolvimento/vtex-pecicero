@@ -1,0 +1,29 @@
+{
+    "vtex.menu@2.x:menu#category-menu": {
+        "props": {
+            "blockClass": "menu-links"
+        },
+        "children": ["menu-item#all-categories"]
+    },
+    "menu-item#all-categories": {
+        "props": {
+            "blockClass": [
+                "menu-links-item",
+                "menu-links-item--overlay",
+                "menu-links-item--all-categories"
+            ],
+            "id": "menu-item-all-categories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "noFollow": true,
+                "tagTitle": "Todas as Categorias",
+                "text": "Todas as Categorias"
+            }
+        },
+        "blocks": ["vtex.menu@2.x:submenu#all-categories"]
+    }
+}

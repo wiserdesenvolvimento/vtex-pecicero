@@ -1,0 +1,45 @@
+{
+    "flex-layout.row#top-bar": {
+        "children": ["slider-layout#top-bar"],
+        "props": {
+            "blockClass": "top-bar",
+            "horizontalAlign": "center",
+            "preventHorizontalStretch": false
+        }
+    },
+    "slider-layout#top-bar": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 2,
+                "phone": 1
+            },
+            "infinite": true,
+            "showPaginationDots": "never",
+            "showNavigationArrows":"mobileOnly",
+            "blockClass": "top-bar"
+        },
+        "children": ["link#top-bar--desconto", "link#top-bar--pagseguro", "link#top-bar--boleto"]
+    },
+    "link#top-bar--desconto": {
+        "props": {
+        "label": "5% Off no boleto bancário",
+        "href": "/241?map=productClusterIds",
+        "blockClass": "top-bar"
+        }
+    },
+    "link#top-bar--pagseguro": {
+        "props": {
+            "label": "clientes PAGSeguro",
+            "href": "/241?map=productClusterIds",
+            "blockClass": "top-bar"
+        }
+    },
+    "link#top-bar--boleto": {
+        "props": {
+            "label": "Portal boletos",
+            "href": "/241?map=productClusterIds",
+            "blockClass": "top-bar"
+        }
+    }
+}

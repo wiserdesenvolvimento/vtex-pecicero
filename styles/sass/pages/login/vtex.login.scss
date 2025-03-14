@@ -1,0 +1,31 @@
+.content--emailAndPassword {
+    flex-direction: column;
+
+    .inputContainerEmail {
+        margin-bottom: 12px;
+    }
+}
+.content--emailAndPassword .inputContainerPassword :global(.pa2) {
+    position: static;
+    width: 100%;
+}
+
+.contentContainer {
+    @media screen and (min-width: 768px) {
+        border-radius: 5px;
+        overflow: hidden;
+    }
+}
+
+.inputContainer {
+    :global(.vtex-styleguide-9-x-input) {
+        text-transform: initial;
+
+        &::placeholder {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            text-transform: initial;
+            color: #828282;
+        }
+    }
+}

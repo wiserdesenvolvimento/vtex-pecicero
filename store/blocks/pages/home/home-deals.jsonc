@@ -1,0 +1,119 @@
+{
+    "flex-layout.row#home-deals": {
+        "props": {
+            "blockClass": "home-deals"
+        },
+        "children": [
+            "flex-layout.col#home-deals-text",
+            "flex-layout.col#home-deals-01",
+            "flex-layout.col#home-deals-02",
+            "flex-layout.col#home-deals-03",
+            "flex-layout.col#home-deals-04"
+        ]
+    },
+    "flex-layout.col#home-deals-text": {
+        "props": {
+            "blockClass": "home-deals-text"
+        },
+        "children": [
+            "rich-text#home-deals-title",
+            "rich-text#home-deals-subtitle"
+        ]
+    },
+    "rich-text#home-deals-title": {
+        "props": {
+            "blockClass": "home-deals-title",
+            "text": "Vantagens \n da Padre Cícero"
+        }
+    },
+    "rich-text#home-deals-subtitle": {
+        "props": {
+            "blockClass": "home-deals-subtitle",
+            "text": "Conheça algumas vantagens \n de escolher a nossa loja"
+        }
+    },
+    "flex-layout.col#home-deals-01": {
+        "props": {
+            "blockClass": "home-deals"
+        },
+        "children": [
+            "image#home-deals-01",
+            "rich-text#home-deals-01"
+        ]
+    },
+    "image#home-deals-01": {
+        "props": {
+            "src": "assets/svgs/home-deals4.svg",
+            "maxHeight": "42px"
+        }
+    },
+    "rich-text#home-deals-01": {
+        "props": {
+            "blockClass": "home-deals",
+            "text": "Descontos promocionais"
+        }
+    },
+    "flex-layout.col#home-deals-02": {
+        "props": {
+            "blockClass": "home-deals"
+        },
+        "children": [
+            "image#home-deals-02",
+            "rich-text#home-deals-02"
+        ]
+    },
+    "image#home-deals-02": {
+        "props": {
+            "src": "assets/svgs/home-deals2.svg",
+            "maxHeight": "42px"
+        }
+    },
+    "rich-text#home-deals-02": {
+        "props": {
+            "blockClass": "home-deals",
+            "text": "Compra \n 100% Segura"
+        }
+    },
+    "flex-layout.col#home-deals-03": {
+        "props": {
+            "blockClass": "home-deals"
+        },
+        "children": [
+            "image#home-deals-03",
+            "rich-text#home-deals-03"
+        ]
+    },
+    "image#home-deals-03": {
+        "props": {
+            "src": "assets/svgs/home-deals3.svg",
+            "maxHeight": "42px"
+        }
+    },
+    "rich-text#home-deals-03": {
+        "props": {
+            "blockClass": "home-deals",
+            "text": "Mais de xx anos de \n história."
+        }
+    },
+    "flex-layout.col#home-deals-04": {
+        "props": {
+            "blockClass": "home-deals"
+        },
+        "children": [
+            "image#home-deals-04",
+            "rich-text#home-deals-04"
+        ]
+    },
+    "image#home-deals-04": {
+        "props": {
+            "src": "assets/svgs/home-deals4.svg",
+            "maxHeight": "42px"
+        }
+    },
+    "rich-text#home-deals-04": {
+        "props": {
+            "blockClass": "home-deals",
+            "text": "Parcelamento em \n até xx vezes"
+        }
+    }
+}

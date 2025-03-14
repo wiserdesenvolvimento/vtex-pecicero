@@ -1,0 +1,47 @@
+.link--top-bar {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-white;
+    text-align: center;
+    width: fit-content;
+    padding: 12px;
+}
+
+.link--minicart-continue-buying {
+    display: inline-block;
+    border: 1px solid #bdbdbd;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #828282;
+    width: 348px;
+    max-width: 100%;
+    padding: 16px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .link--minicart-continue-buying.link--empty-state {
+        width: 345px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .link--minicart-continue-buying.link--empty-state {
+        width: 295px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .link--minicart-continue-buying.link--empty-state {
+        width: 250px;
+    }
+}

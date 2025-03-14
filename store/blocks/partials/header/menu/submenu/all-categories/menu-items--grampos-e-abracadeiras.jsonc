@@ -1,0 +1,197 @@
+{
+    "menu-item#submenu-item--grampos-e-abracadeiras": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":7,
+                "text": "Grampos e abraçadeiras"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-grampos-e-abracadeiras"]
+    },
+    "vtex.menu@2.x:submenu#submenu-grampos-e-abracadeiras": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-grampos-e-abracadeiras",
+            "vtex.menu@2.x:menu#submenu-grampos-e-abracadeiras-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-grampos-e-abracadeiras": {
+        "children": ["flex-layout.col#title-grampos-e-abracadeiras"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-grampos-e-abracadeiras": {
+        "children": ["rich-text#menu-title-grampos-e-abracadeiras"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-grampos-e-abracadeiras": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Grampos e abraçadeiras",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--grampos-e-abracadeiras"]
+    },
+    "menu-item#see-more--grampos-e-abracadeiras": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--grampos-e-abracadeiras",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":7,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-grampos-e-abracadeiras-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "children":[
+                "menu-item#submenu-item--abracadeira-escapamento",
+                "menu-item#submenu-item-abracadeira-mangueira"
+            ]
+        }
+    },
+    "menu-item#submenu-item--abracadeira-escapamento":{
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-fourth-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":26,
+                "text": "Abraçadeira de escapamento"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-abracadeira-escapamento"]
+    },
+    "vtex.menu@2.x:submenu#submenu-abracadeira-escapamento":{
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-fourth-level"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-abracadeira-escapamento"
+        ]
+    },
+    "vtex.menu@2.x:menu#submenu-abracadeira-escapamento":{
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-fourth-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1248,
+                        "text": "Retrovisor externo"
+                    }
+                },
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1249,
+                        "text": "Retrovisor externo"
+                    }
+                }
+            ]
+        }
+    },
+    "menu-item#submenu-item-abracadeira-mangueira":{
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-fourth-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":31,
+                "text": "Abraçadeira de mangueira"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-abracadeira-mangueira"]
+    },
+    "vtex.menu@2.x:submenu#submenu-abracadeira-mangueira":{
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-fourth-level"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#submenu-abracadeira-mangueira"
+        ]
+    },
+    "vtex.menu@2.x:menu#submenu-abracadeira-mangueira":{
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-fourth-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":530,
+                        "text": "Catalisador"
+                    }
+                },
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1319,
+                        "text": "Silencioso"
+                    }
+                }
+            ]
+        }
+    }
+
+}

@@ -1,0 +1,192 @@
+{
+    "header": {
+        "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    },
+    "header.full": {
+        "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    },
+    "header-layout.desktop": {
+        "children": [
+            //"flex-layout.row#top-bar",
+            "header-row#1-desktop",
+            "header-row#2-desktop",
+            "telemarketing"
+        ]
+    },
+    "header-row#1-desktop": {
+        "children": [
+            "logo",
+            "header-spacer",
+            "search-bar",
+            "header-spacer",
+            "flex-layout.row#login-desktop",
+            "minicart.v2"
+        ],
+        "props": {
+            "sticky": true,
+            "blockClass": "main-header"
+        }
+    },
+    "header-row#2-desktop": {
+        "props": {
+            "sticky": false,
+            "blockClass": "main-header-menu"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#category-menu",
+            "custom-menu#m3-custom"
+        ]
+    },
+    "logo": {
+        "props": {
+            "title": "Logo Auto Peças Padre Cícero",
+            "href": "/",
+            "url": "assets/imgs/logo.svg",
+            "width": "188"
+        }
+    },
+    "search-bar": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "openAutocompleteOnFocus": true,
+            "maxWidth": "400px",
+            "placeholder": "FAÇA SUA BUSCA",
+            "displayMode": "clear-button"
+        }
+    },
+    "autocomplete-result-list.v2": {
+        "props": {
+            "maxSuggestedProducts": 2,
+            "maxSuggestedTerms": 3
+        },
+        "blocks": ["product-summary.shelf#m3-shelf-product"]
+    },
+    "flex-layout.row#login-desktop": {
+        "children": ["login"],
+        "props": {
+            "preventHorizontalStretch": false,
+            "colSizing": "2",
+            "blockClass": "login-wrapper"
+        }
+    },
+    "login": {
+        //https://github.com/vtex-apps/login/blob/master/docs/README.md
+        "props": {
+            "showIconProfile": true,
+            "iconLabel": "Entre ou_ Cadastre-se",
+            "optionsTitle": "Escolha uma opção para entrar:",
+            "providerPasswordButtonLabel":"Entrar com e-mail",
+            "accessCodeTitle": "Receber acesso de código por e-mail:",
+            "emailAndPasswordTitle": "Entrar com e-mail e Senha",
+            "passwordPlaceholder": "Adicione sua Senha",
+            "hasGoogleOneTap": true,
+            "acessCodePlaceholder":"Adicione seu código de acesso",
+            "showPasswordVerificationIntoTooltip": false
+        }
+    },
+    "header-layout.mobile": {
+        "children": [
+            //"flex-layout.row#top-bar",
+            "header-row#1-mobile",
+            "header-row#2-mobile",
+            "header-row#3-mobile",
+            "header-row#4-mobile",
+            "custom-mobile-options-fixed"
+        ],
+        "props": {
+            "blockClass": "mobile-header"
+        }
+    },
+    "header-row#1-mobile": {
+        "props": {
+            "sticky": false,
+            "blockClass": "main-header-mobile"
+        },
+        "children": ["drawer", "logo", "flex-layout.row#links-mobile"]
+    },
+    "drawer": {
+        "props": {
+            "maxWidth": "380px",
+            "blockClass": "menu-mobile"
+        },
+        "children": ["menu#drawer"]
+    },
+    "flex-layout.row#links-mobile": {
+        "children": ["login", "minicart.v2"],
+        "props": {
+            "colGap": 2,
+            "preventHorizontalStretch": true,
+            "blockClass": "links-mobile"
+        }
+    },
+    "header-row#2-mobile": {
+        "children": ["search-bar#mobile"],
+        "props": {
+            "sticky": false,
+            "blockClass": "mobile-search"
+        }
+    },
+    "search-bar#mobile": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "openAutocompleteOnFocus": true,
+            "maxWidth": "500px",
+            "placeholder": "Faça sua busca",
+            "displayMode": "clear-button",
+            "blockClass": "mobile"
+        }
+    },
+    "header-row#3-mobile": {
+        "props": {
+            "blockClass": "header-mobile-fixed"
+        },
+        "children": [
+            "drawer",
+            "flex-layout.row#search-fixed",
+            "login",
+            "minicart.v2#header-fixed"]
+    },
+    "flex-layout.row#search-fixed": {
+        "props": {
+            "preventHorizontalStretch": true,
+            "blockClass": "search-fixed-mobile"
+        },
+        "children": [
+            "image#open-search",
+            "image#close-search"
+        ]
+    },
+    "image#open-search": {
+        "props": {
+            "blockClass": "open-search-mobile",
+            "src": "assets/svgs/search-icon.svg",
+            "maxHeight": 32
+        }
+    },
+    "image#close-search": {
+        "props": {
+            "blockClass": "close-search-mobile",
+            "src": "assets/svgs/close-icon.svg",
+            "maxHeight": 32
+        }
+    },
+    "minicart.v2#header-fixed": {
+        "props": {
+            "MinicartIcon": "icon-cart",
+            "maxDrawerWidth": 375,
+            "quantityDisplay": "never"
+        },
+        "children": ["minicart-base-content"]
+    },
+    "icon-cart": {
+        "props": {
+            "blockClass": "header-mobile-fixed"
+        }
+    },
+    "header-row#4-mobile": {
+        "children": ["search-bar#mobile"],
+        "props": {
+            "blockClass": ["mobile-search", "searh-fixed"]
+        }
+    }
+}

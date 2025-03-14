@@ -1,0 +1,16 @@
+{
+    "store.search#department": {
+        "props": {
+            "context": {
+                "orderByField": "OrderByTopSaleDESC",
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "default"
+            }
+        },
+
+        "blocks": [
+            "search-result-layout"
+        ]
+    }
+}

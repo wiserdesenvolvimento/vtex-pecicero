@@ -1,0 +1,129 @@
+/* M3 FOOTER  */
+.link--social-footer-blog {
+    border-bottom: 1px solid #414141;
+    font-family: $font-family2;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #414141;
+}
+
+// .label--back-link {
+
+//     & ::before {
+//         content: '';
+//         width: 24px;
+//         height: 24px;
+//         background-image: url('assets/imgs/icons/arrow-back.svg');
+//     }
+// }
+
+.link--buy-with-cnpj {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: $color-white;
+    line-height: 37px;
+    padding: 0 16px;
+    position: relative;
+}
+
+.link--buy-with-cnpj::after {
+    content: "";
+    display: block;
+    height: 23px;
+    width: 1px;
+    background: $color-white;
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+
+.link--not-found-btn {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    display: block;
+    line-height: 42px;
+    max-width: 330px;
+    text-align: center;
+    background: $primary-color;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 32px auto 0 auto;
+}
+
+.link--whatsapp-link {
+    display: block;
+    height: 35px;
+    width: 35px;
+    background: url(assets/svgs/whatsapp.svg) no-repeat center center !important;
+    background-size: contain;
+    position: fixed;
+    bottom: 80px;
+    right: 14px;
+    z-index: 25;
+}
+
+.buttonLink--inst-nav {
+    background: none;
+    border: none;
+    color: $color-gray2;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.buttonLink--inst-nav:active,
+.buttonLink--inst-nav:hover {
+    background: none;
+    color: $color-gray2;
+    font-weight: bold;
+}
+
+.link--pedidos-antigos {
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 31px;
+    right: 33px;
+    color: $color-white;
+    background: #292929;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 10px;
+    line-height: 42px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.label--inst-nav {
+    padding: 0;
+    text-align: left;
+}
+.label--top-bar {
+    font-weight: 400;
+}
+@media only screen and (max-width: 1026px) {
+    .link--pedidos-antigos {
+        position: static;
+        float: right;
+    }
+}

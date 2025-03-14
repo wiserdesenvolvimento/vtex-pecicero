@@ -1,0 +1,228 @@
+{
+    "menu-item#submenu-item--sist_eletronico-e-injecao-eletronica": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":18,
+                "text": "Sistema eletrônico e injeção eletrônica"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-sist_eletronico-e-injecao-eletronica"]
+    },
+    "vtex.menu@2.x:submenu#submenu-sist_eletronico-e-injecao-eletronica": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-sist_eletronico-e-injecao-eletronica",
+            "vtex.menu@2.x:menu#submenu-sist_eletronico-e-injecao-eletronica-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-sist_eletronico-e-injecao-eletronica": {
+        "children": ["flex-layout.col#title-sist_eletronico-e-injecao-eletronica"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-sist_eletronico-e-injecao-eletronica": {
+        "children": ["rich-text#menu-title-sist_eletronico-e-injecao-eletronica"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-sist_eletronico-e-injecao-eletronica": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Sistema eletrônico e injeção eletrônica",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--sist_eletronico-e-injecao-eletronica"]
+    },
+    "menu-item#see-more--sist_eletronico-e-injecao-eletronica": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--sist_eletronico-e-injecao-eletronica",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":18,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-sist_eletronico-e-injecao-eletronica-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":109,
+                        "text": "Alternador"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":154,
+                        "text": "Arruela do bico injetor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":234,
+                        "text": "Bico injetor combustível"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":252,
+                        "text": "Bobina campo"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":250,
+                        "text": "Bobina ignição"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":254,
+                        "text": "Bobina pulso"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":600,
+                        "text": "CJ retif alternador"
+                    }
+                },
+                {
+                    "id": "menu-item-link-08",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":936,
+                        "text": "JG cabo velas"
+                    }
+                },
+                {
+                    "id": "menu-item-link-09",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1093,
+                        "text": "Motor de partida"
+                    }
+                },
+                {
+                    "id": "menu-item-link-10",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1167,
+                        "text": "Polia alternador"
+                    }
+                },
+                {
+                    "id": "menu-item-link-11",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1182,
+                        "text": "Porta escovas motor partida"
+                    }
+                },
+                {
+                    "id": "menu-item-link-12",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1199,
+                        "text": "Regul retif"
+                    }
+                },
+                {
+                    "id": "menu-item-link-13",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1254,
+                        "text": "Rolamento alternador"
+                    }
+                },
+                {
+                    "id": "menu-item-link-14",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1530,
+                        "text": "Vela aquecedora"
+                    }
+                },
+                {
+                    "id": "menu-item-link-14",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1531,
+                        "text": "Vela ign"
+                    }
+                }
+            ]
+        }
+    }
+}

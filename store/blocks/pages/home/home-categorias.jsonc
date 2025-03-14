@@ -1,0 +1,226 @@
+{
+    "flex-layout.row#categorias-home": {
+        "props": {
+            "blockClass": "categories-home"
+        },
+        "children": [
+            "flex-layout.col#categorias-home"
+        ]
+    },
+    "flex-layout.col#categorias-home": {
+        "props": {
+            "blockClass": "categories-home"
+        },
+        "children": [
+            "responsive-layout.desktop#categorias-home", //1026 - full
+            "responsive-layout.tablet#categorias-home",  // 640 - 1025
+            "responsive-layout.phone#categorias-home"    // 0 - 639
+        ]
+    },
+    "responsive-layout.desktop#categorias-home": {
+        "children": [
+            "rich-text#categorias-titulo",
+            "slider-layout#categorias-home"
+        ]
+    },
+    "responsive-layout.tablet#categorias-home": {
+        "children": [
+            "rich-text#categorias-titulo",
+            "slider-layout#categorias-home"
+        ]
+    },
+    "rich-text#categorias-titulo": {
+        "props": {
+            "blockClass": "categories-home-title",
+            "text": "Categorias"
+        }
+    },
+    "slider-layout#categorias-home": {
+        "props": {
+            "blockClass": "categories-home",
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "centerMode": {
+                "mobile": true
+            },
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 2,
+                "mobile": 1
+            }
+        },
+        "children": [
+            "info-card#linha-leve",
+            "info-card#linha-pesada",
+            "info-card#utilitarios",
+            "info-card#duas-rodas"
+        ]
+    },
+    "info-card#linha-leve": {
+        "props": {
+            "blockClass": "categories-home",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "assets/imgs/categoria-leve.png",
+            "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "callToActionText": "Ver mais",
+            "callToActionUrl": "/linha-leve",
+            "textAlignment": "center"
+        }
+    },
+    "info-card#linha-pesada": {
+        "props": {
+            "blockClass": "categories-home",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "assets/imgs/categoria-pesada.png",
+            "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "callToActionText": "Ver mais",
+            "callToActionUrl": "/linha-pesada",
+            "textAlignment": "center"
+        }
+    },
+    "info-card#utilitarios": {
+        "props": {
+            "blockClass": "categories-home",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "assets/imgs/categoria-utilitarios.png",
+            "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "callToActionText": "Ver mais",
+            "callToActionUrl": "/utilitarios",
+            "textAlignment": "center"
+        }
+    },
+    "info-card#duas-rodas": {
+        "props": {
+            "blockClass": "categories-home",
+            "isFullModeStyle": false,
+            "textPosition": "right",
+            "imageUrl": "assets/imgs/categoria-duas-rodas.png",
+            "headline": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "callToActionText": "Ver mais",
+            "callToActionUrl": "/duas-rodas",
+            "textAlignment": "center"
+        }
+    },
+    "responsive-layout.phone#categorias-home": {
+        "children": [
+            "rich-text#categorias-titulo",
+            "tab-layout#categorias-home"
+        ]
+    },
+    "tab-layout#categorias-home": {
+        "props": {
+            "blockClass": "categories-home",
+            "defaultActiveTabId": "linha-leve"
+        },
+        "children": [
+            "tab-list#categorias-home",
+            "tab-content#categorias-home"
+        ]
+    },
+    "tab-list#categorias-home": {
+        "props": {
+            "blockClass": "categories-home"
+        },
+        "children": [
+            "slider-layout#tab-categorias-home"
+        ]
+    },
+    "slider-layout#tab-categorias-home": {
+        "props": {
+            "blockClass": "categories-home-mobile",
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "itemsPerPage": {
+                "mobile": 2
+            },
+            "centerMode": {
+                "mobile": true
+            },
+            "centerModeSlidesGap": {
+                "mobile": 10
+            }
+        },
+        "children": [
+            "tab-list.item#linha-leve",
+            "tab-list.item#linha-pesada",
+            "tab-list.item#utilitarios",
+            "tab-list.item#duas-rodas"
+        ]
+    },
+    "tab-list.item#linha-leve": {
+        "props": {
+            "blockClass": "categories-home-mobile",
+            "tabId": "linha-leve",
+            "label": "Linha leve",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-list.item#linha-pesada": {
+        "props": {
+            "blockClass": "categories-home-mobile",
+            "tabId": "linha-pesada",
+            "label": "Linha pesada"
+        }
+    },
+    "tab-list.item#utilitarios": {
+        "props": {
+            "blockClass": "categories-home-mobile",
+            "tabId": "utilitarios",
+            "label": "Linha Utilitarios"
+        }
+    },
+    "tab-list.item#duas-rodas": {
+        "props": {
+            "blockClass": "categories-home-mobile",
+            "tabId": "duas-rodas",
+            "label": "Duas Rodas"
+        }
+    },
+    "tab-content#categorias-home": {
+        "props": {
+            "blockClass": "categories-home"
+        },
+        "children": [
+            "tab-content.item#linha-leve",
+            "tab-content.item#linha-pesada",
+            "tab-content.item#utilitarios",
+            "tab-content.item#duas-rodas"
+        ]
+    },
+    "tab-content.item#linha-leve": {
+        "props": {
+            "tabId": "linha-leve"
+        },
+        "children": [
+            "info-card#linha-leve"
+        ]
+    },
+    "tab-content.item#linha-pesada": {
+        "props": {
+            "tabId": "linha-pesada"
+        },
+        "children": [
+            "info-card#linha-pesada"
+        ]
+    },
+    "tab-content.item#utilitarios": {
+        "props": {
+            "tabId": "utilitarios"
+        },
+        "children": [
+            "info-card#utilitarios"
+        ]
+    },
+    "tab-content.item#duas-rodas": {
+        "props": {
+            "tabId": "duas-rodas"
+        },
+        "children": [
+            "info-card#duas-rodas"
+        ]
+    }
+}

@@ -1,0 +1,84 @@
+.sliderArrows {
+    margin: 0;
+    padding: 0;
+}
+
+.caretIcon {
+    color: $primary-color;
+    width: 40px;
+    height: 40px;
+}
+
+.paginationDotsContainer {
+    align-items: flex-end;
+}
+
+.paginationDot {
+    background: #808080;
+    border-radius: 0;
+    width: 24px !important;
+    height: 2px !important;
+    margin: 0 2px;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.paginationDot--isActive {
+    height: 4px !important;
+}
+
+.sliderRightArrow--categories-home {
+    right: -9px;
+}
+
+@include mq(md, min) {
+    .paginationDot--isActive {
+        background: $secondary-color;
+    }
+}
+
+@include mq(md, max) {
+    .paginationDot {
+        height: 1px !important;
+    }
+
+    .paginationDot--isActive {
+        height: 3px !important;
+    }
+}
+
+@include mq(sm, max) {
+    .sliderArrows {
+        top: 40%;
+    }
+
+    .sliderRightArrow {
+        right: -8px;
+    }
+
+    .sliderLeftArrow {
+        left: -8px;
+    }
+
+    .caretIcon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.sliderLayoutContainer--inst-nav {
+    max-width: 1127px;
+    margin: 23px auto 38px auto;
+}
+
+.sliderLayoutContainer--categories-home {
+    width: 99%;
+}
+
+.paginationDotsContainer--inst-nav {
+    display: none;
+}
+
+.slide--inst-nav {
+    width: fit-content !important;
+}

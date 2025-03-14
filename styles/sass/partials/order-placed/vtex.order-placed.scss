@@ -1,0 +1,166 @@
+.section--confirmation {
+    margin-bottom: 25px;
+}
+
+.orderPlacedWrapper {
+    @include mq(sm, max) {
+        padding: 4rem 1rem 0;
+    }
+}
+
+.confirmationTitle {
+    color: #292929;
+    font-family: $font-family3;
+    font-size: 24px;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+.noticesList {
+    background: white;
+}
+
+.noticeListItem {
+    border: none;
+    color: #292929;
+    font-family: $font-family3;
+    font-size: 13px;
+    padding: 10px 0;
+
+    &:first-child {
+        display: none;
+    }
+}
+
+.orderOptionsWrapper {
+    display: none;
+}
+
+.orderNumber,
+.packageDeliveryTitle {
+    color: #292929;
+    font-family: $font-family;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.orderDatetime,
+.orderSoldBy,
+.orderSeller,
+.customerInfoListName,
+.customerInfoListEmail,
+.customerInfoListDocument,
+.customerInfoListPhone,
+.paymentGroup,
+.paymentValue,
+.addressContainer,
+.packageShippingEstimate,
+.packageSLA {
+    color: #292929 !important;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+}
+
+.packageSLA {
+    display: block;
+    width: fit-content;
+}
+
+.vtex__icon-info {
+    color: $color-green;
+}
+
+.updateOrderButton :global(.vtex-button),
+.myOrdersButton :global(.vtex-button) {
+    background: $primary-color;
+    border: none;
+    border-radius: 5px;
+    color: $color-white;
+    font-family: $font-family;
+    text-transform: none;
+}
+
+.cancelOrderButton :global(.vtex-button) {
+    border: none;
+    border-radius: 5px;
+    font-family: $font-family;
+    text-transform: none;
+}
+
+.package--delivery {
+    flex-direction: column;
+}
+
+.productList {
+    width: 100%;
+
+    .productInfoColumn {
+        justify-content: space-evenly;
+    }
+
+    .productName,
+    .productQuantity {
+        color: $color-gray;
+        font-family: $font-family;
+        font-weight: 300;
+    }
+
+    .productPrice {
+        display: flex;
+        align-items: flex-end;
+
+        color: $secondary-color;
+        font-family: $font-family;
+        font-size: 22px;
+        font-weight: bold;
+
+        @include mq(md, max) {
+            justify-content: center;
+        }
+    }
+}
+
+// .addressContainer {
+//     color: $color-gray;
+//     font-family: $font-family;
+// }
+
+.totalListWrapper {
+    justify-content: start;
+}
+
+.totalListItem {
+    color: #292929;
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+
+    &:not(:last-child) {
+        display: none;
+    }
+
+    .totalListItemValue {
+        color: $secondary-color;
+        font-size: 22px;
+        margin-left: 0.625rem;
+    }
+}
+
+.totalListItemLabel {
+    font-size: 24px;
+
+    &::after {
+        content: ":";
+    }
+}

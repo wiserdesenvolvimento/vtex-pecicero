@@ -1,0 +1,32 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+/* Colors */
+/* Grid breakpoints */
+.buttonDataContainer--m3-shelf {
+  background-color: #5baa63;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.buttonDataContainer--m3-shelf:hover {
+  background: rgb(71.686746988, 138.313253012, 78.4337349398);
+}
+
+.buttonText--m3-shelf {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #fff;
+  padding: 18px;
+}

@@ -1,0 +1,17 @@
+/* M3 SHELF TITLE  */
+/* ------------------------------------------------------------------------ */
+.container--m3-shelf-title {
+    margin-bottom: 24px;
+}
+
+.heading--m3-shelf-title {
+    border-bottom: 2px solid $secondary-color;
+    color: #4f4f4f;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 0;
+    text-align: center;
+    text-rendering: geometricPrecision;
+    text-transform: capitalize;
+}

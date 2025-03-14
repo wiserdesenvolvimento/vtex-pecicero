@@ -1,0 +1,98 @@
+{
+    "menu-item#submenu-item--palhetas-e-componentes": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":29,
+                "text": "Palhetas e componentes"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-palhetas-e-componentes"]
+    },
+    "vtex.menu@2.x:submenu#submenu-palhetas-e-componentes": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-palhetas-e-componentes",
+            "vtex.menu@2.x:menu#submenu-palhetas-e-componentes-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-palhetas-e-componentes": {
+        "children": ["flex-layout.col#title-palhetas-e-componentes"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-palhetas-e-componentes": {
+        "children": ["rich-text#menu-title-palhetas-e-componentes"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-palhetas-e-componentes": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Palhetas e componentes",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--palhetas-e-componentes"]
+    },
+    "menu-item#see-more--palhetas-e-componentes": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--palhetas-e-componentes",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":29,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-palhetas-e-componentes-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":958,
+                        "text": "JG palh limpadora parabrisa"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1112,
+                        "text": "Palheta limpadora parabrisa"
+                    }
+                }
+            ]
+        }
+    }
+}

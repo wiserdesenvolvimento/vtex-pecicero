@@ -1,0 +1,22 @@
+.opened {
+    @include mq(sm, max) {
+        max-width: 384px !important;
+    }
+}
+
+.drawerContent {
+    :global(.vtex-rich-text-0-x-paragraph) {
+        color: #4f4f4f;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+.minicartIconContainer {
+    @include mq(sm, max) {
+        :global(.vtex-store-components-3-x-imageElement) {
+            width: 29.79px;
+            height: 26.78px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    // M3 NEWSLETTER
+    "flex-layout.row#m3-newsletter": {
+        "props": {
+            "blockClass": "m3-newsletter"
+        },
+        "children": [
+            "rich-text#m3-newsletter",
+            "newsletter#m3-newsletter"
+        ]
+    },
+    "rich-text#m3-newsletter": {
+        "props": {
+            "blockClass": "m3-newsletter",
+            "textAlignment": "RIGHT",
+            "textPosition": "CENTER",
+            "text": "**Newsletter** cadastre-se e receba ofertas e novidades!"
+        }
+    },
+    "newsletter#m3-newsletter": {
+        "props": {
+            "blockClass": "m3-newsletter",
+            "placeholder": "E-mail",
+            "submit": "Cadastre-se",
+            "label": "",
+            "hideLabel": true
+        }
+    }
+}

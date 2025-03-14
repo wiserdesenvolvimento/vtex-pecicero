@@ -1,0 +1,52 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+/* Colors */
+/* Grid breakpoints */
+/* .input, .input::-webkit-input-placeholder{
+  display: none;
+  font-family: "Roboto";
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+color: $color-gray4;
+} */
+:global(.vtex-dropdown__container) {
+  max-width: 100px;
+}
+:global(.vtex-dropdown__container) :global(.vtex-dropdown__button) {
+  width: initial;
+}
+:global(.vtex-dropdown__container) :global(.vtex-dropdown__caption) {
+  padding-right: 15px;
+}
+:global(.vtex-dropdown__container) :global(.vtex-dropdown__caption) ::after {
+  content: url(assets/svgs/dropdown/dropdown-arrow-down.svg);
+  display: inline-block;
+  position: absolute;
+  right: 8px;
+  top: 9px;
+}
+@media screen and (min-width: 992px) {
+  :global(.vtex-dropdown__container) :global(.vtex-dropdown__caption) ::after {
+    right: 11px;
+    top: 9px;
+  }
+}
+:global(.vtex-dropdown__container) :global(.vtex-dropdown__arrow) {
+  display: none;
+}
+
+:global(.vtex-dropdown__button) {
+  width: 100%;
+}

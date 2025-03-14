@@ -1,0 +1,140 @@
+/* M3 PRODUCT DETAILS  */
+.flexRow--m3-product-main {
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0;
+    }
+}
+
+.flexRowContent--m3-product-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 40px;
+
+    @include mq(lg, min) {
+        margin-bottom: 6.25rem;
+    }
+}
+
+.flexCol--product-name {
+    border-bottom: 1px solid #ebebeb;
+    width: fit-content;
+    min-width: 80%;
+}
+
+.flexCol--product-price {
+    padding: 0;
+}
+
+.flexRowContent--m3-buy-btn {
+    :global(.vtex-button) {
+        border-radius: 0;
+        min-height: 0;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    :global(.vtex-button__label) {
+        padding: 16px 4px !important;
+    }
+
+    :global(.vtex-add-to-cart-button-0-x-buttonText) {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.1em;
+    }
+}
+
+.flexCol--add-to-cart {
+    margin-right: 8px;
+}
+
+.flexColChild--add-to-cart {
+    :global(.vtex-button) {
+        background-color: transparent;
+        border: 1px solid $color-green;
+    }
+
+    :global(.vtex-add-to-cart-button-0-x-buttonText) {
+        color: $color-green;
+    }
+}
+
+.flexColChild--buy {
+    :global(.vtex-button) {
+        background-color: $color-green;
+        border: 1px solid $color-green;
+        height: 100%;
+
+        &:hover {
+            background-color: darken($color-green, 10);
+        }
+    }
+
+    :global(.vtex-add-to-cart-button-0-x-buttonText) {
+        color: $color-white;
+    }
+}
+
+.flexRow--m3-product-shelf {
+    margin: 40px auto !important;
+}
+
+.flexColChild--product-info {
+    margin-bottom: 16px;
+}
+
+.flexRowContent--minicart-product {
+    gap: 11px;
+}
+
+@media only screen and (max-width: 768px) {
+    .flexRowContent--m3-product-main {
+        display: block;
+
+        .stretchChildrenWidth {
+            width: 100% !important;
+        }
+    }
+
+    .flexCol--product-info {
+        max-width: 550px;
+        padding-top: 30px;
+    }
+
+    .flexCol--product-name {
+        min-width: 100%;
+        border: none;
+    }
+
+    .flexCol--product-price {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .flexCol--product-info {
+        padding-top: 0;
+    }
+
+    .flexCol--add-to-cart {
+        margin: 0 0 8px;
+    }
+
+    .flexRow--m3-product-shelf {
+        margin: 20px auto !important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .flexRowContent--m3-product-main {
+        padding: 32px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .flexRowContent--m3-product-main {
+        padding: 32px 20px;
+    }
+}

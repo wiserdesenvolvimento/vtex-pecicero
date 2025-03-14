@@ -1,0 +1,157 @@
+// store.home.jsonc
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#main-slider",
+      // Nova linha com as abas (Pneu e Carro)
+      "flex-layout.row#abas-pneu-carro",
+      "flex-layout.row#categorias-home",
+      "link#whatsapp",
+      "__fold__",
+      // Mantém os outros blocos como estavam
+      "filter-product",
+      "flex-layout.row#shelf-01",
+      "flex-layout.row#shelf-highlight",
+      "flex-layout.row#shelf-02",
+      "flex-layout.row#home-deals",
+      "flex-layout.row#shelf-03",
+      "flex-layout.row#shelf-04"
+    ]
+  },
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/registration",
+      "defaultContentVisibility": "hidden"
+    }
+  },
+  "list-context.image-list#main-slider": {
+    "props": {
+      "images": [
+        {
+          "image": "assets/imgs/banner-desktop.png",
+          "mobileImage": "assets/imgs/banner-mobile.png"
+        },
+        {
+          "image": "assets/imgs/banner-desktop.png",
+          "mobileImage": "assets/imgs/banner-mobile.png"
+        }
+      ]
+    },
+    "children": [
+      "slider-layout#main-slider"
+    ]
+  },
+  "filter-product": {
+    "props": {
+      "filterTitle": "Busque a peça certa para o seu veículo",
+      "placeHolder": "Digite a placa do carro",
+      "searchButtonText": "Buscar por peça",
+      "clearButtonText": "Limpar filtros"
+    }
+  },
+  "slider-layout#main-slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "blockClass": "m3-main-slider",
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly"
+    }
+  },
+  "link#whatsapp": {
+    "props": {
+      "href": "https://wa.me/5585987740914",
+      "blockClass": "whatsapp-link",
+      "target": "_blank"
+    }
+  },
+
+  // --- Nova Linha com as Abas (Pneu e Carro) ---
+  "flex-layout.row#abas-pneu-carro": {
+    "children": [
+      "tab-layout#abas-pneu-carro" // Adiciona o tab-layout dentro da nova linha
+    ],
+    "props": {
+      "blockClass": "container-abas-pneu-carro", // Classe CSS para estilizar a linha
+      "fullWidth": true // Ocupa a largura total
+    }
+  },
+  "tab-layout#abas-pneu-carro": {
+    "children": [
+      "tab-list#abas-pneu-carro",    // Lista de abas
+      "tab-content#abas-pneu-carro"   // Conteúdo das abas
+    ]
+  },
+  "tab-list#abas-pneu-carro": {
+    "children": [
+      "tab-list.item#tab-pneu",     // Item da lista 1 (Pneu)
+      "tab-list.item#tab-carro"  // Item da lista 2 (Carro)
+    ]
+  },
+  "tab-list.item#tab-pneu": {
+    "props": {
+      "tabId": "pneu",      // ID único
+      "label": "Pneu",      // Rótulo da aba
+      "defaultActive": true // Define como aba ativa por padrão
+    }
+  },
+  "tab-list.item#tab-carro": {
+    "props": {
+      "tabId": "carro",      // ID único
+      "label": "Carro"     // Rótulo da aba
+    }
+  },
+  "tab-content#abas-pneu-carro": {
+    "children": [
+      "tab-content.item#tab-pneu-content",    // Conteúdo da aba Pneu
+      "tab-content.item#tab-carro-content" // Conteúdo da aba Carro
+    ]
+  },
+  "tab-content.item#tab-pneu-content": {
+    "props": {
+      "tabId": "pneu"    // ID correspondente no tab-list.item
+    },
+    "children": [
+      // Conteúdo da aba Pneu (coloque aqui o que você quiser)
+      "rich-text#conteudo-pneu" // Exemplo com rich-text
+    ]
+  },
+  "tab-content.item#tab-carro-content": {
+    "props": {
+      "tabId": "carro"    // ID correspondente no tab-list.item
+    },
+    "children": [
+      // Conteúdo da aba Carro (coloque aqui o que você quiser)
+      "rich-text#conteudo-carro" // Exemplo com rich-text
+    ]
+  },
+  //Exemplo de conteúdo para as abas
+  "rich-text#conteudo-pneu": {
+    "props": {
+      "text": "Conteúdo da aba Pneu",
+       "textPosition": "CENTER",
+       "font": "t-heading-2"
+    }
+  },
+    "rich-text#conteudo-carro": {
+    "props": {
+      "text": "Conteúdo da aba Carro",
+       "textPosition": "CENTER",
+       "font": "t-heading-2"
+    }
+  },
+  // --- (Fim da nova seção de abas) ---
+    // Bloco que agrupa os blocos de destaques (shelves) - Permanece inalterado
+  "flex-layout.row#destaques": {
+    "children": [
+      "flex-layout.row#shelf-01",
+      "flex-layout.row#shelf-highlight",
+      "flex-layout.row#shelf-02",
+      "flex-layout.row#home-deals"
+    ]
+  }
+}

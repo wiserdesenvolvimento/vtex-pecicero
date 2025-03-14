@@ -1,0 +1,42 @@
+.discountInsideContainer {
+    background-color: $primary-color;
+}
+
+.swiperCaretPrev {
+    display: block;
+    background: url(assets/svgs/slide-left-arrow.svg) no-repeat center center !important;
+    background-size: contain;
+}
+
+.swiperCaretNext {
+    display: block;
+    background: url(assets/svgs/slide-right-arrow.svg) no-repeat center center !important;
+    background-size: contain;
+}
+
+.swiperCaretNext,
+.swiperCaretPrev {
+    padding: 0;
+}
+
+.caretIcon {
+    opacity: 0;
+}
+
+.swiper-pagination {
+    align-items: center;
+}
+
+.swiperBullet {
+    background: #ffffff;
+    height: 8px !important;
+    width: 8px !important;
+    opacity: 1;
+}
+
+.swiperBullet--active {
+    background: transparent;
+    border: 1px solid #ffffff;
+    height: 13px !important;
+    width: 13px !important;
+}

@@ -1,0 +1,278 @@
+{
+    "menu-item#submenu-item--motor": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":19,
+                "text": "Motor"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-motor"]
+    },
+    "vtex.menu@2.x:submenu#submenu-motor": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-motor",
+            "vtex.menu@2.x:menu#submenu-motor-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-motor": {
+        "children": ["flex-layout.col#title-motor"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-motor": {
+        "children": ["rich-text#menu-title-motor"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-motor": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Motor",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--motor"]
+    },
+    "menu-item#see-more--motor": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--motor",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":19,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-motor-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":119,
+                        "text": "Aneis segmento"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":390,
+                        "text": "Bujão carter"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":454,
+                        "text": "Calço volante motor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":464,
+                        "text": "Camisa motor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":527,
+                        "text": "Carter motor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                       "categoryId":626,
+                        "text": "Comando válvula"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                       "categoryId":678,
+                        "text": "Coxim motor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-08",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1009,
+                        "text": "Kit p/ motor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-09",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1065,
+                        "text": "Mangueira filtro ar"
+                    }
+                },
+                {
+                    "id": "menu-item-link-10",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1176,
+                        "text": "Polia virabrequim"
+                    }
+                },
+                {
+                    "id": "menu-item-link-11",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1230,
+                        "text": "Retentor comando válvula"
+                    }
+                },
+                {
+                    "id": "menu-item-link-12",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1236,
+                        "text": "Retentor polia"
+                    }
+                },
+                {
+                    "id": "menu-item-link-13",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1233,
+                        "text": "Retentor válvula"
+                    }
+                },
+                {
+                    "id": "menu-item-link-14",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1239,
+                        "text": "Retentor volante motor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-15",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1448,
+                        "text": "Tubo guia vareta óleo"
+                    }
+                },
+                {
+                    "id": "menu-item-link-16",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                       "categoryId":1469,
+                        "text": "Tucho hidr motor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-17",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1470,
+                        "text": "Tucho motor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-18",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1484,
+                        "text": "Vávula admissao"
+                    }
+                },
+                {
+                    "id": "menu-item-link-19",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1497,
+                        "text": "Vávula escape"
+                    }
+                },
+                {
+                    "id": "menu-item-link-20",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1527,
+                        "text": "Vareta vávula"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "custom-menu#m3-custom": {
+        "props": {
+            "items": [],
+            "footerInfos": {
+                "social": [
+                    {
+                        "title": "Facebook",
+                        "href": "https://www.facebook.com/autopecaspecicero/",
+                        "iconSrc": "assets/svgs/facebook.svg"
+                    },
+                    {
+                        "title": "Instagram",
+                        "href": "https://www.instagram.com/autopecaspecicero/",
+                        "iconSrc": "assets/svgs/instagram.svg"
+                    },
+                    {
+                        "title": "You Tube",
+                        "href": "https://www.youtube.com/channel/UCW4o86gZG_ceA8CmHltXeXA",
+                        "iconSrc": "assets/svgs/youtube.svg"
+                    }
+                ],
+                "atendimento": {
+                    "href": "tel:8334442273",
+                    "telefone": "(83) 3444-2273"
+                }
+            }
+        }
+    }
+}

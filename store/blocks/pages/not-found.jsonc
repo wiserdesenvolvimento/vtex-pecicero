@@ -1,0 +1,91 @@
+{
+    "store.not-found#product": {
+        "blocks": [
+            "flex-layout.row#product-not-found"
+        ]
+    },
+    "store.not-found#search": {
+        "blocks": [
+            "flex-layout.row#search-not-found"
+        ]
+    },
+    "flex-layout.row#product-not-found": {
+        "props": {
+            "blockClass": "not-found-row"
+        },
+        "children": ["flex-layout.col#product-not-found"]
+    },
+    "flex-layout.row#search-not-found": {
+        "props": {
+            "blockClass": "not-found-row"
+        },
+        "children": ["flex-layout.col#search-not-found"]
+    },
+    "flex-layout.col#product-not-found": {
+        "children": [
+            "rich-text#produt-not-found-1",
+            "rich-text#produt-not-found-2",
+            "search-bar#research"
+        ]
+    },
+    "flex-layout.col#search-not-found": {
+        "children": [
+            "rich-text#search-not-found-1",
+            "rich-text#search-not-found-2",
+            "link#produt-not-found-to-home"
+        ]
+    },
+    "rich-text#produt-not-found-1": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Sua busca não gerou nenhum resultado.**",
+            "font": "t-heading-1",
+            "blockClass": "not-found-heading"
+        }
+    },
+    "rich-text#search-not-found-1": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Página não encontrada**",
+            "font": "t-heading-1",
+            "blockClass": "not-found-heading"
+        }
+    },
+    "rich-text#produt-not-found-2": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Verifique os termos buscados e tente novamente.**",
+            "font": "t-heading-2",
+            "blockClass": "not-found-sub-heading"
+        }
+    },
+    "rich-text#search-not-found-2": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**A página que vocês está tentando acessar está indisponível.**",
+            "font": "t-heading-2",
+            "blockClass": "not-found-sub-heading"
+        }
+    },
+    "link#produt-not-found-to-home": {
+        "props": {
+            "href": "/",
+            "label": "voltar",
+            "blockClass": "not-found-btn"
+        }
+    },
+    "search-bar#research": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "blockClass": "research",
+            "openAutocompleteOnFocus": true,
+            "placeholder": "Buscar...",
+            "maxWidth": "330px",
+            "displayMode": "clear-button"
+        }
+    }
+}

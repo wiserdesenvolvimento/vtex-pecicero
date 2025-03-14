@@ -1,0 +1,99 @@
+{
+    "menu-item#submenu-item--acessorios": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":11,
+                "text": "Acessórios"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-acessorios"]
+    },
+    "vtex.menu@2.x:submenu#submenu-acessorios": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-acessorios",
+            "vtex.menu@2.x:menu#submenu-acessorios-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-acessorios": {
+        "children": ["flex-layout.col#title-acessorios"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-acessorios": {
+        "children": ["rich-text#menu-title-acessorios"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-acessorios": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Acessórios",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--acessorios"]
+    },
+    "menu-item#see-more--acessorios": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--acessorios",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":11,
+                "text": "Ver Todos"
+            }
+        }
+    },
+
+    "vtex.menu@2.x:menu#submenu-acessorios-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":461,
+                        "text": "Calota"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":485,
+                        "text": "Capacete"
+                    }
+                }
+            ]
+        }
+    }
+}

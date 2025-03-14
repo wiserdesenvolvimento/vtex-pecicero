@@ -1,0 +1,16 @@
+.linkNavegacao {
+    color: #7d7d7d;
+    font-family: "Roboto",sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.linkAtivo {
+    color: $primary-color;
+    font-weight: bold;
+
+    @include mq(lg,min) {
+        color: #7D7D7D;
+    }
+}

@@ -1,0 +1,82 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+/* Colors */
+/* Grid breakpoints */
+.openIconContainer {
+  padding: 0 12px;
+}
+@media only screen and (min-width: 576px) {
+  .openIconContainer {
+    flex: 1;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .openIconContainer {
+    padding: 0 8px 0 0;
+  }
+}
+
+.menuIcon {
+  color: #de7903;
+  width: 48px;
+  height: 48px;
+}
+@media only screen and (max-width: 420px) {
+  .menuIcon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.overlay--menu-mobile {
+  background: #000;
+}
+.overlay--menu-mobile.overlay--menu-mobile--visible {
+  opacity: 0.6 !important;
+}
+
+.opened--menu-mobile {
+  width: 95% !important;
+  max-width: 95% !important;
+}
+
+.drawerContent--menu-mobile {
+  height: 100%;
+  position: relative;
+}
+
+.childrenContainer--menu-mobile {
+  height: 100%;
+}
+
+.closeIconContainer {
+  position: absolute;
+  top: 22px;
+  right: 42px;
+}
+.closeIconContainer .closeIconButton {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+.closeIconContainer .closeIcon {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+@media screen and (max-width: 320px) {
+  .closeIconContainer {
+    right: 20px;
+  }
+}

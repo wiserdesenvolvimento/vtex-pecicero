@@ -1,0 +1,109 @@
+/* HOME */
+/* ---------------------------------------------------------------------------------------- */
+.container--categories-home-title {
+    justify-content: center;
+}
+
+.paragraph--categories-home-title {
+    border-bottom: 2px solid $secondary-color;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: $primary-color;
+    padding-bottom: 4px;
+    margin: 0;
+}
+
+.paragraph--m3-shelf-highlight-tag {
+    background: $secondary-color;
+    border-radius: 30px 10px 10px 10px;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    margin: 0;
+    padding: 10px 8px;
+}
+
+.heading--m3-shelf-highlight-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: $color-white;
+    margin: 36px 0;
+}
+
+.paragraph--m3-shelf-highlight-description {
+    font-size: 18px;
+    line-height: 22px;
+    color: $color-white;
+    margin: 16px 0;
+}
+
+.paragraph--home-deals-title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: $primary-color;
+    margin: 0 0 8px;
+    padding-bottom: 8px;
+
+    &::after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid $secondary-color;
+        width: 40px;
+    }
+}
+
+.paragraph--home-deals-subtitle {
+    font-size: 14px;
+    line-height: 18px;
+    color: #828282;
+    margin: 0;
+}
+
+.paragraph--home-deals {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4f4f4f;
+    margin: 18px 0 0;
+}
+
+@media screen and (max-width: 640px) {
+    .container--categories-home-title {
+        border-bottom: 1px solid #bdbdbd;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .paragraph--categories-home-title {
+        border: none;
+    }
+
+    .heading--m3-shelf-highlight-title {
+        font-size: 32px;
+        line-height: 40px;
+        margin: 24px 0;
+    }
+
+    .paragraph--m3-shelf-highlight-description {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 12px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .paragraph--home-deals {
+        font-size: 11px;
+        line-height: 14px;
+        margin-top: 10px;
+    }
+}

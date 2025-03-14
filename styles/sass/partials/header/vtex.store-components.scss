@@ -1,0 +1,147 @@
+.logoLink {
+    display: block;
+    flex-grow: 1;
+    // text-align: center;
+}
+
+.logoContainer {
+    padding: 0;
+
+    @include mq(sm, max) {
+        display: block;
+        margin: auto;
+    }
+}
+
+.searchBarContainer {
+    padding: 0;
+
+    :global(.vtex-input-prefix__group) {
+        border: none;
+        border-radius: 0;
+        height: auto;
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+        border-radius: 0;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.1em;
+        color: #4f4f4f;
+        padding: 16px;
+
+        &::placeholder {
+            text-transform: uppercase;
+            color: #bdbdbd;
+        }
+        @media not all and (min-resolution: 0.001dpcm) {
+            @supports (-webkit-appearance: none) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    :global(.vtex-input__suffix) {
+        border-radius: 0;
+        padding: 8px 16px;
+    }
+}
+
+.searchBarIcon {
+    color: $secondary-color;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+
+    :global(.vtex-store-components-3-x-closeIcon) {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.searchIcon {
+    width: 32px;
+    height: 32px;
+}
+
+.imageElement--open-search-mobile,
+.imageElement--close-search-mobile {
+    background-color: $primary-color;
+    padding: 0 8px;
+    position: absolute;
+    left: 0;
+}
+
+.imageElement--close-search-mobile {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@include mq(sm, max) {
+    .logoImage {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .logoImage {
+        max-width: 116px;
+        position: relative;
+        bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logoImage {
+        max-width: 100px;
+        margin: 0 -4px;
+    }
+}
+
+:global(.vtex-search-2-x-biggy-autocomplete) {
+    @include mq(slg, max) {
+        right: 0;
+        top: -16px;
+    }
+
+    @include mq(sm, max) {
+        width: 92vw;
+        max-width: 500px;
+    }
+}
+
+:global(.vtex-search-2-x-biggy-autocomplete-wrapper) {
+    @include mq(slg, max) {
+        right: 0;
+    }
+
+    @include mq(slg, min) {
+        max-width: 400px;
+    }
+
+    @include mq(sm, min) {
+        width: 500px;
+    }
+
+    @media screen and (max-width: 300px) {
+        width: 100vw;
+    }
+}
+
+.portalContaier {
+    top: 25px !important;
+}
+
+.portalContainer--mobile {
+    top: 17px !important;
+
+    @media screen and (min-width: 300px) {
+        right: 100%;
+    }
+    @media screen and (max-width: 300px) {
+        left: 9px !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}

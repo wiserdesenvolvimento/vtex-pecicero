@@ -1,0 +1,88 @@
+{
+    "menu-item#submenu-item--tintas-e-componentes-para-pintura": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "Tintas e componentes p/ pintura"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-tintas-e-componentes-para-pintura"]
+    },
+    "vtex.menu@2.x:submenu#submenu-tintas-e-componentes-para-pintura": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-tintas-e-componentes-para-pintura",
+            "vtex.menu@2.x:menu#submenu-tintas-e-componentes-para-pintura-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-tintas-e-componentes-para-pintura": {
+        "children": ["flex-layout.col#title-tintas-e-componentes-para-pintura"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-tintas-e-componentes-para-pintura": {
+        "children": ["rich-text#menu-title-tintas-e-componentes-para-pintura"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-tintas-e-componentes-para-pintura": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Tintas e componentes p/ pintura",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--tintas-e-componentes-para-pintura"]
+    },
+    "menu-item#see-more--tintas-e-componentes-para-pintura": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--tintas-e-componentes-para-pintura",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 1,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-tintas-e-componentes-para-pintura-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId": 831,
+                        "text": "Fita dupla face"
+                    }
+                }
+            ]
+        }
+    }
+}

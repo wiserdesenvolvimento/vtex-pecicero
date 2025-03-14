@@ -1,0 +1,118 @@
+{
+    "store.custom#troca-e-devolucao": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#wrapper-troca-e-devolucao"
+        ]
+    },
+    "flex-layout.row#wrapper-troca-e-devolucao": {
+        "children": [
+            "flex-layout.col#inst-nav",
+            "flex-layout.col#institucional--troca-e-devolucao"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    },
+    "flex-layout.col#institucional--troca-e-devolucao": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": ["flex-layout.row#institucional--troca-e-devolucao"]
+    },
+    "flex-layout.row#institucional--troca-e-devolucao": {
+        "children": ["flex-layout.col#institucional--troca-e-devolucao-content"]
+    },
+    "flex-layout.col#institucional--troca-e-devolucao-content":{
+        "children":[
+            "rich-text#troca-e-devolucao",
+            "rich-text#troca-e-devolucao--direito-de-arrependimento",
+            "rich-text#troca-e-devolucao--vicio-ou-defeito",
+            "rich-text#troca-e-devolucao--devolucao-x-garantia",
+            "rich-text#troca-e-devolucao--formas-de-ressarcimento",
+            "rich-text#troca-e-devolucao--avaria-no-transporte",
+            "rich-text#troca-e-devolucao--perfeitas-condicoes-de-embalagem",
+            "rich-text#troca-e-devolucao--atencao"
+        ]
+    },
+    "rich-text#troca-e-devolucao": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Política de Trocas e Garantias E-commerce",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#troca-e-devolucao--direito-de-arrependimento": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**1.** **DIREITO DE ARREPENDIMENTO**\n Em caso de recebimento do produto e insatisfação quanto ao mesmo, é facultado ao consumidor, em até 7 dias corridos, contados da data do recebimento, solicitar a troca ou efetuar a devolução.\n O direito de arrependimento poderá ser exercido pelo Consumidor através da Central de Atendimento ao Cliente, onde deverá ser orientado quanto ao procedimento logístico para devolução do produto.\n O consumidor receberá no e-mail cadastrado no site ou televendas o “Termo de Devolução por Arrependimento”, o qual deverá ser devidamente preenchido, assinado e enviado juntamente com o produto no ato da devolução.\n Caso o produto seja enviado à Auto Peças Padre Cícero após o prazo, apresente indícios de uso, esteja avariada por culpa do consumidor, ou não esteja acompanhada da embalagem original, em perfeito estado de conservação, de todos os acessórios e da nota fiscal, a devolução não será aceita. Neste caso, a mercadoria será remetida ao endereço do cliente e a Auto Peças Padre Cícero se reserva do direito de nova cobrança de frete.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#troca-e-devolucao--vicio-ou-defeito": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**2.** **TROCA OU DEVOLUÇÃO DO PRODUTO POR VÍCIO OU DEFEITO**\n A Auto Peças Padre Cícero somente efetuará a troca ou aceitará a devolução de produtos, que não caracterizem exercício de direito de arrependimento, na hipótese de constatação de vício ou defeito, verificados até 30 dias corridos – contados da data do recebimento. \n O consumidor receberá no e-mail cadastrado no site ou televendas o “Termo de Entrega de Produto Para Avaliação”, o qual deverá ser devidamente preenchido, assinado e enviado juntamente com o produto no ato da devolução.\n Todo produto encaminhado para troca por vício, passará por avaliação técnica realizada pelo fabricante, cujo prazo de (i) envio, (ii) recebimento, (iii) avaliação, (iv) emissão de laudo e (v) devolução do produto é de 30 dias úteis – contados da data de recebimento do produto pelo fornecedor.\n Caso o resultado da avaliação verifique a existência de defeito de fabricação, o fabricante efetuará o reparo necessário ou enviará um novo produto em substituição.\n Caso o resultado da avaliação verifique a inexistência de defeito de fabricação, o fabricante emitirá o laudo técnico de avaliação realizada no produto e o devolverá no estado em que o recebera, ficando o Consumidor responsável pelo pagamento da despesa com o frete.\n Caso o resultado da avaliação identifique defeito provocado por mau uso, por instalação inadequada ou em desacordo com as orientações do fabricante, este emitirá o laudo técnico de avaliação e devolverá o produto no estado em que o recebera, ficando o Consumidor responsável pelo pagamento da despesa com o frete.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#troca-e-devolucao--devolucao-x-garantia": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**3.** **DEVOLUÇÃO X GARANTIA**\n A Auto Peças Padre Cícero esclarece que será considerada devolução do produto, apenas se o mesmo não estiver sido instalado ou aplicado.\n A Auto Peças Padre Cícero esclarece que, caso o produto tenha sido instalado ou aplicado, será considerado exercício do direito de garantia.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#troca-e-devolucao--formas-de-ressarcimento": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**4.** **FORMAS DE RESSARCIMENTO**\n Caso o Consumidor opte por exercer o seu direito de arrependimento, o ressarcimento dos valores pagos observará o meio de pagamento utilizado na compra dos produtos. Se realizado com cartões de crédito, a quantia será estornada pela administradora, dependendo o prazo de realização exclusivamente de seus procedimentos administrativos internos. Para quaisquer outros meios de pagamento que tenham sido utilizados, a Auto Peças Padre Cícero realizará a restituição da quantia em conta bancária indicada pelo Consumidor em até 7 dias úteis – contados da efetiva devolução do produto.\n Em caso de exercício do direito de arrependimento, o consumidor será ressarcido dos valores pagos, a qualquer título, bem como em relação ao frete necessário à devolução do produto.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#troca-e-devolucao--avaria-no-transporte": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**5.** **AVARIA NO TRANSPORTE**\n No ato do recebimento, caso haja percepção de avaria no produto, embalagem danificada, entrega em desacordo com o pedido efetuado, falta ou diferença entre a Nota Fiscal e o produto, a Auto Peças Padre Cícero orienta a recusa do recebimento, com a anotação do motivo no verso da nota fiscal e a posterior comunicação à Central de Atendimento ao Cliente.\n Em caso de recebimento pelo consumidor, a Auto Peças Padre Cícero orienta a entrar em contato com a Central de Atendimento ao Cliente, respeitando o prazo de 7 dias corridos, contados do recebimento. ",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#troca-e-devolucao--perfeitas-condicoes-de-embalagem": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**6.** **PERFEITAS CONDIÇÕES DA EMBALAGEM**\n Em caso de exercício do direito de arrependimento, bem como de devolução, para aceitação por parte da Auto Peças Padre Cícero, faz-se necessário o envio do produto acompanhado da embalagem original em perfeitas condições, sem avarias e possibilitando a identificação do fornecedor do produto, assim como de todos os acessórios originais e da nota fiscal.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#troca-e-devolucao--atencao": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**ATENÇÃO**\n Todos os procedimentos em que a Auto Peças Padre Cícero necessite receber de volta um produto vindo do Consumidor, somente o fará mediante assinatura do (i) Termo de Entrega de Produto Para Avaliação, para os casos em que o produto será encaminhado ao fabricante e (ii) Termo de Devolução por Arrependimento. Em ambos os casos, cada um dos documentos conterá as respectivas declarações de responsabilidade do Consumidor.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional-atencao"
+        }
+    }
+}

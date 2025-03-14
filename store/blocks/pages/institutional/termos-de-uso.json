@@ -1,0 +1,49 @@
+{
+    "store.custom#termos-de-uso": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#wrapper-termos-de-uso"
+        ]
+    },
+    "flex-layout.row#wrapper-termos-de-uso": {
+        "children": [
+            "flex-layout.col#inst-nav",
+            "flex-layout.col#institucional-troca"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    },
+    "flex-layout.col#institucional-troca": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": ["flex-layout.row#institucional-troca"]
+    },
+    "flex-layout.row#institucional-troca": {
+        "children": ["flex-layout.col#institucional-troca-content"]
+    },
+    "flex-layout.col#institucional-troca-content": {
+        "children": ["rich-text#termos-de-uso"]
+    },
+    "rich-text#termos-de-uso": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Termos e Condições de Uso",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "rich-text#termos-de-uso--uso-da-plataforma": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Termos e Condições de Uso\n1.1 O Usuário, ao utilizar a Plataforma, não poderá realizar qualquer atividade que:",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    }
+}

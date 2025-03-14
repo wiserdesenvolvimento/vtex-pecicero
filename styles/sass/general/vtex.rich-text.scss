@@ -1,0 +1,77 @@
+/* MENU MOBILE  */
+.paragraph--minicart-text {
+    font-family: $font-family2;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: $color-white;
+    margin: 0 0 2px;
+}
+
+/*** Minha conta */
+.paragraph--account-title-text {
+    color: #4f4f4f;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0;
+}
+
+/*** Institucional  */
+.table--institucional {
+    border-spacing: 0 20px;
+}
+
+.tableTd--institucional {
+    vertical-align: top;
+}
+
+/*** Not found */
+.paragraph--not-found-heading {
+    color: $color-gray2;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    margin: 0 0 12px 0;
+
+    @include mq(md, max) {
+        font-size: 16px;
+    }
+    @media (max-width: 300px) {
+        font-size: 14px;
+    }
+}
+
+.paragraph--not-found-sub-heading {
+    color: $color-gray2;
+    font-size: 14px;
+    margin: 0 0 13px 0;
+
+    .strong--not-found-sub-heading {
+        font-weight: normal;
+    }
+}
+
+/*** Texto compra segura, página de produto */
+.paragraph--compra-segura {
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #8f8f8f;
+    margin: 16px 0;
+
+    &::after {
+        content: url(assets/svgs/cadeado.svg);
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .paragraph--compra-segura {
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,428 @@
+{
+    "menu-item#submenu-item--outros": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":6,
+                "text": "Outros"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-outros"]
+    },
+    "vtex.menu@2.x:submenu#submenu-outros": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-outros",
+            "vtex.menu@2.x:menu#submenu-outros-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-outros": {
+        "children": ["flex-layout.col#title-outros"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-outros": {
+        "children": ["rich-text#menu-title-outros"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-outros": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Outros",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--outros"]
+    },
+    "menu-item#see-more--outros": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--outros",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":6,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-outros-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":78,
+                        "text": "Alavanca capô"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":120,
+                        "text": "Anel"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":153,
+                        "text": "Arruelas diversas"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":279,
+                        "text": "Borracha"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":337,
+                        "text": "Bucha"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":373,
+                        "text": "Bucha patim freio"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":399,
+                        "text": "Cabo"
+                    }
+                },
+                {
+                    "id": "menu-item-link-08",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":442,
+                        "text": "Calço"
+                    }
+                },
+                {
+                    "id": "menu-item-link-09",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":445,
+                        "text": "Calço camisa motor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-10",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":542,
+                        "text": "Chapa"
+                    }
+                },
+                {
+                    "id": "menu-item-link-11",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":634,
+                        "text": "Conexão"
+                    }
+                },
+                {
+                    "id": "menu-item-link-12",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":676,
+                        "text": "Coxim"
+                    }
+                },
+                {
+                    "id": "menu-item-link-13",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":690,
+                        "text": "Cruzeta"
+                    }
+                },
+                {
+                    "id": "menu-item-link-14",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":727,
+                        "text": "Dobradiça capô"
+                    }
+                },
+                {
+                    "id": "menu-item-link-15",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":726,
+                        "text": "Dobradiça"
+                    }
+                },
+                {
+                    "id": "menu-item-link-16",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":731,
+                        "text": "Eixo"
+                    }
+                },
+                {
+                    "id": "menu-item-link-17",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":828,
+                        "text": "Fita"
+                    }
+                },
+                {
+                    "id": "menu-item-link-18",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":835,
+                        "text": "Flange"
+                    }
+                },
+                {
+                    "id": "menu-item-link-19",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                       "categoryId":859,
+                        "text": "Gancho"
+                    }
+                },
+                {
+                    "id": "menu-item-link-20",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":867,
+                        "text": "Gargalo"
+                    }
+                },
+                {
+                    "id": "menu-item-link-21",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":883,
+                        "text": "Guia"
+                    }
+                },
+                {
+                    "id": "menu-item-link-22",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":901,
+                        "text": "Interruptor"
+                    }
+                },
+                {
+                    "id": "menu-item-link-23",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":921,
+                        "text": "JG aneis"
+                    }
+                },
+                {
+                    "id": "menu-item-link-24",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":923,
+                        "text": "JG arruelas"
+                    }
+                },
+                {
+                    "id": "menu-item-link-25",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":2,
+                        "text": "Outros"
+                    }
+                },
+                {
+                    "id": "menu-item-link-26",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1207,
+                        "text": "Relê vent radiador"
+                    }
+                },
+                {
+                    "id": "menu-item-link-27",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1275,
+                        "text": "Rol gerador/alt"
+                    }
+                },
+                {
+                    "id": "menu-item-link-28",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1251,
+                        "text": "Rolamentos"
+                    }
+                },
+                {
+                    "id": "menu-item-link-29",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1331,
+                        "text": "Suporte"
+                    }
+                },
+                {
+                    "id": "menu-item-link-30",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1353,
+                        "text": "Tampa"
+                    }
+                },
+                {
+                    "id": "menu-item-link-31",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1401,
+                        "text": "Terminal"
+                    }
+                },
+                {
+                    "id": "menu-item-link-32",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1426,
+                        "text": "Trava"
+                    }
+                },
+                {
+                    "id": "menu-item-link-33",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1439,
+                        "text": "Tubo"
+                    }
+                },
+                {
+                    "id": "menu-item-link-34",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1481,
+                        "text": "Válvula"
+                    }
+                },
+                {
+                    "id": "menu-item-link-35",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1522,
+                        "text": "Vareta"
+                    }
+                }
+            ]
+        }
+    }
+}

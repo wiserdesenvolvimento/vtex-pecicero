@@ -1,0 +1,450 @@
+@charset "UTF-8";
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+/* Colors */
+/* Grid breakpoints */
+.content--emailAndPassword {
+  flex-direction: column;
+}
+.content--emailAndPassword .inputContainerEmail {
+  margin-bottom: 12px;
+}
+
+.content--emailAndPassword .inputContainerPassword :global(.pa2) {
+  position: static;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .contentContainer {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+
+.inputContainer :global(.vtex-styleguide-9-x-input) {
+  text-transform: initial;
+}
+.inputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-transform: initial;
+  color: #828282;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    margin: 0 12px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .container {
+    margin: 0 4px 0 0;
+  }
+}
+
+.container :global(.vtex-button) {
+  padding: 0;
+  transition: ease-in 0.3s all;
+}
+.container :global(.vtex-button):focus, .container :global(.vtex-button):hover {
+  outline: none;
+  background-color: transparent;
+}
+
+.container :global(.vtex-button__label) {
+  border: none;
+  padding: 0 !important;
+  outline: none;
+}
+.container :global(.vtex-button__label) :global(.nr2),
+.container :global(.vtex-button__label) :global(.mr3) {
+  margin: 0;
+}
+
+.profileIcon {
+  width: 32px;
+  height: 32px;
+  color: #fff;
+}
+
+:global(.vtex-store-header-2-x-headerRowContentContainer--header-mobile-fixed) .profileIcon {
+  width: 32.38px;
+  height: 36.56px;
+}
+:global(.vtex-store-header-2-x-headerRowContentContainer--header-mobile-fixed) :global(.vtex-store-components-3-x-imageElement--open-search-mobile) {
+  width: 33.01px;
+  height: 33.01px;
+}
+
+@media only screen and (max-width: 576px) {
+  :global(.vtex-flex-layout-0-x-flexRow--links-mobile) .profileIcon {
+    width: 22.75px;
+    height: 25.31px;
+  }
+}
+
+.label {
+  border-bottom: 1px solid #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  text-align: left;
+  color: #fff;
+  max-width: 83px;
+  margin-left: 8px;
+  padding: 0 0 2px;
+}
+
+.arrowUp {
+  display: none;
+}
+
+.portalContainer {
+  left: 80px !important;
+}
+
+.box {
+  min-width: 290px;
+  max-width: 290px;
+}
+
+.contentInitialScreen {
+  padding: 16px 24px;
+}
+
+.options {
+  min-width: 100%;
+}
+
+.formTitle {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #4f4f4f;
+  margin: 8px 0 16px;
+  padding: 0;
+}
+
+.emailVerification .formTitle {
+  color: #333333;
+}
+
+.optionsList {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.optionsList :global(.vtex-button__label) {
+  font-weight: 400;
+}
+
+.optionsListItem:nth-child(1) {
+  order: -1;
+}
+
+.optionsListItem:nth-child(3) {
+  order: -1;
+}
+
+.optionsListItemContainer {
+  order: 5;
+}
+
+.contentFormVisible .optionsListItem:nth-child(3) {
+  order: 2;
+}
+.contentFormVisible .optionsListItemContainer {
+  order: 4;
+}
+
+.button :global(.vtex-button) {
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  min-height: 0;
+  transition: all 0.3s ease-in-out;
+  background: rgb(233, 233, 233);
+  border: 1px solid transparent;
+}
+
+.googleOptionBtn :global(.vtex-button),
+.facebookOptionBtn :global(.vtex-button) {
+  color: #000;
+}
+
+.button :global(.vtex-button__label) {
+  padding: 12px 0 !important;
+}
+
+.accessCodeOptionBtn :global(.vtex-button) {
+  background-color: #26247b;
+}
+.accessCodeOptionBtn :global(.vtex-button):hover, .accessCodeOptionBtn :global(.vtex-button):focus {
+  background-color: rgb(50.1886792453, 47.5471698113, 162.4528301887);
+}
+.accessCodeOptionBtn :global(.vtex-button) :global(.vtex-button__label) {
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+}
+.accessCodeOptionBtn :global(.vtex-button) :global(.vtex-button__label):before {
+  content: "Receber código de acesso";
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.content {
+  padding: 16px 23px;
+  gap: 50px;
+  flex-direction: column;
+}
+@media (max-width: 920px) {
+  .content {
+    gap: 110px;
+  }
+}
+@media (max-width: 434px) {
+  .content {
+    gap: 37px;
+  }
+}
+
+.inputContainer :global(.vtex-input-prefix__group) {
+  border: none;
+  border-radius: 0;
+}
+
+.inputContainer :global(.vtex-styleguide-9-x-input) {
+  border-radius: 0;
+  background: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+  padding: 12px 16px;
+}
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .inputContainer :global(.vtex-styleguide-9-x-input) {
+      font-size: 16px;
+    }
+  }
+}
+
+.inputContainer :global(.vtex-input__suffix) {
+  background: #f2f2f2;
+}
+
+.eyeIcon--invisible,
+.eyeIcon--visible {
+  display: flex;
+  align-items: center;
+}
+
+.formLinkContainer {
+  padding: 0;
+}
+
+.dontHaveAccount,
+.forgotPasswordLink {
+  outline: none;
+}
+
+.forgotPasswordLink {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  color: #828282;
+}
+@media screen and (min-width: 992px) {
+  .forgotPasswordLink {
+    margin-bottom: 5px;
+  }
+}
+
+.formFooter {
+  border: none;
+  padding: 0;
+  margin: 16px 0 20px;
+}
+
+.backButton :global(.vtex-button):hover,
+.backButton :global(.vtex-button):focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.backButton :global(.vtex-button__label) {
+  height: 38px;
+  padding: 4px !important;
+}
+
+.arrowBackIcon {
+  color: #828282;
+  width: 25px;
+  height: 25px;
+  margin-right: -6px;
+  padding-top: 1px;
+}
+
+.backButton :global(.t-small) {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #828282;
+  margin: 0;
+}
+
+.sendButton :global(.vtex-button) {
+  background: #26247b;
+  border-radius: 0;
+  border: none;
+}
+.sendButton :global(.vtex-button):hover {
+  background-color: rgb(50.1886792453, 47.5471698113, 162.4528301887);
+}
+
+.sendButton :global(.vtex-button__label) {
+  padding: 0 !important;
+}
+
+.sendButton :global(.t-small) {
+  font-size: 0;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  min-width: 120px;
+  padding: 12px !important;
+  box-sizing: border-box;
+}
+.sendButton :global(.t-small):before {
+  content: "Enviar";
+  display: block;
+  font-size: 15px;
+}
+
+.sendButton :global(.t-small):focus,
+.sendButton :global(.vtex-button__label):focus {
+  outline: none;
+}
+
+.dontHaveAccount {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  text-align: center;
+  color: #828282;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 12px;
+}
+
+.profile {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  white-space: break-spaces;
+  text-transform: capitalize;
+  color: #fff;
+  max-width: 83px;
+  margin-left: 8px;
+  padding: 0;
+}
+
+.contentForm {
+  text-align: center;
+  min-width: 100%;
+  order: -1;
+}
+@media screen and (max-width: 640px) {
+  .contentForm {
+    min-height: 350px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contentForm {
+    padding: 0;
+  }
+}
+
+.accountOptions .button,
+.accountOptions :global(.vtex-button__label) {
+  border-radius: 0;
+  border: none;
+  font-size: 12px !important;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 12px !important;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.accountOptions .button {
+  background-color: #26247b;
+}
+.accountOptions .button:hover, .accountOptions .button:focus {
+  background-color: rgb(50.1886792453, 47.5471698113, 162.4528301887);
+}
+
+.accountOptions :global(.vtex-button__label) {
+  background-color: #26247b;
+}
+.accountOptions :global(.vtex-button__label):hover, .accountOptions :global(.vtex-button__label):focus {
+  background-color: rgb(50.1886792453, 47.5471698113, 162.4528301887);
+}
+
+.accountOptions :global(.vtex-button) {
+  border: none;
+  min-height: 0;
+  width: 100%;
+}
+
+.accountOptions :global(.mv2) {
+  display: none;
+}
+
+.formFooter .sendButton {
+  width: initial;
+  margin-left: auto;
+}
+
+.emailAndPasswordForm .sendButton :global(.vtex-button) {
+  background-color: #de7903;
+}
+
+.emailPasswordOptionBtn :global(.vtex-button) {
+  background-color: #de7903;
+}
+.emailPasswordOptionBtn :global(.vtex-button):hover, .emailPasswordOptionBtn :global(.vtex-button):focus {
+  background-color: rgb(251.88, 146.84, 24.12);
+}

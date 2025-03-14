@@ -1,0 +1,234 @@
+//HOME SHELF
+{
+    "flex-layout.row#shelf-01": {
+        "props": {
+            "blockClass": "m3-shelf"
+        },
+        "children": ["flex-layout.col#shelf-01"]
+    },
+    "flex-layout.col#shelf-01": {
+        "props": {
+            "blockClass": "m3-shelf"
+        },
+        "children": [
+            "rich-text#shelf-01-title",
+            "list-context.product-list#shelf-01-product-list"
+        ]
+    },
+    "rich-text#shelf-01-title": {
+        "props": {
+            "blockClass": "m3-shelf-title",
+            "text": "## Mais procurados",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#shelf-01-product-list": {
+        "props": {
+            "blockClass": "m3-shelf",
+            "collection": "333"
+        },
+        "blocks": [
+            "product-summary.shelf#m3-shelf-product"
+        ],
+        "children": [
+            "slider-layout#m3-shelf-products-slide"
+        ]
+    },
+    "slider-layout#m3-shelf-products-slide": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": "m3-shelf-products-slide",
+            "showPaginationDots": "always"
+        }
+    },
+
+    "flex-layout.row#shelf-highlight": {
+        "props": {
+            "blockClass": ["m3-shelf", "m3-shelf-highlight", "raridades"]
+        },
+        "children": [
+            "flex-layout.col#shelf-highlight-text",
+            "flex-layout.col#shelf-highlight-slide"
+        ]
+    },
+    "flex-layout.col#shelf-highlight-text": {
+        "props": {
+            "blockClass": "m3-shelf-highlight-text"
+        },
+        "children": [
+            "rich-text#shelf-highlight-tag",
+            "rich-text#shelf-highlight-title",
+            "rich-text#shelf-highlight-description"
+        ]
+    },
+    "rich-text#shelf-highlight-tag": {
+        "props": {
+            "blockClass": "m3-shelf-highlight-tag",
+            "text": "Exclusivo",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "rich-text#shelf-highlight-title": {
+        "props": {
+            "blockClass": "m3-shelf-highlight-title",
+            "text": "## Sessão raridades",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT"
+        }
+    },
+    "rich-text#shelf-highlight-description": {
+        "props": {
+            "blockClass": "m3-shelf-highlight-description",
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Conheça alguns itens de raridade em nosso site.\n\n Aqui você encontra produtos que já se encontram fora de produção ou são difíceis de se encontrar.\n\n Aqui na **Auto Peças Padre Cícero**, trabalhamos para trazer produtos que fazem diferença para o seu veículo"
+        }
+    },
+    "flex-layout.col#shelf-highlight-slide":{
+        "props": {
+            "blockClass": "m3-shelf-highlight-slide"
+        },
+        "children":["list-context.product-list#shelf-highlight-product-list"]
+    },
+    "list-context.product-list#shelf-highlight-product-list": {
+        "props": {
+            "blockClass": ["m3-shelf", "m3-shelf-highlight"],
+            "collection": "331"
+        },
+        "blocks": [
+            "product-summary.shelf#m3-shelf-product"
+        ],
+        "children": [
+            "slider-layout#shelf-highlight-products-slide"
+        ]
+    },
+    "slider-layout#shelf-highlight-products-slide": {
+        "props": {
+            "infinite": true,
+            "fullWidth": false,
+            "blockClass": ["m3-shelf-products-slide", "m3-shelf-highlight"],
+            "showPaginationDots": "never",
+            "itemsPerPage": {
+                "desktop": 2,
+                "tablet": 2,
+                "phone": 2
+            }
+        }
+    },
+
+    "flex-layout.row#shelf-02": {
+        "props": {
+            "blockClass": "m3-shelf"
+        },
+        "children": ["flex-layout.col#shelf-02"]
+    },
+    "flex-layout.col#shelf-02": {
+        "props": {
+            "blockClass": "m3-shelf"
+        },
+        "children": [
+            "rich-text#shelf-02-title",
+            "list-context.product-list#shelf-02-product-list"
+        ]
+    },
+    "rich-text#shelf-02-title": {
+        "props": {
+            "blockClass": "m3-shelf-title",
+            "text": "## Ofertas",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#shelf-02-product-list": {
+        "props": {
+            "blockClass": "m3-shelf",
+            "collection": "330"
+        },
+        "blocks": [
+            "product-summary.shelf#m3-shelf-product"
+        ],
+        "children": [
+            "slider-layout#m3-shelf-products-slide"
+        ]
+    },
+
+    "flex-layout.row#shelf-03": {
+        "props": {
+            "blockClass": "m3-shelf"
+        },
+        "children": ["flex-layout.col#shelf-03"]
+    },
+    "flex-layout.col#shelf-03": {
+        "props": {
+            "blockClass": "m3-shelf"
+        },
+        "children": [
+            "rich-text#shelf-03-title",
+            "list-context.product-list#shelf-03-product-list"
+        ]
+    },
+    "rich-text#shelf-03-title": {
+        "props": {
+            "blockClass": "m3-shelf-title",
+            "text": "## Novidades",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#shelf-03-product-list": {
+        "props": {
+            "blockClass": "m3-shelf",
+            "collection": "332"
+        },
+        "blocks": [
+            "product-summary.shelf#m3-shelf-product"
+        ],
+        "children": [
+            "slider-layout#m3-shelf-products-slide"
+        ]
+    },
+
+    "flex-layout.row#shelf-04": {
+        "props": {
+            "blockClass": ["m3-shelf", "mais-vendidos"]
+        },
+        "children": ["flex-layout.col#shelf-04"]
+    },
+    "flex-layout.col#shelf-04": {
+        "props": {
+            "blockClass": "m3-shelf"
+        },
+        "children": [
+            "rich-text#shelf-04-title",
+            "list-context.product-list#shelf-04-product-list"
+        ]
+    },
+    "rich-text#shelf-04-title": {
+        "props": {
+            "blockClass": "m3-shelf-title",
+            "text": "## Mais Vendidos",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#shelf-04-product-list": {
+        "props": {
+            "blockClass": "m3-shelf",
+            "collection": "137"
+        },
+        "blocks": [
+            "product-summary.shelf#m3-shelf-product"
+        ],
+        "children": [
+            "slider-layout#m3-shelf-products-slide"
+        ]
+    }
+}

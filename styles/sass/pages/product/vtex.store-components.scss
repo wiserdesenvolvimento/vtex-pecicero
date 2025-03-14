@@ -1,0 +1,401 @@
+.productImagesThumb .thumbImg {
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    max-height: 90px;
+    width: auto;
+    margin-left: auto;
+}
+
+.productImageTag {
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.productNameContainer {
+    margin-bottom: 8px;
+
+    .productBrand {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.1em;
+        color: $color-black;
+    }
+}
+
+.productBrand--m3-product {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #292929;
+    background-color: goldenrod;
+}
+
+.skuSelectorName {
+    font-size: 12px;
+    line-height: 14px;
+    color: #7d7d7d;
+}
+
+.skuSelectorName::after {
+    content: ":";
+}
+
+.frameAround--m3-custom-sku-selector {
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 2px solid #f0f0f0;
+}
+
+.skuSelectorItem--m3-custom-sku-selector--selected
+    .frameAround--m3-custom-sku-selector {
+    border: 2px solid #7d7d7d;
+    border-radius: 5px;
+}
+
+.skuSelectorInternalBox--m3-custom-sku-selector {
+    border: none;
+}
+
+.skuSelectorSubcontainer {
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.skuSelectorContainer--m3-custom-sku-selector {
+    margin-bottom: 32px;
+}
+
+.subscriberContainer {
+    max-width: 350px;
+    margin: 20px 0;
+    position: relative;
+
+    .title {
+        font-size: 0;
+        line-height: 0;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #414149;
+        margin-bottom: 12px;
+
+        &::before {
+            content: "Produto indisponível";
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    .subscribeLabel {
+        display: none;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .input {
+        width: 100%;
+        margin: 0 0 8px;
+    }
+
+    :global(.vtex-input-prefix__group) {
+        border: 1px solid #787c8a;
+        border-radius: 4px;
+        height: auto;
+    }
+
+    :global(.vtex-styleguide-9-x-input) {
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 14px;
+        color: #787c8a;
+        padding: 16px 20px;
+
+        &::placeholder {
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        @media not all and (min-resolution: 0.001dpcm) {
+            @supports (-webkit-appearance: none) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    :global(.vtex-button) {
+        background: $primary-color;
+        border: none;
+        border-radius: 4px;
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background: darken($primary-color, 10);
+        }
+    }
+
+    :global(.vtex-button__label) {
+        font-weight: bold;
+        font-size: 0;
+        line-height: 0;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $color-white;
+        padding: 16px !important;
+
+        &::after {
+            content: "Avise-me quando chegar";
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+}
+
+.shippingContainer {
+    display: flex;
+    align-items: flex-end;
+    width: fit-content;
+    margin: 12px 0;
+    padding-bottom: 20px;
+    position: relative;
+
+    :global(.vtex-address-form__postalCode) {
+        padding: 0;
+
+        @media (min-width: 375px) and (max-width: 475px) {
+            min-width: 66%;
+        }
+        @media (min-width: 300px) and (max-width: 375px) {
+            min-width: 62%;
+        }
+        @media (max-width: 300px) {
+            min-width: initial;
+        }
+    }
+
+    :global(.vtex-input__label) {
+        font-size: 0;
+        line-height: 0;
+        margin-bottom: 16px;
+
+        &::after {
+            content: "Calcular Frete";
+            font-size: 14px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #565656;
+        }
+    }
+
+    :global(.vtex-input-prefix__group) {
+        border: 1px solid #e0e0e0;
+        border-radius: 0;
+        box-sizing: border-box;
+        height: auto;
+
+        @media screen and (max-width: 300px) {
+            :global(.vtex-input__suffix) {
+                display: none;
+            }
+        }
+    }
+
+    :global(.vtex-address-form-4-x-input) {
+        border-radius: 0;
+        font-size: 12px;
+        line-height: 14px;
+        color: #828282;
+        padding: 16px;
+    }
+
+    :global(.vtex-address-form__postalCode-forgottenURL) {
+        font-size: 10px;
+        line-height: 12px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        margin-top: 8px;
+        padding: 0;
+        position: absolute;
+        right: 0;
+
+        :first-child {
+            color: #828282;
+        }
+    }
+
+    :global(.vtex__icon-external-link) {
+        display: none;
+    }
+
+    :global(.vtex-button) {
+        background: #d97d55;
+        border-radius: 0;
+        border: 0;
+        min-height: 0;
+        max-width: 120px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        :hover {
+            background: darken(#d97d55, 10);
+        }
+    }
+
+    :global(.vtex-button__label) {
+        font-weight: 900;
+        font-size: 0;
+        line-height: 0;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $color-white;
+        padding: 16px 20px !important;
+
+        &::after {
+            content: "Calcular";
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    :global(.vtex-input__error) {
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .productNameContainer {
+        text-align: center;
+    }
+
+    .shippingContainer {
+        margin: 16px auto;
+
+        :global(.vtex-input) {
+            display: block;
+            padding-top: 32px;
+        }
+
+        :global(.vtex-input__label) {
+            text-align: center;
+            position: absolute;
+            top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .shippingContainer {
+        width: initial;
+    }
+}
+
+/* PÁGINA DE PRODUTOS(DETAILS) */
+.productDescriptionTitle {
+    display: none;
+}
+
+.productDescriptionText {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    color: #828282;
+}
+
+.skuSelectorNameContainer,
+.skuSelectorOptionsList {
+    margin: 0;
+}
+
+.skuSelectorOptionsList {
+    display: flex;
+}
+
+.skuSelectorItem {
+    width: auto;
+    height: auto;
+    margin: 0 8px 0 0;
+    border-radius: 4px;
+}
+
+.skuSelectorItemTextValue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #7d7d7d;
+}
+
+.skuSelectorItemImageValue {
+    display: block;
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.swiperPaginationClickable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.skuSelectorSubcontainer .frameAround {
+    border-radius: 5px;
+    border-color: #e3e4e6;
+}
+
+.skuSelectorSubcontainer .skuSelectorInternalBox {
+    border-radius: 5px;
+}
+
+.diagonalCross {
+    border-radius: 5px;
+    border-color: #e3e4e6;
+}
+
+.skuSelectorItem--selected .frameAround {
+    border: 2px solid #7d7d7d;
+}
+
+.productImagesThumbCaret :global(.vtex-store-components-3-x-caretIcon) {
+    opacity: 1;
+}
+
+:global(.vtex-toast) {
+    min-height: 62px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: $color-white;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    :global(.vtex-toast) :global(.vtex-button__label) {
+        font-size: 13px;
+    }
+
+    .subscriberContainer {
+        text-align: center;
+        margin: 60px auto 30px;
+    }
+}

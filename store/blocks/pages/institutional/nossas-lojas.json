@@ -1,0 +1,70 @@
+{
+    "store.custom#nossas-lojas": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#wrapper-nossas-lojas"
+        ]
+    },
+    "flex-layout.row#wrapper-nossas-lojas": {
+        "children": [
+            "flex-layout.col#inst-nav",
+            "flex-layout.col#institucional--nossas-lojas"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    },
+    "flex-layout.col#institucional--nossas-lojas": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": ["flex-layout.row#institucional--nossas-lojas"]
+    },
+    "flex-layout.row#institucional--nossas-lojas": {
+        "children": ["flex-layout.col#institucional--nossas-lojas-content"]
+    },
+    "flex-layout.col#institucional--nossas-lojas-content": {
+        "children": [
+            "rich-text#nossas-lojas",
+            "store-card#lojas"
+        ]
+    },
+    "rich-text#nossas-lojas": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Nossas lojas",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    },
+    "store-card#lojas": {
+        "props": {
+            "stores": [
+                {
+                    "branch": "Matriz – Montese",
+                    "address": "Av. Prof. Gomes de Matos, 1368 - Montese",
+                    "phone": "(85) 3499.9003",
+                    "working": {
+                        "weekday": "07h00 às 18h00",
+                        "saturday": "08h00 às 17h00",
+                        "sunday": "Fechado",
+                        "holiday": "sujeito a alterações"
+                    }
+                },
+                {
+                    "branch": "Matriz – Montese",
+                    "address": "Av. Prof. Gomes de Matos, 1368 - Montese",
+                    "phone": "(85) 3499.9003",
+                    "working": {
+                        "weekday": "07h00 às 18h00",
+                        "saturday": "08h00 às 17h00",
+                        "sunday": "Fechado",
+                        "holiday": "sujeito a alterações"
+                    }
+                }
+            ]
+        }
+    }
+}

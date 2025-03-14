@@ -1,0 +1,138 @@
+{
+    "menu-item#submenu-item--higienizacao-e-lubrificacao": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":15,
+                "text": "Higenização e lubrificação"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-higienizacao-e-lubrificacao"]
+    },
+    "vtex.menu@2.x:submenu#submenu-higienizacao-e-lubrificacao": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-higienizacao-e-lubrificacao",
+            "vtex.menu@2.x:menu#submenu-higienizacao-e-lubrificacao-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-higienizacao-e-lubrificacao": {
+        "children": ["flex-layout.col#title-higienizacao-e-lubrificacao"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-higienizacao-e-lubrificacao": {
+        "children": ["rich-text#menu-title-higienizacao-e-lubrificacao"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-higienizacao-e-lubrificacao": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Higenização e lubrificação",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--higienizacao-e-lubrificacao"]
+    },
+    "menu-item#see-more--higienizacao-e-lubrificacao": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--higienizacao-e-lubrificacao",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+               "categoryId":15,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-higienizacao-e-lubrificacao-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":150,
+                        "text": "Aromatizante"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                       "categoryId":276,
+                        "text": "Bomba óleo"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":879,
+                        "text": "Graxa"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1098,
+                        "text": "Óleo caixa marcha"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1100,
+                        "text": "Óleo freio"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1096,
+                        "text": "Óleo motor"
+                    }
+                }
+            ]
+        }
+    }
+}

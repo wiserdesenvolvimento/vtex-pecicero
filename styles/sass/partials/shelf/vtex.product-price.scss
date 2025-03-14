@@ -1,0 +1,55 @@
+.listPrice--m3-shelf {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #828282;
+
+    &::before {
+        content: "DE: ";
+    }
+}
+
+.listPriceValue--m3-shelf {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.sellingPrice--m3-shelf {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: $secondary-color;
+    margin: 4px 0 8px;
+}
+
+.spotPrice {
+    font-size: 0;
+
+    &::before, .spotPriceValue {
+        content: "DE: ";
+        color: #828282;
+        font-size: 11px;
+    }
+}
+
+.installments--m3-shelf {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #828282;
+    margin-bottom: 8px;
+}
+
+@include mq(md, max) {
+    .listPrice--m3-shelf {
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .sellingPrice--m3-shelf {
+        font-size: 20px;
+        line-height: 23px;
+    }
+}

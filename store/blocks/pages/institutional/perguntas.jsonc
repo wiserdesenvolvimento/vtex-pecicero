@@ -1,0 +1,79 @@
+{
+    "store.custom#perguntas": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#wrapper-perguntas"
+        ]
+    },
+    "flex-layout.row#wrapper-perguntas": {
+        "children": [
+            "flex-layout.col#inst-nav",
+            "flex-layout.col#institucional-perguntas"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper"
+        }
+    },
+    "flex-layout.col#institucional-perguntas": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": [
+            "flex-layout.row#institucional-perguntas-title",
+            "flex-layout.row#institucional-perguntas-pergunta"
+        ]
+    },
+    "flex-layout.row#institucional-perguntas-title": {
+        "children": ["rich-text#institucional-perguntas-title"]
+    },
+    "rich-text#institucional-perguntas-title": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Perguntas Frequentes",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": ["institucional", "institucional-perguntas"]
+        }
+    },
+    "flex-layout.row#institucional-perguntas-pergunta": {
+        "props": {
+            "blockClass": "institucional-row-perguntas"
+        },
+        "children": [
+            "rich-text#institucional-perguntas-pergunta1",
+            "rich-text#institucional-perguntas-pergunta2",
+            "rich-text#institucional-perguntas-pergunta3"
+        ]
+    },
+    "rich-text#institucional-perguntas-pergunta1": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**Lorem ipsum dolor sit amet, consectetur adipiscing elit?** \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien pretium, accumsan nulla ac, fermentum nibh. Aliquam tristique est id risus rutrum, ac convallis lectus pharetra. Vivamus aliquam eros risus, at feugiat purus auctor ac. ",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional-pergunta"
+        }
+    },
+    "rich-text#institucional-perguntas-pergunta2": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**Lorem ipsum dolor sit amet, consectetur adipiscing elit?** \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien pretium, accumsan nulla ac, fermentum nibh. Aliquam tristique est id risus rutrum, ac convallis lectus pharetra. Vivamus aliquam eros risus, at feugiat purus auctor ac. ",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional-pergunta"
+        }
+    },
+    "rich-text#institucional-perguntas-pergunta3": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "**Lorem ipsum dolor sit amet, consectetur adipiscing elit?** \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien pretium, accumsan nulla ac, fermentum nibh. Aliquam tristique est id risus rutrum, ac convallis lectus pharetra. Vivamus aliquam eros risus, at feugiat purus auctor ac. ",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional-pergunta"
+        }
+    }
+}

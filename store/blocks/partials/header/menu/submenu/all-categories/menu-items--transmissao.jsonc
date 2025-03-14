@@ -1,0 +1,308 @@
+{
+    "menu-item#submenu-item--transmissao": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level",
+            "id": "menu-item-category-all-categories",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId": 14,
+                "text": "Transmissão"
+            },
+            "iconPosition": "right",
+            "iconProps": {
+                "id": "submenu-arrow",
+                "size": 16,
+                "viewBox": "0 0 8 16",
+                "activeClassName": "vtex-icone",
+                "mutedClassName": "c-action-primary"
+            },
+            "iconToTheRight": true
+        },
+        "blocks": ["vtex.menu@2.x:submenu#submenu-transmissao"]
+    },
+    "vtex.menu@2.x:submenu#submenu-transmissao": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-second-level"
+        },
+        "children": [
+            "flex-layout.row#title-transmissao",
+            "vtex.menu@2.x:menu#submenu-transmissao-third-level",
+            "flex-layout.row#ver-todos"
+        ]
+    },
+    "flex-layout.row#title-transmissao": {
+        "children": ["flex-layout.col#title-transmissao"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.col#title-transmissao": {
+        "children": ["rich-text#menu-title-transmissao"],
+        "props": {
+            "blockClass": "menu-title"
+        }
+    },
+    "rich-text#menu-title-transmissao": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "Transmissão",
+            "blockClass": "menu-title"
+        }
+    },
+    "flex-layout.row#ver-todos": {
+        "children": ["menu-item#see-more--transmissao"]
+    },
+    "menu-item#see-more--transmissao": {
+        "props": {
+            "blockClass": "see-more--menu-item",
+            "id": "see-more--transmissao",
+            "type": "category",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "categoryId":14,
+                "text": "Ver Todos"
+            }
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-transmissao-third-level": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu-item-third-level",
+            "items": [
+                {
+                    "id": "menu-item-link-01",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId": 157,
+                        "text": "Arruela caixa satelite"
+                    }
+                },
+                {
+                    "id": "menu-item-link-02",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":173,
+                        "text": "Atuador garfo embreagem"
+                    }
+                },
+                {
+                    "id": "menu-item-link-03",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId": 393,
+                        "text": "Cabeça alavanca câmbio"
+                    }
+                },
+                {
+                    "id": "menu-item-link-04",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":568,
+                        "text": "Cilindro embreagem"
+                    }
+                },
+                {
+                    "id": "menu-item-link-05",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":651,
+                        "text": "Coroa e pião transmissão"
+                    }
+                },
+                {
+                    "id": "menu-item-link-06",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":680,
+                        "text": "Coxim câmbio"
+                    }
+                },
+                {
+                    "id": "menu-item-link-07",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":691,
+                        "text": "Cruzeta transmissão"
+                    }
+                },
+                {
+                    "id": "menu-item-link-08",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":736,
+                        "text": "Eixo entalhado"
+                    }
+                },
+                {
+                    "id": "menu-item-link-09",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":739,
+                        "text": "Eixo piloto"
+                    }
+                },
+                {
+                    "id": "menu-item-link-10",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":769,
+                        "text": "Egrenagem satelite"
+                    }
+                },
+                {
+                    "id": "menu-item-link-11",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId": 773,
+                        "text": "Egrenagem virabrequim"
+                    }
+                },
+                {
+                    "id": "menu-item-link-12",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":839,
+                        "text": "Flange diferencial"
+                    }
+                },
+                {
+                    "id": "menu-item-link-13",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":865,
+                        "text": "Garfo transmissão"
+                    }
+                },
+                {
+                    "id": "menu-item-link-14",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1047,
+                        "text": "Luva transmissão"
+                    }
+                },
+                {
+                    "id": "menu-item-link-15",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1177,
+                        "text": "Ponta deslizante"
+                    }
+                },
+                {
+                    "id": "menu-item-link-16",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1178,
+                        "text": "Ponta Homocinetica"
+                    }
+                },
+                {
+                    "id": "menu-item-link-17",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1234,
+                        "text": "Retentor caixa Marcha"
+                    }
+                },
+                {
+                    "id": "menu-item-link-18",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1231,
+                        "text": "Retentor diferencial"
+                    }
+                },
+                {
+                    "id": "menu-item-link-18",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1232,
+                        "text": "Retentor eixo piloto"
+                    }
+                },
+                {
+                    "id": "menu-item-link-18",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1260,
+                        "text": "Rolamento pinhão diferencial"
+                    }
+                },
+                {
+                    "id": "menu-item-link-19",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1404,
+                        "text": "Terminal alavanca câmbio"
+                    }
+                },
+                {
+                    "id": "menu-item-link-20",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1438,
+                        "text": "Trizeta"
+                    }
+                },
+                {
+                    "id": "menu-item-link-20",
+                    "type": "category",
+                    "iconId": null,
+                    "highlight": false,
+                    "itemProps": {
+                        "categoryId":1445,
+                        "text": "Tubo flexível embreagem"
+                    }
+                }
+            ]
+        }
+    }
+}

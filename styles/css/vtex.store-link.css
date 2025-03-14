@@ -1,0 +1,194 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+/* Colors */
+/* Grid breakpoints */
+/* M3 FOOTER  */
+.link--social-footer-blog {
+  border-bottom: 1px solid #414141;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #414141;
+}
+
+.link--buy-with-cnpj {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 37px;
+  padding: 0 16px;
+  position: relative;
+}
+
+.link--buy-with-cnpj::after {
+  content: "";
+  display: block;
+  height: 23px;
+  width: 1px;
+  background: #fff;
+  position: absolute;
+  top: 9px;
+  right: 0;
+}
+
+.link--not-found-btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  display: block;
+  line-height: 42px;
+  max-width: 330px;
+  text-align: center;
+  background: #26247b;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 32px auto 0 auto;
+}
+
+.link--whatsapp-link {
+  display: block;
+  height: 35px;
+  width: 35px;
+  background: url(assets/svgs/whatsapp.svg) no-repeat center center !important;
+  background-size: contain;
+  position: fixed;
+  bottom: 80px;
+  right: 14px;
+  z-index: 25;
+}
+
+.buttonLink--inst-nav {
+  background: none;
+  border: none;
+  color: #7d7d7d;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.buttonLink--inst-nav:active,
+.buttonLink--inst-nav:hover {
+  background: none;
+  color: #7d7d7d;
+  font-weight: bold;
+}
+
+.link--pedidos-antigos {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 31px;
+  right: 33px;
+  color: #fff;
+  background: #292929;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 10px;
+  line-height: 42px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.label--inst-nav {
+  padding: 0;
+  text-align: left;
+}
+
+.label--top-bar {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1026px) {
+  .link--pedidos-antigos {
+    position: static;
+    float: right;
+  }
+}
+.link--link-breadcrumb-home {
+  color: #7d7d7d;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.link--pedidos-antigos {
+  display: none;
+}
+
+.link--top-bar {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  width: fit-content;
+  padding: 12px;
+}
+
+.link--minicart-continue-buying {
+  display: inline-block;
+  border: 1px solid #bdbdbd;
+  font-size: 14px;
+  line-height: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #828282;
+  width: 348px;
+  max-width: 100%;
+  padding: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.link--minicart-continue-buying:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 490px) {
+  .link--minicart-continue-buying.link--empty-state {
+    width: 345px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .link--minicart-continue-buying.link--empty-state {
+    width: 295px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .link--minicart-continue-buying.link--empty-state {
+    width: 250px;
+  }
+}

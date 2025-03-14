@@ -1,0 +1,290 @@
+{
+    "footer": {
+        "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    },
+    "footer-layout.desktop": {
+        "children": [
+            "flex-layout.row#m3-newsletter",
+            "flex-layout.row#footer-links",
+            "flex-layout.row#footer-bottom"
+        ]
+    },
+    "flex-layout.row#footer-links": {
+        "props": {
+            "blockClass": "footer-links"
+        },
+        "children": [
+            "logo#footer",
+            "vtex.menu@2.x:menu#footer-institucional",
+            "vtex.menu@2.x:menu#footer-institucional-2",
+            "vtex.menu@2.x:menu#footer-fale-conosco",
+            "flex-layout.col#social"
+        ]
+    },
+    "logo#footer": {
+        "props": {
+            "blockClass": "footer-links",
+            "title": "Logo Auto Peças Padre Cícero",
+            "href": "/",
+            "url": "assets/imgs/logoFooter.png",
+            "width": "136"
+        }
+    },
+    "flex-layout.col#social": {
+        "props": {
+            "blockClass": "col-footer-social"
+        },
+        "children": ["rich-text#siga-nos", "flex-layout.row#redes-sociais"]
+    },
+    "rich-text#siga-nos": {
+        "props": {
+            "blockClass": "footer-menu-title",
+            "text": "Siga-nos"
+        }
+    },
+    "flex-layout.row#redes-sociais": {
+        "props": {
+            "blockClass": "row-footer-social"
+        },
+        "children": ["image#facebook-footer", "image#instagram-footer"]
+    },
+    "image#facebook-footer": {
+        "props": {
+            "blockClass": ["social-footer", "social-footer-img"],
+            "src": "assets/svgs/facebook.svg",
+            "label": "Facebook",
+            "link": {
+                "url": "https://www.facebook.com/autopecaspecicero/",
+                "title": "Facebook",
+                "openNewTab": true
+            }
+        }
+    },
+    "image#instagram-footer": {
+        "props": {
+            "blockClass": ["social-footer", "social-footer-img"],
+            "src": "assets/svgs/instagram.svg",
+            "label": "Instagram",
+            "link": {
+                "url": "https://www.instagram.com/autopecaspecicero/",
+                "title": "Instagram",
+                "openNewTab": true
+            }
+        }
+    },
+    "flex-layout.row#footer-bottom": {
+        "props": {
+            "blockClass": "footer-bottom"
+        },
+        "children": ["flex-layout.row#footer-selos", "rich-text#footer"]
+    },
+    "flex-layout.row#footer-selos": {
+        "props": {
+            "blockClass": "footer-selos"
+        },
+        "children": [
+            "flex-layout.row#footer-payments",
+            "flex-layout.row#footer-m3-powered-by"
+        ]
+    },
+    "flex-layout.row#footer-payments": {
+        "props": {
+            "blockClass": "footer-payment-badges"
+        },
+        "children": [
+            "image#Master",
+            "image#Visa",
+            "image#Amex",
+            "image#Elo",
+            "image#Hypercard",
+            "image#Paypal",
+            "image#Boleto",
+            "image#Pix",
+            "image#vtex-pci"
+        ]
+    },
+    "image#Master": {
+        "props": {
+            "blockClass": "payment-badges",
+            "src": "assets/imgs/master.png"
+        }
+    },
+    "image#Visa": {
+        "props": {
+            "blockClass": "payment-badges",
+            "src": "assets/imgs/visa.png"
+        }
+    },
+    "image#Amex": {
+        "props": {
+            "blockClass": "payment-badges",
+            "src": "assets/imgs/amex.png"
+        }
+    },
+    "image#Elo": {
+        "props": {
+            "blockClass": "payment-badges",
+            "src": "assets/imgs/elo.png"
+        }
+    },
+    "image#Hypercard": {
+        "props": {
+            "blockClass": "payment-badges",
+            "src": "assets/imgs/hiper.png"
+        }
+    },
+    "image#Paypal": {
+        "props": {
+            "blockClass": "payment-badges",
+            "src": "assets/imgs/paypal.png"
+        }
+    },
+    "image#Boleto": {
+        "props": {
+            "blockClass": "payment-badges",
+            "src": "assets/imgs/boleto.png"
+        }
+    },
+    "image#Pix": {
+        "props": {
+            "blockClass": "payment-badges",
+            "src": "assets/imgs/pix.png"
+        }
+    },
+    "image#vtex-pci": {
+        "props": {
+            "blockClass": "vtex-pci",
+            "src": "assets/imgs/vtex-pci.png",
+            "maxWidth": 45
+        }
+    },
+    "flex-layout.row#footer-m3-powered-by": {
+        "props": {
+            "blockClass": "footer-m3-powered-by"
+        },
+        "children": [
+            "rich-text#footer-powered-by-vtex--text",
+            "responsive-layout.desktop#vtex",
+            "responsive-layout.phone#vtex"
+            //"rich-text#footer-powered-by-m3--text",
+            //"responsive-layout.desktop#m3",
+            //"responsive-layout.phone#m3"
+        ]
+    },
+    "rich-text#footer-powered-by-vtex--text": {
+        "props": {
+            "text": "Powered by",
+            "blockClass": "footer-bottom-text"
+        }
+    },
+    "responsive-layout.desktop#vtex": {
+        "children": ["image#footer-powered-by-vtex--image-desktop"]
+    },
+    "responsive-layout.phone#vtex": {
+        "children": ["image#footer-powered-by-vtex--image-phone"]
+    },
+    "image#footer-powered-by-vtex--image-desktop": {
+        "props": {
+            "blockClass": "footer-vtex-logo",
+            "src": "assets/svgs/vtex-desktop.svg",
+            "link": {
+                "url": "https://vtex.com",
+                "attributeTitle": "VTEX",
+                "openNewTab": true
+            }
+        }
+    },
+    "image#footer-powered-by-vtex--image-phone": {
+        "props": {
+            "blockClass": "footer-vtex-logo",
+            "src": "assets/svgs/vtex.svg",
+            "link": {
+                "url": "https://vtex.com",
+                "attributeTitle": "VTEX",
+                "openNewTab": true
+            }
+        }
+    },
+    "rich-text#footer-powered-by-m3--text": {
+        "props": {
+            "text": "Developed by",
+            "blockClass": "footer-bottom-text"
+        }
+    },
+    "responsive-layout.desktop#m3": {
+        "children": ["image#footer-powered-by-m3--image-desktop"]
+    },
+    "responsive-layout.phone#m3": {
+        "children": ["image#footer-powered-by-m3--image-phone"]
+    },
+    "image#footer-powered-by-m3--image-desktop": {
+        "props": {
+            "blockClass": "footer-m3-logo",
+            "src": "assets/svgs/m3-desktop.svg",
+            "link": {
+                "url": "https://m3ecommerce.com/",
+                "attributeTitle": "M3",
+                "openNewTab": true
+            }
+        }
+    },
+    "image#footer-powered-by-m3--image-phone": {
+        "props": {
+            "blockClass": "footer-m3-logo",
+            "src": "assets/svgs/m3.svg",
+            "link": {
+                "url": "https://m3ecommerce.com/",
+                "attributeTitle": "M3",
+                "openNewTab": true
+            }
+        }
+    },
+    "rich-text#footer": {
+        "props": {
+            "blockClass": "footer-bottom-store-info",
+            "text": "Lorem ipsum dolor sit amet, consectetur  adipiscing elit.  Nunc sollicitudin ligulanon risus bibendum faucibus."
+        }
+    },
+
+    "footer-layout.mobile": {
+        "props": {
+            "blockClass": "footer-mobile"
+        },
+        "children": [
+            "flex-layout.row#m3-newsletter",
+            "flex-layout.row#footer-links-mobile",
+            "flex-layout.row#footer-bottom"
+        ]
+    },
+    "flex-layout.row#footer-links-mobile": {
+        "props": {
+            "blockClass": "footer-links-mobile"
+        },
+        "children": [
+            "logo#footer",
+            "vtex.menu@2.x:menu#footer-mobile",
+            "flex-layout.col#social"
+        ]
+    },
+    "social-networks": {
+        "props": {
+            "socialNetworks": [
+                {
+                    "name": "Facebook",
+                    "url": "https://www.facebook.com/autopecaspecicero/",
+                    "image": "assets/imgs/brand-makup.png"
+                },
+                {
+                    "name": "Instagram",
+                    "url": "https://www.instagram.com/autopecaspecicero/"
+                }
+            ]
+        }
+    },
+    "rich-text#footer-mobile": {
+        "props": {
+            "text": "All stock and product photos are from photos.icons8.com",
+            "blockClass": "footer"
+        }
+    }
+}

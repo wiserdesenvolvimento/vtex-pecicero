@@ -1,0 +1,138 @@
+.minicartWrapperContainer {
+    margin: 0 24px;
+
+    @media only screen and (max-width: 1024px) {
+        margin: 0 12px;
+    }
+
+    @media only screen and (max-width: 420px) {
+        margin: 0 0 0 4px;
+    }
+}
+
+.openIconContainer {
+    padding: 0 !important;
+
+    :global(.vtex-button) {
+        border: none;
+
+        &:hover,
+        &:focus {
+            background: transparent;
+            outline: none;
+        }
+    }
+
+    :global(.vtex-button__label) {
+        padding: 0;
+    }
+}
+
+.drawer {
+    width: 95% !important;
+}
+
+.drawerContent {
+    height: 100vh;
+    position: relative;
+}
+
+.closeIconContainer {
+    height: 74px;
+    padding: 26px 20px;
+    position: absolute;
+}
+
+.closeIconButton {
+    padding: 0;
+}
+
+.closeIcon {
+    color: #888;
+    width: 20px;
+    height: 20px;
+}
+
+.childrenContainer,
+.minicartSideBarContentWrapper {
+    height: 100% !important;
+}
+
+.minicartTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    line-height: 0;
+    padding: 26px;
+    margin: 0;
+
+    &::before {
+        content: "Meu carrinho";
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: $color-gray4;
+        margin-right: 12px;
+        text-transform: uppercase;
+    }
+
+    &::after {
+        content: " ";
+        display: block;
+        background: url("assets/svgs/minicart-icon-title.svg") center no-repeat;
+        width: 23px;
+        height: 22px;
+        visibility: visible;
+    }
+}
+
+.minicartEmptyStateContainer {
+    padding: 16px;
+}
+
+.minicartProductListContainer {
+    padding: 0 16px;
+}
+
+.minicartCheckoutButton {
+    margin: 8px 0 0;
+    padding: 0;
+
+    @include mq(sm, max) {
+        width: 348px;
+        max-width: 100%;
+    }
+
+    :global(.vtex-button) {
+        background-color: $color-green;
+        border: none;
+        border-radius: 0;
+        font-weight: bold;
+        font-size: 0;
+        line-height: 0;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: $color-white;
+        transition: all 0.3s ease-in-out;
+        padding: 16px;
+    }
+
+    :global(.vtex-button)::before {
+        content: "Comprar";
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    :global(.vtex-button__label) {
+        padding: 0 !important;
+    }
+}
+
+.minicartCheckoutButton :global(.vtex-button):hover,
+.minicartCheckoutButton :global(.vtex-button):active {
+    background-color: darken($color-green, 10);
+}

@@ -1,0 +1,10 @@
+:global(.vtex-toast) {
+    background: $primary-color;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 !important;
+    opacity: 0.8;
+}
+
+:global(.vtex-toast-container) {
+    display: none;
+}

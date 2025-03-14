@@ -1,0 +1,46 @@
+.flexRow--m3-shelf {
+    margin: 20px auto;
+
+    :global(.vtex-store-components-3-x-container) {
+        padding: 0;
+    }
+}
+
+.flexRowContent--m3-shelf {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    @media screen and (min-width: 1440px) {
+        max-width: 1440px;
+        :global(.vtex-slider-layout-0-x-sliderLeftArrow--m3-shelf-products-slide) {
+            left: 0;
+        }
+        :global(.vtex-slider-layout-0-x-sliderRightArrow--m3-shelf-products-slide) {
+            right: 0;
+        }
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1440px){
+        :global(.vtex-slider-layout-0-x-sliderLeftArrow--m3-shelf-products-slide) {
+            left: -10px;
+        }
+        :global(.vtex-slider-layout-0-x-sliderRightArrow--m3-shelf-products-slide) {
+            right: -10px;
+        }
+    }
+}
+.flexRowContent--raridades {
+    max-width: 1500px;
+    padding: 0 16px 0 60px;
+
+    :global(.vtex-product-summary-2-x-element--m3-shelf-product) {
+        padding: 4px 6px 8px;
+    }
+}
+
+@include mq(sm, max) {
+    .flexRowContent--m3-shelf {
+        padding: 0 12px;
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "vtex.menu@2.x:submenu#all-categories": {
+        "children": ["vtex.menu@2.x:menu#submenu-all-categories"],
+        "props": {
+            "blockClass": "custom-dropdown--all-categories"
+        }
+    },
+    "vtex.menu@2.x:menu#submenu-all-categories": {
+        "props": {
+            "blockClass": "custom-dropdown-submenu--all-categories"
+        },
+        "children": [
+            "menu-item#submenu-item--acessorios",
+            "menu-item#submenu-item--alimentacao",
+            "menu-item#submenu-item--ar-condicionado",
+            "menu-item#submenu-item--arrefecimento",
+            "menu-item#submenu-item--baterias",
+            "menu-item#submenu-item--borrachas-e-guarnicoes",
+            "menu-item#submenu-item--botoes-e-interruptores",
+            "menu-item#submenu-item--cabos",
+            "menu-item#submenu-item--circuitos-tomadas-sensores",
+            "menu-item#submenu-item--colas-e-silicones",
+            "menu-item#submenu-item--correias-correntes-componentes",
+            "menu-item#submenu-item--emblemas-e-faixas",
+            "menu-item#submenu-item--fechaduras-sist_abertura",
+            "menu-item#submenu-item--filtros",
+            "menu-item#submenu-item--freios",
+            "menu-item#submenu-item--grampos-e-abracadeiras",
+            "menu-item#submenu-item--higienizacao-e-lubrificacao",
+            "menu-item#submenu-item--iluminacao",
+            "menu-item#submenu-item--juntas-vedacao",
+            "menu-item#submenu-item--latarias-carenagens-componentes",
+            "menu-item#submenu-item--mangueiras-e-mangotes",
+            "menu-item#submenu-item--motor",
+            "menu-item#submenu-item--outros",
+            "menu-item#submenu-item--palhetas-e-componentes",
+            "menu-item#submenu-item--parachoques-e-componentes",
+            "menu-item#submenu-item--parafusos-e-arruelas",
+            "menu-item#submenu-item--pecas-exterior",
+            "menu-item#submenu-item--pecas-interior",
+            "menu-item#submenu-item--reservatorios-e-componentes",
+            "menu-item#submenu-item--sist_eletronico-e-injecao-eletronica",
+            "menu-item#submenu-item--suspencao-e-direcao",
+            "menu-item#submenu-item--tintas-e-componentes-para-pintura",
+            "menu-item#submenu-item--transmissao"
+        ]
+    }
+}
